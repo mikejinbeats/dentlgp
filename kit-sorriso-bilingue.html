@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kit Sorriso Bilingue Online | Jogo Digital em LGP | DentLGP</title>
+  <meta name="description" content="Jogo digital e plataforma pedagógica interativa bilingue em Língua Gestual Portuguesa e Português Escrito dedicada à educação para a saúde oral.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 & Icons -->
+  <link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendors/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary: #079eb3;
+      --primary-dark: #002868;
+      --primary-light: #dff8fb;
+      --accent: #1768ca;
+      --bg-light: #f8fafc;
+      --card-shadow: 0 10px 25px rgba(7, 158, 179, 0.1);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-light);
+      color: #334155;
+    }
+
+    .top-bar {
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .brand-logo {
+      max-height: 48px;
+      width: auto;
+    }
+
+    .bilingual-badge {
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 6px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    .game-hero {
+      background: linear-gradient(135deg, #002868 0%, #004b87 50%, #079eb3 100%);
+      color: #ffffff;
+      padding: 60px 0;
+      border-radius: 0 0 30px 30px;
+      margin-bottom: 40px;
+    }
+
+    .game-hero h1 {
+      font-weight: 800;
+      font-size: 2.5rem;
+    }
+
+    .theme-card {
+      background: #ffffff;
+      border-radius: 20px;
+      border: 1px solid #e2e8f0;
+      box-shadow: var(--card-shadow);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      overflow: hidden;
+      height: 100%;
+    }
+
+    .theme-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 35px rgba(7, 158, 179, 0.2);
+    }
+
+    .concept-card {
+      background: #ffffff;
+      border-radius: 16px;
+      border: 1px solid #e2e8f0;
+      padding: 16px;
+      text-align: center;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      height: 100%;
+    }
+
+    .concept-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--primary);
+      box-shadow: 0 10px 25px rgba(7, 158, 179, 0.15);
+    }
+
+    .concept-img-wrap {
+      width: 100%;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg-light);
+      border-radius: 12px;
+      margin-bottom: 14px;
+      overflow: hidden;
+    }
+
+    .concept-img-wrap img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+    }
+
+    .nav-pills .nav-link {
+      color: var(--primary-dark);
+      font-weight: 600;
+      border-radius: 30px;
+      padding: 8px 20px;
+      margin: 0 4px;
+    }
+
+    .nav-pills .nav-link.active {
+      background-color: var(--primary);
+      color: #ffffff;
+    }
+
+    .quiz-box {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 15px 35px rgba(0, 40, 104, 0.08);
+      border: 2px solid var(--primary-light);
+    }
+
+    .quiz-option {
+      border: 2px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 16px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      background: #ffffff;
+    }
+
+    .quiz-option:hover {
+      border-color: var(--primary);
+      background: var(--primary-light);
+    }
+
+    .quiz-option.correct {
+      border-color: #10b981;
+      background: #d1fae5;
+      color: #065f46;
+    }
+
+    .quiz-option.incorrect {
+      border-color: #ef4444;
+      background: #fee2e2;
+      color: #991b1b;
+    }
+
+    .score-badge {
+      font-size: 1.25rem;
+      font-weight: 700;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      padding: 8px 20px;
+      border-radius: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <nav class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-3">
+        <a href="index.html" class="btn btn-outline-secondary btn-sm rounded-pill">
+          <i class="bi bi-arrow-left me-1"></i> Voltar ao site principal
+        </a>
+        <img src="imagens/logo-kit-sorriso-bilingue.png" alt="Logo Kit Sorriso Bilingue" class="brand-logo" onerror="this.src='assets/images/dentlgp/logo dentlgp.png'">
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <span class="bilingual-badge"><i class="bi bi-translate me-1"></i> LGP • PORTUGUÊS</span>
+        <button class="btn btn-primary btn-sm rounded-pill" data-bs-toggle="modal" data-bs-target="#teacherGuideModal">
+          <i class="bi bi-journal-text me-1"></i> Guia do Professor
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="game-hero text-center">
+    <div class="container">
+      <span class="badge bg-light text-dark mb-3 px-3 py-2 rounded-pill fw-bold text-uppercase" style="letter-spacing: 1px;">Jogo Digital Interativo</span>
+      <h1 class="mb-3">Aprende saúde oral a jogar!</h1>
+      <p class="lead mb-4 mx-auto" style="max-width: 650px; opacity: 0.9;">
+        Explora 18 conceitos pedagógicos, imagens apelativas e conteúdos bilingues em Língua Gestual Portuguesa e Português escrito através de atividades divertidas.
+      </p>
+
+      <div class="d-flex justify-content-center gap-3">
+        <a href="#exploracao" class="btn btn-light btn-lg rounded-pill fw-bold text-primary px-4">
+          <i class="bi bi-grid-fill me-2"></i> Explorar Conceitos
+        </a>
+        <a href="#jogos" class="btn btn-outline-light btn-lg rounded-pill fw-bold px-4">
+          <i class="bi bi-controller me-2"></i> Jogos e Desafios
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Game Container -->
+  <main class="container mb-5">
+    
+    <!-- 3 Core Themes Overview -->
+    <section class="mb-5">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold" style="color: var(--primary-dark);">Temas Pedagógicos</h2>
+        <p class="text-muted">Escolha um tema para explorar o vocabulário e os conceitos de saúde oral em LGP.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4" onclick="filterTheme('clinica')">
+          <div class="theme-card p-4 text-center">
+            <div class="rounded-circle d-inline-flex p-3 mb-3" style="background: #dff8fb; color: #079eb3;">
+              <i class="bi bi-hospital fs-1"></i>
+            </div>
+            <span class="badge bg-info text-white mb-2">01</span>
+            <h3 class="h5 fw-bold" style="color: var(--primary-dark);">Na clínica dentária</h3>
+            <p class="small text-muted mb-0">Profissionais, pessoas e espaços da clínica.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4" onclick="filterTheme('boca')">
+          <div class="theme-card p-4 text-center">
+            <div class="rounded-circle d-inline-flex p-3 mb-3" style="background: #e5f0ff; color: #1768ca;">
+              <i class="bi bi-emoji-smile fs-1"></i>
+            </div>
+            <span class="badge bg-primary text-white mb-2">02</span>
+            <h3 class="h5 fw-bold" style="color: var(--primary-dark);">Conhecer a boca</h3>
+            <p class="small text-muted mb-0">Partes da boca e estruturas relacionadas.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4" onclick="filterTheme('higiene')">
+          <div class="theme-card p-4 text-center">
+            <div class="rounded-circle d-inline-flex p-3 mb-3" style="background: #e8f5e9; color: #2e7d32;">
+              <i class="bi bi-heart-pulse fs-1"></i>
+            </div>
+            <span class="badge bg-success text-white mb-2">03</span>
+            <h3 class="h5 fw-bold" style="color: var(--primary-dark);">Higiene oral e cuidados</h3>
+            <p class="small text-muted mb-0">Instrumentos e gestos de higiene diária.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Concept Exploration Section -->
+    <section id="exploracao" class="mb-5 pt-3">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4 gap-3">
+        <div>
+          <h2 class="fw-bold mb-1" style="color: var(--primary-dark);">Cartões da Boca e LGP</h2>
+          <p class="text-muted mb-0">Clica em qualquer cartão para ver a imagem, a frase e a explicação em LGP.</p>
+        </div>
+
+        <ul class="nav nav-pills" id="themeFilters">
+          <li class="nav-item"><button class="nav-link active" onclick="filterTheme('todos')">Todos (18)</button></li>
+          <li class="nav-item"><button class="nav-link" onclick="filterTheme('clinica')">Clínica</button></li>
+          <li class="nav-item"><button class="nav-link" onclick="filterTheme('boca')">Boca</button></li>
+          <li class="nav-item"><button class="nav-link" onclick="filterTheme('higiene')">Higiene</button></li>
+        </ul>
+      </div>
+
+      <div class="row g-4" id="conceptsGrid">
+        <!-- Concept cards generated via JavaScript -->
+      </div>
+    </section>
+
+    <!-- Interactive Games & Quiz Section -->
+    <section id="jogos" class="pt-4 mb-5">
+      <div class="text-center mb-4">
+        <span class="badge bg-primary px-3 py-2 rounded-pill text-uppercase fw-bold mb-2">Desafios Interativos</span>
+        <h2 class="fw-bold" style="color: var(--primary-dark);">Testa os teus conhecimentos</h2>
+        <p class="text-muted">Responde às perguntas e joga para acumular pontos!</p>
+      </div>
+
+      <div class="quiz-box max-w-2xl mx-auto">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <span class="fw-bold text-muted" id="quizProgress">Pergunta 1 de 5</span>
+          <span class="score-badge"><i class="bi bi-star-fill text-warning me-1"></i> Pontuação: <span id="scoreVal">0</span></span>
+        </div>
+
+        <div id="quizContainer">
+          <!-- Quiz Content generated via JS -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Concept Detail Modal -->
+  <div class="modal fade" id="conceptModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content rounded-4 border-0">
+        <div class="modal-header border-0 pb-0">
+          <span class="badge bg-info text-white me-2" id="modalCategory">Tema</span>
+          <h5 class="modal-title fw-bold fs-4" id="modalWord">Nome do Conceito</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="row g-4 align-items-center">
+            <div class="col-md-5 text-center">
+              <div class="p-3 bg-light rounded-4">
+                <img id="modalImg" src="" alt="" class="img-fluid rounded-3" style="max-height: 240px; object-fit: contain;">
+              </div>
+            </div>
+            <div class="col-md-7">
+              <h6 class="fw-bold text-uppercase small text-muted mb-2"><i class="bi bi-book me-1"></i> Definição Pedagógica:</h6>
+              <p class="fs-6 mb-3" id="modalDef">Explicação do conceito.</p>
+              
+              <h6 class="fw-bold text-uppercase small text-muted mb-2"><i class="bi bi-chat-quote me-1"></i> Exemplo em Frase:</h6>
+              <p class="fst-italic text-secondary p-3 bg-light rounded-3" id="modalSentence">Frase contextualizada.</p>
+
+              <div class="d-flex gap-2 mt-3">
+                <span class="badge bg-primary-subtle text-primary fw-bold p-2"><i class="bi bi-eye me-1"></i> Recurso Bilingue LGP</span>
+                <span class="badge bg-success-subtle text-success fw-bold p-2"><i class="bi bi-check-circle me-1"></i> 1.º Ciclo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Teacher Guide Modal -->
+  <div class="modal fade" id="teacherGuideModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content rounded-4 border-0">
+        <div class="modal-header border-0" style="background: var(--primary-dark); color: #fff;">
+          <h5 class="modal-title fw-bold"><i class="bi bi-journal-check me-2"></i> Guia do Professor e Educador</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body p-4">
+          <h6 class="fw-bold text-primary mb-2">Objetivos Pedagógicos:</h6>
+          <p>O Kit Sorriso Bilingue promove a literacia em saúde oral através da articulação bilingue entre a Língua Gestual Portuguesa (LGP) e o Português escrito.</p>
+          
+          <h6 class="fw-bold text-primary mb-2">Sugestões de Exploração em Sala de Aula:</h6>
+          <ul class="mb-3">
+            <li><strong>Exploração Multimodal:</strong> Apresente a imagem e peça aos alunos para identificarem o gesto correspondente em LGP.</li>
+            <li><strong>Associação de Frases:</strong> Trabalhe a leitura do português escrito em paralelo com a expressão gestual.</li>
+            <li><strong>Atividade Lúdica de Grupo:</strong> Utilize o modo de quiz e desafios da plataforma para reforçar os cuidados de higiene diária.</li>
+          </ul>
+
+          <div class="p-3 bg-light rounded-3 small">
+            <strong>Projeto de Investigação:</strong> Mestrado em Língua Gestual Portuguesa / Educação Bilingue (Universidade Católica Portuguesa) por Ana Luísa Silva.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS Dependencies -->
+  <script src="assets/vendors/bootstrap/bootstrap.bundle.min.css" onerror=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    const concepts = [
+      { id: "dentista", theme: "clinica", word: "Dentista", image: "imagens/01_dentista.png", def: "O dentista é o profissional de saúde que observa, previne e trata problemas dos dentes, das gengivas e da boca.", sentence: "O dentista observa os dentes do paciente." },
+      { id: "assistente", theme: "clinica", word: "Assistente Dentária", image: "imagens/02_assistente.png", def: "A assistente dentária apoia o dentista durante a consulta, prepara os materiais e ajuda a manter o consultório organizado.", sentence: "A assistente dentária prepara os instrumentos para a consulta." },
+      { id: "paciente", theme: "clinica", word: "Paciente", image: "imagens/03_paciente.png", def: "O paciente é a pessoa que vai ao dentista para cuidar da sua saúde oral.", sentence: "O paciente está na consulta a cuidar do seu sorriso." },
+      { id: "consultorio", theme: "clinica", word: "Consultório", image: "imagens/04_consultorio.png", def: "O consultório é a sala onde o dentista atende o paciente e realiza os exames e tratamentos.", sentence: "O dentista atende no consultório bem equipado." },
+      { id: "sala-espera", theme: "clinica", word: "Sala de Espera", image: "imagens/05_sala_espera.png", def: "A sala de espera é o espaço tranquilo onde os pacientes aguardam pela consulta.", sentence: "O paciente espera na sala de espera pela sua vez." },
+      { id: "rececionista", theme: "clinica", word: "Rececionista", image: "imagens/06_rececionista.png", def: "A rececionista é a profissional que recebe as pessoas, confirma marcações e dá informações à entrada.", sentence: "O paciente fala com a rececionista quando chega à clínica." },
+      
+      { id: "boca", theme: "boca", word: "Boca", image: "imagens/07_boca.png", def: "A boca é a parte do corpo onde se encontram os dentes, as gengivas e a língua.", sentence: "Abrimos a boca para o dentista observar os dentes." },
+      { id: "dentes", theme: "boca", word: "Dentes", image: "imagens/08_dentes.png", def: "Os dentes ajudam a mastigar os alimentos e também são muito importantes para a fala.", sentence: "Devemos cuidar dos dentes todos os dias." },
+      { id: "gengivas", theme: "boca", word: "Gengivas", image: "imagens/09_gengivas.png", def: "As gengivas são os tecidos cor-de-rosa que envolvem e ajudam a proteger a base dos dentes.", sentence: "Devemos escovar suavemente junto às gengivas." },
+      { id: "lingua", theme: "boca", word: "Língua", image: "imagens/10_lingua.png", def: "A língua é o órgão muscular que permite saborear os alimentos, engolir e articular a fala.", sentence: "A língua também deve ser limpa durante a escovagem." },
+      { id: "labios", theme: "boca", word: "Lábios", image: "imagens/11_labios.png", def: "Os lábios delimitam a entrada da boca e ajudam na proteção e articulação dos sons.", sentence: "Os lábios protegem a entrada da boca." },
+      { id: "maxilares", theme: "boca", word: "Maxilares", image: "imagens/12_maxilares.png", def: "Os maxilares são as estruturas ósseas que suportam os dentes superiores e inferiores.", sentence: "Os maxilares mantêm os dentes firmes." },
+
+      { id: "escova", theme: "higiene", word: "Escova de Dentes", image: "imagens/13_escova_dentes.png", def: "A escova de dentes é o instrumento principal utilizado para remover a placa bacteriana e restos de alimentos.", sentence: "Usamos a escova de dentes três vezes por dia." },
+      { id: "pasta", theme: "higiene", word: "Pasta Dentífrica", image: "imagens/14_pasta_dentifrica.png", def: "A pasta dentífrica contém flúor para fortalecer o esmalte e proteger os dentes contra as cáries.", sentence: "Colocamos uma pequena quantidade de pasta na escova." },
+      { id: "fio", theme: "higiene", word: "Fio Dentário", image: "imagens/15_fio_dentario.png", def: "O fio dentário limpa os espaços estreitos entre os dentes onde a escova não consegue chegar.", sentence: "Passamos o fio dentário com cuidado entre os dentes." },
+      { id: "colutorio", theme: "higiene", word: "Colutório", image: "imagens/16_colutorio.png", def: "O colutório é um elixir bochechante de apoio que complementa a higiene e refresca o hálito.", sentence: "Fazemos bochechos com colutório após a escovagem." },
+      { id: "escovar", theme: "higiene", word: "Escovar os Dentes", image: "imagens/17_escovar_dentes.png", def: "Escovar os dentes é a ação diária essencial para manter a boca saudável e prevenir cáries.", sentence: "Devemos escovar os dentes durante 2 a 3 minutos." },
+      { id: "rotina", theme: "higiene", word: "Consulta de Rotina", image: "imagens/18_consulta_rotina.png", def: "A consulta de rotina serve para verificar o estado da boca e prevenir eventuais problemas.", sentence: "Vamos à consulta de rotina pelo menos duas vezes por ano." }
+    ];
+
+    const quizQuestions = [
+      {
+        prompt: "Que profissional de saúde observa, previne e trata problemas dos dentes e da boca?",
+        options: ["Dentista", "Rececionista", "Paciente", "Maxilares"],
+        correct: 0,
+        exp: "Correto! O dentista é o profissional especializado em cuidar dos dentes e da saúde oral."
+      },
+      {
+        prompt: "Que instrumento é essencial para colocar com pasta e limpar os dentes diariamente?",
+        options: ["Fio dentário", "Escova de dentes", "Colutório", "Língua"],
+        correct: 1,
+        exp: "Muito bem! A escova de dentes deve ser usada diariamente após as refeições."
+      },
+      {
+        prompt: "Que estruturas duras ajudam a cortar e mastigar os alimentos?",
+        options: ["Gengivas", "Lábios", "Dentes", "Sala de espera"],
+        correct: 2,
+        exp: "Exato! Os dentes são fundamentais para a mastigação e para uma boa digestão."
+      },
+      {
+        prompt: "Quantas vezes por ano se recomenda ir à consulta de rotina no dentista?",
+        options: ["1 vez a cada 5 anos", "Pelo menos 2 vezes por ano", "Nunca", "Apenas quando dói"],
+        correct: 1,
+        exp: "Correto! Ir ao dentista pelo menos 2 vezes por ano ajuda na prevenção!"
+      },
+      {
+        prompt: "Para que serve o fio dentário?",
+        options: ["Para limpar os espaços entre os dentes", "Para lavar o cabelo", "Para colar os dentes", "Para medir a boca"],
+        correct: 0,
+        exp: "Excelente! O fio dentário retira os restos de comida onde a escova não chega."
+      }
+    ];
+
+    let currentQuizIndex = 0;
+    let score = 0;
+
+    function renderConcepts(filteredList) {
+      const grid = document.getElementById('conceptsGrid');
+      grid.innerHTML = '';
+      
+      filteredList.forEach(c => {
+        const col = document.createElement('div');
+        col.className = 'col-6 col-md-4 col-lg-3';
+        col.innerHTML = `
+          <div class="concept-card" onclick="openConceptModal('${c.id}')">
+            <div class="concept-img-wrap">
+              <img src="${c.image}" alt="${c.word}" onerror="this.src='assets/images/card-expenses.png'">
+            </div>
+            <h4 class="h6 fw-bold mb-1" style="color: var(--primary-dark);">${c.word}</h4>
+            <span class="badge bg-light text-muted border small"><i class="bi bi-eye"></i> Ver LGP</span>
+          </div>
+        `;
+        grid.appendChild(col);
+      });
+    }
+
+    function filterTheme(theme) {
+      // Update nav active buttons
+      const buttons = document.querySelectorAll('#themeFilters .nav-link');
+      buttons.forEach(btn => btn.classList.remove('active'));
+
+      if (theme === 'todos') {
+        buttons[0].classList.add('active');
+        renderConcepts(concepts);
+      } else {
+        const list = concepts.filter(c => c.theme === theme);
+        renderConcepts(list);
+      }
+    }
+
+    function openConceptModal(id) {
+      const item = concepts.find(c => c.id === id);
+      if (!item) return;
+
+      document.getElementById('modalWord').textContent = item.word;
+      document.getElementById('modalImg').src = item.image;
+      document.getElementById('modalDef').textContent = item.def;
+      document.getElementById('modalSentence').textContent = `"${item.sentence}"`;
+      document.getElementById('modalCategory').textContent = item.theme.toUpperCase();
+
+      const modal = new bootstrap.Modal(document.getElementById('conceptModal'));
+      modal.show();
+    }
+
+    function renderQuiz() {
+      const container = document.getElementById('quizContainer');
+      const current = quizQuestions[currentQuizIndex];
+
+      document.getElementById('quizProgress').textContent = `Pergunta ${currentQuizIndex + 1} de ${quizQuestions.length}`;
+
+      container.innerHTML = `
+        <h4 class="fw-bold mb-4" style="color: var(--primary-dark);">${current.prompt}</h4>
+        <div class="row g-3" id="quizOptions">
+          ${current.options.map((opt, idx) => `
+            <div class="col-md-6">
+              <div class="quiz-option fw-semibold text-center" onclick="checkAnswer(${idx})">
+                ${opt}
+              </div>
+            </div>
+          `).join('')}
+        </div>
+        <div id="quizFeedback" class="mt-4 d-none"></div>
+      `;
+    }
+
+    function checkAnswer(selectedIndex) {
+      const current = quizQuestions[currentQuizIndex];
+      const feedback = document.getElementById('quizFeedback');
+      const options = document.querySelectorAll('.quiz-option');
+
+      options.forEach(opt => opt.onclick = null);
+
+      if (selectedIndex === current.correct) {
+        options[selectedIndex].classList.add('correct');
+        score += 20;
+        document.getElementById('scoreVal').textContent = score;
+        feedback.className = 'alert alert-success mt-4 rounded-3 fw-bold';
+        feedback.innerHTML = `<i class="bi bi-check-circle-fill me-2"></i> ${current.exp}`;
+      } else {
+        options[selectedIndex].classList.add('incorrect');
+        options[current.correct].classList.add('correct');
+        feedback.className = 'alert alert-danger mt-4 rounded-3 fw-bold';
+        feedback.innerHTML = `<i class="bi bi-x-circle-fill me-2"></i> Errado! ${current.exp}`;
+      }
+
+      feedback.classList.remove('d-none');
+
+      setTimeout(() => {
+        currentQuizIndex = (currentQuizIndex + 1) % quizQuestions.length;
+        renderQuiz();
+      }, 3000);
+    }
+
+    // Initialize Page
+    document.addEventListener('DOMContentLoaded', () => {
+      renderConcepts(concepts);
+      renderQuiz();
+    });
+  </script>
+</body>
+</html>
