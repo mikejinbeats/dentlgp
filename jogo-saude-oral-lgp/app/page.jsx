@@ -32,7 +32,7 @@ function Header({ onHome, onGuide, compact = false }) {
       <button className="brand" onClick={onHome} aria-label="Voltar ao início">
         <img
           className="brand-logo"
-          src="/imagens/logo-kit-sorriso-bilingue.png"
+          src="imagens/logo-kit-sorriso-bilingue.png"
           alt="Kit Sorriso Bilingue — LGP–Português"
         />
       </button>
@@ -50,7 +50,7 @@ function Home({ onStart, onGuide }) {
       <section className="hero">
         <div className="hero-copy">
           <span className="eyebrow">O jogo digital do Kit Sorriso Bilingue</span>
-          <h1><span>Aprende saúde oral</span><em>a jogar!</em></h1>
+          <h1><span>Aprende saúde oral</span><em>a jogar conosco!</em></h1>
           <p>Explora imagens, palavras em português e conteúdos em Língua Gestual Portuguesa através de desafios claros, visuais e divertidos.</p>
           <div className="hero-actions">
             <a className="primary-button" href="#atividades">Começar a jogar <span aria-hidden="true">→</span></a>
@@ -64,7 +64,7 @@ function Home({ onStart, onGuide }) {
           <div className="cover-glow" aria-hidden="true" />
           <div className="cover-card">
             <img
-              src="/imagens/kit-sorriso-bilingue.png"
+              src="imagens/kit-sorriso-bilingue.png"
               alt="Tampa do Kit Sorriso Bilingue, com uma dentista e um aluno numa clínica dentária"
             />
             <span>O universo do kit, agora também online.</span>
@@ -93,8 +93,8 @@ function Home({ onStart, onGuide }) {
           <button className="activity-game-card orange" onClick={() => onStart("image-word")}>
             <span className="play-badge" aria-hidden="true">▶</span>
             <div className="activity-visual image-word-visual" aria-hidden="true">
-              <img src="/imagens/01_dentista.png" alt="" />
-              <img src="/imagens/08_dentes.png" alt="" />
+              <img src="imagens/01_dentista.png" alt="" />
+              <img src="imagens/08_dentes.png" alt="" />
               <span>DENTISTA</span>
             </div>
             <div className="activity-card-copy">
@@ -122,7 +122,7 @@ function Home({ onStart, onGuide }) {
           <button className="activity-game-card purple" onClick={() => onStart("sequence")}>
             <span className="play-badge" aria-hidden="true">▶</span>
             <div className="activity-visual sequence-visual" aria-hidden="true">
-              <img src="/imagens/sequencia/01-falar-rececionista.png" alt="" />
+              <img src="imagens/sequencia/01-falar-rececionista.png" alt="" />
               <span><b>1</b><b>2</b><b>3</b><b>4</b></span>
             </div>
             <div className="activity-card-copy">
@@ -136,7 +136,7 @@ function Home({ onStart, onGuide }) {
           <button className="activity-game-card teal online" onClick={() => onStart("knowledge-quiz")}>
             <span className="play-badge" aria-hidden="true">▶</span>
             <div className="activity-visual quiz-visual" aria-hidden="true">
-              <img src="/imagens/07_boca.png" alt="" />
+              <img src="imagens/07_boca.png" alt="" />
               <span>?</span>
             </div>
             <div className="activity-card-copy">
@@ -150,8 +150,8 @@ function Home({ onStart, onGuide }) {
           <button className="activity-game-card blue online" onClick={() => onStart("memory")}>
             <span className="play-badge" aria-hidden="true">▶</span>
             <div className="activity-visual memory-visual" aria-hidden="true">
-              <img src="/imagens/13_escova_dentes.png" alt="" />
-              <img src="/imagens/13_escova_dentes.png" alt="" />
+              <img src="imagens/13_escova_dentes.png" alt="" />
+              <img src="imagens/13_escova_dentes.png" alt="" />
               <span>PAR!</span>
             </div>
             <div className="activity-card-copy">
@@ -188,12 +188,12 @@ function Home({ onStart, onGuide }) {
 
       <section className="learning-section">
         <div className="learning-image">
-          <img src="/imagens/17_escovar_dentes.png" alt="Criança a escovar os dentes" />
+          <img src="imagens/17_escovar_dentes.png" alt="Criança a escovar os dentes" />
           <span>SAÚDE ORAL</span>
         </div>
         <div className="learning-copy">
           <span className="eyebrow">Um recurso pedagógico bilingue</span>
-          <h2>Ver, ler e aprender em LGP</h2>
+          <h2>Ver, ler e aprender<br />em LGP</h2>
           <p>O DentLGP complementa os cartões físicos do Kit Sorriso Bilingue e permite trabalhar o vocabulário de forma autónoma, a pares ou com acompanhamento do professor.</p>
           <div className="learning-list">
             <div><b aria-hidden="true">▣</b><span><strong>Imagem</strong>Identificação visual do conceito</span></div>
@@ -325,7 +325,7 @@ function TeacherGuide({ onBack }) {
 
         <section className="accessibility-section" id="preparacao">
           <div className="accessibility-visual">
-            <img src="/imagens/02_assistente.png" alt="Assistente dentária numa clínica" />
+            <img src="imagens/02_assistente.png" alt="Assistente dentária numa clínica" />
             <span>COMUNICAÇÃO ACESSÍVEL</span>
           </div>
           <div>
@@ -717,10 +717,10 @@ function KnowledgeQuiz({ onExit, onFinish }) {
 }
 
 const sequenceCards = [
-  { id: "rececionista", label: "Falar com a rececionista", image: "/imagens/sequencia/01-falar-rececionista.png" },
-  { id: "espera", label: "Esperar na sala de espera", image: "/imagens/sequencia/02-sala-espera.png" },
-  { id: "consultorio", label: "Entrar no consultório", image: "/imagens/sequencia/03-consultorio.png" },
-  { id: "consulta", label: "Realizar a consulta", image: "/imagens/sequencia/04-consulta.png" },
+  { id: "rececionista", label: "Falar com a rececionista", image: "imagens/sequencia/01-falar-rececionista.png" },
+  { id: "espera", label: "Esperar na sala de espera", image: "imagens/sequencia/02-sala-espera.png" },
+  { id: "consultorio", label: "Entrar no consultório", image: "imagens/sequencia/03-consultorio.png" },
+  { id: "consulta", label: "Realizar a consulta", image: "imagens/sequencia/04-consulta.png" },
 ];
 
 function SequenceGame({ onExit, onFinish }) {
@@ -1000,7 +1000,7 @@ export default function Page() {
         <div className="footer-brand">
           <img
             className="footer-logo"
-            src="/imagens/logo-kit-sorriso-bilingue.png"
+            src="imagens/logo-kit-sorriso-bilingue.png"
             alt="Kit Sorriso Bilingue — LGP–Português"
           />
         </div>

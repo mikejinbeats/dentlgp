@@ -11,7 +11,7 @@ export const themes = [
       {
         id: "dentista",
         word: "Dentista",
-        image: "/imagens/01_dentista.png",
+        image: "imagens/01_dentista.png",
         quizPrompt: "Que profissional observa, previne e trata problemas de saúde oral?",
         definition: "O dentista é o profissional de saúde que observa, previne e trata problemas dos dentes, das gengivas e da boca.",
         sentence: "O dentista observa os dentes do paciente.",
@@ -19,7 +19,7 @@ export const themes = [
       {
         id: "assistente",
         word: "Assistente dentária",
-        image: "/imagens/02_assistente.png",
+        image: "imagens/02_assistente.png",
         quizPrompt: "Quem prepara os instrumentos e apoia o profissional durante a consulta?",
         definition: "A assistente dentária apoia o dentista durante a consulta, prepara os materiais e ajuda a manter o consultório organizado.",
         sentence: "A assistente dentária prepara os instrumentos para a consulta.",
@@ -27,7 +27,7 @@ export const themes = [
       {
         id: "paciente",
         word: "Paciente",
-        image: "/imagens/03_paciente.png",
+        image: "imagens/03_paciente.png",
         quizPrompt: "Como se chama a pessoa que recebe cuidados durante uma consulta?",
         definition: "O paciente é a pessoa que vai ao dentista para cuidar da sua saúde oral.",
         sentence: "O paciente está na consulta.",
@@ -35,7 +35,7 @@ export const themes = [
       {
         id: "consultorio",
         word: "Consultório",
-        image: "/imagens/04_consultorio.png",
+        image: "imagens/04_consultorio.png",
         quizPrompt: "Em que sala da clínica são realizados os exames e os tratamentos?",
         definition: "O consultório é a sala onde o dentista atende o paciente e realiza os tratamentos.",
         sentence: "O dentista trabalha no consultório.",
@@ -43,7 +43,7 @@ export const themes = [
       {
         id: "sala-espera",
         word: "Sala de espera",
-        image: "/imagens/05_sala_espera.png",
+        image: "imagens/05_sala_espera.png",
         quizPrompt: "Em que espaço da clínica as pessoas aguardam até serem chamadas?",
         definition: "A sala de espera é o espaço onde os pacientes aguardam pela consulta.",
         sentence: "O paciente espera na sala de espera pela sua vez.",
@@ -51,7 +51,7 @@ export const themes = [
       {
         id: "rececionista",
         word: "Rececionista",
-        image: "/imagens/06_rececionista.png",
+        image: "imagens/06_rececionista.png",
         quizPrompt: "Quem recebe as pessoas, confirma marcações e fornece informações à entrada da clínica?",
         definition: "A rececionista é a profissional que recebe os pacientes, confirma as marcações e dá informações na receção da clínica.",
         sentence: "O paciente fala com a rececionista quando chega à clínica.",
@@ -70,7 +70,7 @@ export const themes = [
       {
         id: "boca",
         word: "Boca",
-        image: "/imagens/07_boca.png",
+        image: "imagens/07_boca.png",
         quizPrompt: "Que parte do corpo reúne os dentes, as gengivas e a língua?",
         definition: "A boca é a parte do corpo onde se encontram os dentes, as gengivas e a língua.",
         sentence: "Abrimos a boca para o dentista observar os dentes.",
@@ -78,7 +78,7 @@ export const themes = [
       {
         id: "dentes",
         word: "Dentes",
-        image: "/imagens/08_dentes.png",
+        image: "imagens/08_dentes.png",
         quizPrompt: "Que estruturas ajudam a cortar e mastigar os alimentos e também participam na fala?",
         definition: "Os dentes ajudam a mastigar os alimentos e também são importantes para falar.",
         sentence: "Devemos cuidar dos dentes todos os dias.",
@@ -86,7 +86,7 @@ export const themes = [
       {
         id: "gengivas",
         word: "Gengivas",
-        image: "/imagens/09_gengivas.png",
+        image: "imagens/09_gengivas.png",
         quizPrompt: "Que tecidos rodeiam e ajudam a proteger a base dos dentes?",
         definition: "As gengivas são os tecidos que envolvem e ajudam a proteger os dentes.",
         sentence: "Devemos escovar suavemente junto às gengivas.",
@@ -94,7 +94,7 @@ export const themes = [
       {
         id: "lingua",
         word: "Língua",
-        image: "/imagens/10_lingua.png",
+        image: "imagens/10_lingua.png",
         quizPrompt: "Que órgão muscular permite saborear, engolir e articular a fala?",
         definition: "A língua ajuda a saborear os alimentos, a engolir e a falar.",
         sentence: "A língua também deve ser limpa.",
@@ -102,7 +102,7 @@ export const themes = [
       {
         id: "labios",
         word: "Lábios",
-        image: "/imagens/11_labios.png",
+        image: "imagens/11_labios.png",
         quizPrompt: "Que estruturas móveis ajudam a fechar a boca, a falar e a expressar emoções?",
         definition: "Os lábios ajudam a fechar a boca, a falar e a expressar emoções.",
         sentence: "O dentista observa os lábios e a boca.",
@@ -110,7 +110,7 @@ export const themes = [
       {
         id: "maxilares",
         word: "Maxilares",
-        image: "/imagens/12_maxilares.png",
+        image: "imagens/12_maxilares.png",
         quizPrompt: "Que ossos sustentam os dentes e participam nos movimentos da mastigação?",
         definition: "Os maxilares são os ossos que sustentam os dentes e ajudam nos movimentos da boca.",
         sentence: "Os dentes encontram-se nos maxilares.",
@@ -129,7 +129,7 @@ export const themes = [
       {
         id: "escova",
         word: "Escova de dentes",
-        image: "/imagens/13_escova_dentes.png",
+        image: "imagens/13_escova_dentes.png",
         quizPrompt: "Que objeto com cabo e cerdas é usado na limpeza diária da boca?",
         definition: "A escova de dentes é utilizada para remover restos de alimentos e placa bacteriana dos dentes.",
         sentence: "Colocamos pasta dentífrica na escova de dentes.",
@@ -137,7 +137,7 @@ export const themes = [
       {
         id: "pasta",
         word: "Pasta dentífrica",
-        image: "/imagens/14_pasta_dentifrica.png",
+        image: "imagens/14_pasta_dentifrica.png",
         quizPrompt: "Que produto é colocado nas cerdas para ajudar a limpar e proteger a superfície dentária?",
         definition: "A pasta dentífrica é um produto usado com a escova para ajudar a limpar e proteger os dentes.",
         sentence: "Usamos uma pequena quantidade de pasta dentífrica.",
@@ -145,7 +145,7 @@ export const themes = [
       {
         id: "fio",
         word: "Fio dentário",
-        image: "/imagens/15_fio_dentario.png",
+        image: "imagens/15_fio_dentario.png",
         quizPrompt: "Que recurso fino limpa os espaços onde as cerdas não chegam facilmente?",
         definition: "O fio dentário ajuda a limpar os espaços entre os dentes, onde a escova não chega facilmente.",
         sentence: "O fio dentário passa suavemente entre os dentes.",
@@ -153,7 +153,7 @@ export const themes = [
       {
         id: "colutorio",
         word: "Colutório",
-        image: "/imagens/16_colutorio.png",
+        image: "imagens/16_colutorio.png",
         quizPrompt: "Que líquido pode ser usado para bochechar quando recomendado por um profissional?",
         definition: "O colutório é um líquido utilizado para bochechar, quando recomendado por um profissional de saúde oral.",
         sentence: "O colutório não deve ser engolido.",
@@ -161,7 +161,7 @@ export const themes = [
       {
         id: "escovar",
         word: "Escovar os dentes",
-        image: "/imagens/17_escovar_dentes.png",
+        image: "imagens/17_escovar_dentes.png",
         quizPrompt: "Que ação diária remove a placa bacteriana das superfícies dentárias?",
         definition: "Escovar os dentes ajuda a remover a placa bacteriana e a prevenir problemas de saúde oral.",
         sentence: "Devemos escovar todas as superfícies dos dentes.",
@@ -169,7 +169,7 @@ export const themes = [
       {
         id: "consulta-rotina",
         word: "Consulta de rotina",
-        image: "/imagens/18_consulta_rotina.png",
+        image: "imagens/18_consulta_rotina.png",
         quizPrompt: "Que tipo de visita permite verificar a boca e identificar precocemente possíveis problemas?",
         definition: "A consulta de rotina permite ao dentista observar a boca, verificar os dentes e identificar possíveis problemas.",
         sentence: "O paciente vai ao dentista para uma consulta de rotina.",
