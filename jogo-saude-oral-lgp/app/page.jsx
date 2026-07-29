@@ -734,7 +734,9 @@ function NativeLgpVideoPlayer({ src, themeColor }) {
       {!isPlaying && (
         <div className="lgp-video-play-overlay" onClick={handleTogglePlay}>
           <div className="lgp-video-play-btn" style={{ backgroundColor: themeColor || "var(--theme, #079eb3)" }}>
-            ▶
+            <svg viewBox="0 0 24 24" aria-hidden="true" style={{ width: "32px", height: "32px", fill: "#ffffff", marginLeft: "3px" }}>
+              <path d="M8 5v14l11-7z" />
+            </svg>
           </div>
           <span className="lgp-video-play-text">
             {hasStarted ? "Clique para continuar a ver" : "Ver vídeo em LGP"}
@@ -1241,6 +1243,35 @@ export default function Page() {
       if (observer) observer.disconnect();
     };
   }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    window.scrollTo({ top: 0, behavior: "instant" });
+    const timer = setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, 60);
+
+    if (screen !== "home") {
+      try {
+        window.history.pushState({ kitSorrisoScreen: screen }, "", window.location.href);
+      } catch (e) {}
+    }
+
+    const handlePopState = () => {
+      if (screen !== "home") {
+        setScreen("home");
+        setResult(null);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("popstate", handlePopState);
+    };
+  }, [screen]);
 
   const compact = useMemo(() => screen !== "home", [screen]);
 

@@ -3362,8 +3362,47 @@ footer p { margin: 0; text-align: right; }
   font-size: 32px !important;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35) !important;
   margin-bottom: 12px !important;
-  padding-left: 4px !important;
+  padding-left: 0 !important;
   transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.lgp-video-play-btn svg {
+  width: 32px !important;
+  height: 32px !important;
+  fill: #ffffff !important;
+  margin-left: 3px !important;
+  pointer-events: none !important;
+}
+
+.lgp-video-player video::-webkit-media-controls-start-playback-button,
+.lgp-video-player video::-webkit-media-controls-play-button,
+.lgp-video-player video::-webkit-media-controls-overlay-play-button {
+  display: none !important;
+  -webkit-appearance: none !important;
+  opacity: 0 !important;
+}
+
+.teacher-guide-page .guide-hero {
+  text-align: center !important;
+}
+
+.teacher-guide-page .guide-hero-copy {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.teacher-guide-page .guide-downloads {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  gap: 12px !important;
 }
 
 .lgp-video-play-text {
