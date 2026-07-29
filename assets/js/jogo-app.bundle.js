@@ -23424,14 +23424,15 @@
       screen === "memory" && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(MemoryGame, { onExit: home, onFinish: finish }, `memory-${result?.moves ?? "new"}`),
       screen === "result" && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Result, { result, onAgain: () => setScreen(result.type), onActivities: home, onHome: home }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("footer", { children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "footer-brand", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "footer-brand", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", { href: "https://www.dentlgp.pt", title: "Ir para a p\xE1gina principal da DentLGP", style: { display: "inline-flex", alignItems: "center", textDecoration: "none" }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
           "img",
           {
             className: "footer-logo",
             src: "imagens/logo-kit-sorriso-bilingue.png",
             alt: "Kit Sorriso Bilingue \u2014 LGP\u2013Portugu\xEAs"
           }
-        ) }),
+        ) }) }),
+
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "footer-guide-link", onClick: openGuide, children: "Guia do Professor" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Recurso pedag\xF3gico bilingue LGP\u2013portugu\xEAs \xB7 Medicina Dent\xE1ria e sa\xFAde oral" })
       ] })

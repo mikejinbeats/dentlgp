@@ -1331,11 +1331,13 @@ export default function Page() {
       {screen === "result" && <Result result={result} onAgain={() => setScreen(result.type)} onActivities={home} onHome={home} />}
       <footer>
         <div className="footer-brand">
-          <img
-            className="footer-logo"
-            src="imagens/logo-kit-sorriso-bilingue.png"
-            alt="Kit Sorriso Bilingue — LGP–Português"
-          />
+          <a href="https://www.dentlgp.pt" title="Ir para a página principal da DentLGP" style={{ display: 'inline-flex', alignItems: 'center', textDecoration: 'none' }}>
+            <img
+              className="footer-logo"
+              src="imagens/logo-kit-sorriso-bilingue.png"
+              alt="Kit Sorriso Bilingue — LGP–Português"
+            />
+          </a>
         </div>
         <button className="footer-guide-link" onClick={openGuide}>Guia do Professor</button>
         <p>Recurso pedagógico bilingue LGP–português · Medicina Dentária e saúde oral</p>

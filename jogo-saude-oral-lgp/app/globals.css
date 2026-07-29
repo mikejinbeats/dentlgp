@@ -2886,11 +2886,23 @@ footer p { margin: 0; text-align: right; }
   opacity: 1 !important;
 }
 
+.back-to-home-link {
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s ease, background-color 0.2s ease !important;
+}
+
+.back-to-home-link:hover {
+  transform: scale(1.08) translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
 @media (max-width: 991.98px) {
   .back-to-home-link {
     display: none !important;
   }
 }
+
 
 .check-list.plain-list li::before {
   display: none !important;
