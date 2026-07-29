@@ -7,3 +7,9 @@ build/
 *.log
 .DS_Store
 *.backup.png
+.sites-runtime
+.sites-runtime/
+**/.sites-runtime
+**/.sites-runtime/**
+.wrangler/
+.openai/

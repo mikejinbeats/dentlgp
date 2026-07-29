@@ -4,6 +4,18 @@ import { useEffect, useMemo, useState } from "react";
 import { themes, trueFalseStatements } from "./data";
 
 const allItems = themes.flatMap((theme) => theme.items);
+const allCards = themes.flatMap((theme, themeIdx) =>
+  theme.items.map((item, itemIdx) => ({
+    ...item,
+    themeId: theme.id,
+    themeTitle: theme.title,
+    themeNumber: theme.number,
+    themeColor: theme.color,
+    themeLight: theme.light,
+    cardNumberInTheme: itemIdx + 1,
+    globalCardNumber: themeIdx * 6 + itemIdx + 1,
+  }))
+);
 const allTrueFalseStatements = Object.values(trueFalseStatements).flat();
 const gameColors = { color: "#079eb3", light: "#dff8fb" };
 
@@ -38,7 +50,9 @@ function Header({ onHome, onGuide, compact = false }) {
       </button>
       <div className="header-tags">
         <button className="guide-nav-button" onClick={onGuide}>Guia do Professor</button>
-        <span className="bilingual-tag"><i /> LGP <b>—</b> PORTUGUÊS</span>
+        <a className="dentlgp-brand-tag" href="index.html" title="Ir para a página principal da DentLGP" style={{ display: 'inline-flex', alignItems: 'center', background: '#ffffff', padding: '5px 14px', borderRadius: '50px', border: '1px solid rgba(255,255,255,0.4)', boxShadow: '0 4px 12px rgba(0,0,0,0.12)', textDecoration: 'none', transition: 'transform 0.2s ease' }}>
+          <img src="assets/images/dentlgp/logo dentlgp.png" alt="DentLGP Principal" style={{ height: '30px', width: 'auto', objectFit: 'contain' }} />
+        </a>
       </div>
     </header>
   );
@@ -49,8 +63,15 @@ function Home({ onStart, onGuide }) {
     <main>
       <section className="hero">
         <div className="hero-copy">
+          <a className="back-to-home-link" href="index.html" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '8px 18px', background: '#ffffff', color: '#000000', border: '1.5px solid #000000', borderRadius: '50px', textDecoration: 'none', fontWeight: '700', fontSize: '14px', marginTop: '-12px', marginBottom: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.12)' }}>
+            <span aria-hidden="true">←</span> Voltar à DentLGP
+          </a>
           <span className="eyebrow">O jogo digital do Kit Sorriso Bilingue</span>
-          <h1><span>Aprende saúde oral</span><em>a jogar conosco!</em></h1>
+          <h1>
+            <span className="hero-w1">Aprende </span>
+            <span className="hero-w2">saúde oral </span>
+            <em className="hero-w3">a jogar conosco!</em>
+          </h1>
           <p>Explora imagens, palavras em português e conteúdos em Língua Gestual Portuguesa através de desafios claros, visuais e divertidos.</p>
           <div className="hero-actions">
             <a className="primary-button" href="#atividades">Começar a jogar <span aria-hidden="true">→</span></a>
@@ -133,17 +154,15 @@ function Home({ onStart, onGuide }) {
             </div>
           </button>
 
-          <button className="activity-game-card teal online" onClick={() => onStart("knowledge-quiz")}>
+          <button className="activity-game-card teal" onClick={() => onStart("knowledge-quiz")}>
             <span className="play-badge" aria-hidden="true">▶</span>
             <div className="activity-visual quiz-visual" aria-hidden="true">
-              <img src="imagens/07_boca.png" alt="" />
-              <span>?</span>
+              <img src="assets/images/pedro-lgp - Copy.png" alt="" />
             </div>
             <div className="activity-card-copy">
-              <div className="activity-card-label"><b>+</b><small>EXCLUSIVO ONLINE</small></div>
-              <h3>Quiz de Saúde Oral</h3>
-              <p>Responde a 18 perguntas de escolha múltipla sobre os conceitos dos cartões.</p>
-              <span className="game-cta">Começar o quiz <b aria-hidden="true">→</b></span>
+              <h3>Cartões de Aprendizagem</h3>
+              <p>Explora os 18 cartões com imagem, definição, frase de exemplo e vídeo em LGP.</p>
+              <span className="game-cta">Explorar Cartões <b aria-hidden="true">→</b></span>
             </div>
           </button>
 
@@ -155,7 +174,7 @@ function Home({ onStart, onGuide }) {
               <span>PAR!</span>
             </div>
             <div className="activity-card-copy">
-              <div className="activity-card-label"><b>+</b><small>EXCLUSIVO ONLINE</small></div>
+              <div className="activity-card-label"><b>+</b><small>EXCLUSIVO - ONLINE</small></div>
               <h3>Jogo de Memória</h3>
               <p>Vira os cartões e encontra os pares formados por duas imagens iguais.</p>
               <span className="game-cta">Começar o jogo <b aria-hidden="true">→</b></span>
@@ -198,10 +217,17 @@ function Home({ onStart, onGuide }) {
           <div className="learning-list">
             <div><b aria-hidden="true">▣</b><span><strong>Imagem</strong>Identificação visual do conceito</span></div>
             <div><b aria-hidden="true">Aa</b><span><strong>Português</strong>Palavra e frase de exemplo</span></div>
-            <div><b aria-hidden="true">LGP</b><span><strong>Língua Gestual Portuguesa</strong>Vídeo associado ao conceito</span></div>
           </div>
         </div>
       </section>
+      <button
+        className="scroll-to-top-fab"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        title="Voltar ao início"
+        aria-label="Voltar ao início"
+      >
+        ↑
+      </button>
     </main>
   );
 }
@@ -219,7 +245,7 @@ function TeacherGuide({ onBack }) {
     "Testar previamente o acesso aos vídeos em LGP.",
     "Garantir boa iluminação e contacto visual antes de cada explicação.",
     "Apresentar uma informação de cada vez e dar tempo para observar.",
-    "Respeitar a variedade linguística da LGP e esclarecer variantes quando necessário.",
+    "Respeitar a variedade e esclarecer variantes da LGP.",
   ];
   const activities = [
     {
@@ -254,11 +280,12 @@ function TeacherGuide({ onBack }) {
           <h1>Guia do Professor</h1>
           <p>Orientações para explorar os conteúdos de saúde oral com alunos Surdos do 1.º Ciclo, através dos cartões físicos e das atividades digitais.</p>
           <div className="guide-downloads">
-            <a className="primary-button" href="/documentos/guia-do-professor.pdf" target="_blank" rel="noreferrer">Abrir o guia em PDF</a>
-            <a className="guide-outline-button" href="/documentos/instrucoes-das-atividades.pdf" target="_blank" rel="noreferrer">Instruções das atividades</a>
+            <a className="primary-button" href="assets/Guia_do_Professor_A5.pdf" target="_blank" rel="noreferrer">Abrir o guia em PDF</a>
           </div>
         </div>
-        <div className="guide-hero-mark" aria-hidden="true"><span>▤</span><b>GUIA</b></div>
+        <div className="guide-hero-mark" style={{ width: '240px', height: '320px', padding: '8px', background: '#ffffff', borderRadius: '18px', boxShadow: '0 20px 45px rgba(0,0,0,0.3)', transform: 'rotate(2deg)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <img src="assets/images/capa guia do professor.png" alt="Capa Guia do Professor" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }} />
+        </div>
       </section>
 
       <section className="guide-content">
@@ -293,9 +320,9 @@ function TeacherGuide({ onBack }) {
           <div>
             <span className="eyebrow">Público-alvo e objetivos</span>
             <h2>Aprender com diferentes níveis de apoio</h2>
-            <p>Destina-se principalmente a alunos Surdos do 1.º Ciclo. Pode também apoiar turmas bilingues, famílias, docentes, intérpretes de LGP e ações de literacia em saúde oral.</p>
+            <p style={{ color: "#000000", fontWeight: "600", opacity: 1 }}>Destina-se principalmente a alunos Surdos do 1.º Ciclo. Pode também apoiar turmas bilingues, famílias, docentes, intérpretes de LGP e ações de literacia em saúde oral.</p>
           </div>
-          <ul className="check-list">{objectives.map((item) => <li key={item}>{item}</li>)}</ul>
+          <ul className="check-list plain-list">{objectives.map((item) => <li key={item}>{item}</li>)}</ul>
         </section>
 
         <section className="guide-themes">
@@ -332,7 +359,7 @@ function TeacherGuide({ onBack }) {
             <span className="eyebrow">Preparação e acessibilidade</span>
             <h2>Antes de começar</h2>
             <ul className="check-list compact-list">{preparation.map((item) => <li key={item}>{item}</li>)}</ul>
-            <p className="guide-note">Evite falar ou produzir LGP enquanto o aluno observa outro suporte. Organize o espaço para que todos vejam as mãos, o rosto e os materiais.</p>
+            <p className="guide-note" style={{ color: "#000000", fontWeight: "600", opacity: 1 }}>Evite falar ou produzir LGP enquanto o aluno observa outro suporte. Organize o espaço para que todos vejam as mãos, o rosto e os materiais.</p>
           </div>
         </section>
 
@@ -354,12 +381,11 @@ function TeacherGuide({ onBack }) {
           </div>
           <div className="guide-digital-extras">
             <article>
-              <small>ATIVIDADE DIGITAL EXTRA</small>
-              <h3>Quiz de Saúde Oral</h3>
-              <p>O aluno lê uma definição e escolhe o conceito correto entre quatro opções. A correção apresenta a imagem e uma frase de exemplo.</p>
+              <h3>Cartões de Aprendizagem</h3>
+              <p>Versão digital interativa dos 18 cartões com imagem, definição, frase de exemplo e vídeo em Língua Gestual Portuguesa (LGP).</p>
             </article>
             <article>
-              <small>ATIVIDADE DIGITAL EXTRA</small>
+              <small>EXCLUSIVO - ONLINE</small>
               <h3>Jogo de Memória</h3>
               <p>O aluno vira dois cartões de cada vez e procura os pares formados por duas imagens iguais.</p>
             </article>
@@ -370,7 +396,7 @@ function TeacherGuide({ onBack }) {
           <div>
             <span className="eyebrow">Acompanhamento pedagógico</span>
             <h2>Grelha de observação</h2>
-            <p>O professor pode registar o grau de autonomia demonstrado em cada aspeto.</p>
+            <p style={{ color: "#000000", fontWeight: "600", opacity: 1 }}>O professor pode registar o grau de autonomia demonstrado em cada aspeto.</p>
           </div>
           <div className="observation-table" role="table" aria-label="Grelha de observação">
             <div className="observation-row header" role="row"><span>Aspeto</span><b>Sim</b><b>Com apoio</b><b>Ainda não</b></div>
@@ -382,6 +408,22 @@ function TeacherGuide({ onBack }) {
 
         <p className="health-disclaimer">Este recurso é educativo e não substitui a avaliação nem as recomendações de um profissional de saúde oral.</p>
       </section>
+      <button
+        type="button"
+        className="scroll-to-top-fab"
+        onClick={() => {
+          const hero = document.querySelector(".guide-hero") || document.querySelector(".teacher-guide-page");
+          if (hero) {
+            hero.scrollIntoView({ behavior: "smooth", block: "start" });
+          } else {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }
+        }}
+        title="Voltar ao topo"
+        aria-label="Voltar ao topo"
+      >
+        ↑
+      </button>
     </main>
   );
 }
@@ -622,105 +664,238 @@ function TrueFalseGame({ onExit, onFinish }) {
   );
 }
 
-function KnowledgeQuiz({ onExit, onFinish }) {
-  const [questions] = useState(() => shuffle(allItems).map((item) => {
-    const itemTheme = themes.find((theme) => theme.items.some((candidate) => candidate.id === item.id));
-    const distractors = shuffle(itemTheme.items.filter((candidate) => candidate.id !== item.id)).slice(0, 3);
-    return { item, options: shuffle([item, ...distractors]) };
-  }));
-  const [current, setCurrent] = useState(0);
-  const [score, setScore] = useState(0);
-  const [selected, setSelected] = useState(null);
-  const [showLgp, setShowLgp] = useState(false);
-  const question = questions[current];
-  const isCorrect = selected === question.item.id;
-  const finished = current === questions.length - 1;
+function NativeLgpVideoPlayer({ src, themeColor }) {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [hasStarted, setHasStarted] = useState(false);
+  const videoRef = useRef(null);
 
-  function answer(item) {
-    if (selected !== null) return;
-    setSelected(item.id);
-    if (item.id === question.item.id) setScore((value) => value + 1);
-  }
-
-  function next() {
-    if (finished) {
-      onFinish({ type: "knowledge-quiz", score, total: questions.length });
-      return;
+  useEffect(() => {
+    setIsPlaying(false);
+    setHasStarted(false);
+    if (videoRef.current) {
+      videoRef.current.pause();
+      try {
+        videoRef.current.currentTime = 0;
+      } catch (e) {}
     }
-    setCurrent((value) => value + 1);
-    setSelected(null);
-    setShowLgp(false);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
+  }, [src]);
+
+  const handleTogglePlay = (e) => {
+    if (e) e.stopPropagation();
+
+    if (isPlaying) {
+      setIsPlaying(false);
+      if (videoRef.current) {
+        videoRef.current.pause();
+      }
+    } else {
+      setIsPlaying(true);
+      setHasStarted(true);
+      if (videoRef.current) {
+        videoRef.current.play().catch(() => {});
+      }
+    }
+  };
+
+  const handleEnded = () => {
+    setIsPlaying(false);
+    setHasStarted(false);
+    if (videoRef.current) {
+      try {
+        videoRef.current.currentTime = 0;
+      } catch (err) {}
+    }
+  };
 
   return (
-    <main className="knowledge-quiz-page" style={{ "--theme": gameColors.color, "--theme-light": gameColors.light }}>
+    <div
+      className="lgp-video-player"
+      style={{ position: "relative", overflow: "hidden", borderRadius: "14px", cursor: "pointer" }}
+      onClick={handleTogglePlay}
+    >
+      <video
+        ref={videoRef}
+        key={src}
+        src={src}
+        onEnded={handleEnded}
+        muted
+        playsInline
+        preload="auto"
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "contain",
+          backgroundColor: "#100a1c",
+          borderRadius: "14px",
+          display: "block",
+          pointerEvents: "none"
+        }}
+      />
+      {!isPlaying && (
+        <div className="lgp-video-play-overlay" onClick={handleTogglePlay}>
+          <div className="lgp-video-play-btn" style={{ backgroundColor: themeColor || "var(--theme, #079eb3)" }}>
+            ▶
+          </div>
+          <span className="lgp-video-play-text">
+            {hasStarted ? "Clique para continuar a ver" : "Ver vídeo em LGP"}
+          </span>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function KnowledgeQuiz({ onExit, onFinish }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [showLgp, setShowLgp] = useState(false);
+
+  const currentCard = allCards[currentIndex] || allCards[0];
+
+    function scrollToTop() {
+      const el = document.querySelector(".learning-cards-page") || document.querySelector(".learning-workspace");
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    }
+
+    function nextCard() {
+      if (currentIndex < allCards.length - 1) {
+        setCurrentIndex((i) => i + 1);
+        setShowLgp(false);
+        scrollToTop();
+      } else {
+        onFinish({ type: "knowledge-quiz", score: allCards.length, total: allCards.length });
+      }
+    }
+
+    function prevCard() {
+      if (currentIndex > 0) {
+        setCurrentIndex((i) => i - 1);
+        setShowLgp(false);
+        scrollToTop();
+      }
+    }
+
+  return (
+    <main className="learning-cards-page" style={{ "--theme": currentCard.themeColor, "--theme-light": currentCard.themeLight }}>
       <div className="game-topbar">
-        <button className="back-button" onClick={onExit}>× Sair do jogo</button>
-        <span className="score-chip quiz-score-chip">Pontos <b>{score}</b></span>
-      </div>
-      <Progress current={current + (selected !== null ? 1 : 0)} total={questions.length} label="Perguntas respondidas" />
-      <div className="knowledge-heading">
-        <span className="knowledge-pill">QUIZ DIGITAL · 18 CONCEITOS</span>
-        <h1>Quiz de Saúde Oral</h1>
-        <p>Lê a pista e escolhe o conceito correto.</p>
+        <button className="back-button" onClick={onExit}>× Voltar ao menu</button>
       </div>
 
-      <section className="knowledge-card">
-        <div className="question-number">PERGUNTA {current + 1} DE {questions.length}</div>
-        <div className="knowledge-question-layout">
-          <figure>
-            <img src={question.item.image} alt="Imagem do conceito apresentado na pergunta" />
-            <figcaption>Pista visual</figcaption>
-          </figure>
-          <div className="knowledge-question-copy">
-            <h2>Escolhe a resposta correta</h2>
-            <blockquote>{question.item.quizPrompt}</blockquote>
-            <div className="knowledge-options">
-              {question.options.map((item, index) => {
-                const chosen = selected === item.id;
-                const correct = selected !== null && item.id === question.item.id;
-                const wrong = chosen && !correct;
-                return (
-                  <button
-                    key={item.id}
-                    className={`${chosen ? "selected" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}`}
-                    onClick={() => answer(item)}
-                    disabled={selected !== null}
-                  >
-                    <span>{String.fromCharCode(65 + index)}</span>
-                    {item.word}
-                    {correct && <b>✓</b>}
-                    {wrong && <b>×</b>}
-                  </button>
-                );
-              })}
+      <div className="learning-heading">
+        <span className="knowledge-pill">VERSÃO DIGITAL DOS CARTÕES · CARTÃO {currentCard.globalCardNumber} DE {allCards.length}</span>
+        <h1>Cartões de Aprendizagem</h1>
+      </div>
+
+      <div className="learning-workspace">
+        <div className="learning-card-container">
+          <div className="learning-card-a6">
+            <div className="card-a6-header">
+              <h2 className="card-word-title">{currentCard.word}</h2>
+              <span className="card-number-badge">{currentCard.globalCardNumber}</span>
+            </div>
+
+            <div className="card-a6-image-box">
+              <img src={currentCard.image} alt={currentCard.word} />
+            </div>
+
+            <div className="card-a6-content">
+              <div className="card-section">
+                <h3>O que é?</h3>
+                <p>{currentCard.definition}</p>
+              </div>
+
+              <div className="card-section">
+                <h3>Frase de exemplo:</h3>
+                <p className="card-example-sentence">{currentCard.sentence}</p>
+              </div>
             </div>
           </div>
         </div>
-      </section>
 
-      {selected !== null && (
-        <div className={`knowledge-feedback ${isCorrect ? "correct" : "wrong"}`} role="status">
-          <div>
-            <strong>{isCorrect ? "Resposta correta!" : `A resposta correta é «${question.item.word}».`}</strong>
-            <p>{question.item.definition}</p>
-            <small>Exemplo: {question.item.sentence}</small>
+        <div className="lgp-video-card">
+          <div className="lgp-video-header">
+            <span className="lgp-video-badge">▶ VÍDEO EM LGP</span>
+            <h3>{currentCard.word}</h3>
           </div>
-          <button className="lgp-button" onClick={() => setShowLgp(true)}>LGP <span>▶</span></button>
-          <button className="next-question-button" onClick={next}>{finished ? "Ver resultado" : "Próxima pergunta"} →</button>
+          {currentCard.video ? (
+            <NativeLgpVideoPlayer src={currentCard.video} themeColor={currentCard.themeColor} />
+          ) : (
+            <div className="lgp-video-player" style={{ position: "relative" }}>
+              {currentCard.youtubeId ? (
+                <>
+                  <iframe
+                    src={`https://www.youtube-nocookie.com/embed/${currentCard.youtubeId}?enablejsapi=1&autoplay=1&mute=1&loop=1&playlist=${currentCard.youtubeId}&controls=0&modestbranding=1&showinfo=0&iv_load_policy=3&disablekb=1&rel=0&playsinline=1&fs=0`}
+                    title={`Vídeo em LGP: ${currentCard.word}`}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    style={{ width: "100%", height: "100%", border: 0, borderRadius: "14px", pointerEvents: "none" }}
+                  />
+                  <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", zIndex: 10, background: "transparent", pointerEvents: "auto" }} />
+                </>
+              ) : (
+                <div className="lgp-video-screen">
+                  <span className="play-icon-large">▶</span>
+                  <p>Língua Gestual Portuguesa</p>
+                </div>
+              )}
+            </div>
+          )}
+          <p className="lgp-video-note">Demonstração do gesto em Língua Gestual Portuguesa correspondente a «{currentCard.word}».</p>
         </div>
-      )}
-      {showLgp && <LgpModal word={question.item.word} onClose={() => setShowLgp(false)} />}
+      </div>
+
+      <div className="card-pagination-grid">
+        {allCards.map((card, idx) => (
+          <button
+            key={card.id}
+            className={`card-nav-dot ${idx === currentIndex ? "active" : ""}`}
+            onClick={() => {
+              setCurrentIndex(idx);
+              setShowLgp(false);
+              scrollToTop();
+            }}
+            title={`${card.globalCardNumber}. ${card.word}`}
+          >
+            {card.globalCardNumber}
+          </button>
+        ))}
+      </div>
+
+      <div className="learning-controls">
+        <button className="secondary-button" onClick={prevCard} disabled={currentIndex === 0}>
+          <span className="btn-label-desktop">← Cartão anterior</span>
+          <span className="btn-label-mobile">
+            <span className="btn-word">Anterior</span>
+            <span className="btn-arrow">←</span>
+          </span>
+        </button>
+
+        <button className="primary-button" onClick={nextCard}>
+          {currentIndex < allCards.length - 1 ? (
+            <>
+              <span className="btn-label-desktop">Próximo cartão →</span>
+              <span className="btn-label-mobile">
+                <span className="btn-word">Próximo</span>
+                <span className="btn-arrow">→</span>
+              </span>
+            </>
+          ) : (
+            "Concluir cartões ✓"
+          )}
+        </button>
+      </div>
     </main>
   );
 }
 
 const sequenceCards = [
-  { id: "rececionista", label: "Falar com a rececionista", image: "imagens/sequencia/01-falar-rececionista.png" },
-  { id: "espera", label: "Esperar na sala de espera", image: "imagens/sequencia/02-sala-espera.png" },
-  { id: "consultorio", label: "Entrar no consultório", image: "imagens/sequencia/03-consultorio.png" },
-  { id: "consulta", label: "Realizar a consulta", image: "imagens/sequencia/04-consulta.png" },
+  { id: "rececionista", label: "Falar com a rececionista", image: "imagens/06_rececionista.png" },
+  { id: "espera", label: "Esperar na sala de espera", image: "imagens/05_sala_espera.png" },
+  { id: "consultorio", label: "Entrar no consultório", image: "imagens/04_consultorio.png" },
+  { id: "consulta", label: "Realizar a consulta", image: "imagens/18_consulta_rotina.png" },
 ];
 
 function SequenceGame({ onExit, onFinish }) {
@@ -778,7 +953,7 @@ function SequenceGame({ onExit, onFinish }) {
               return (
                 <button key={card.id} className={used ? "used" : ""} onClick={() => addCard(card)} disabled={used}>
                   <img src={card.image} alt={card.label} />
-                  <span>{used ? "Adicionado ✓" : "Adicionar à sequência"}</span>
+                  <strong className="sequence-card-label">{card.label}</strong>
                 </button>
               );
             })}
@@ -796,6 +971,7 @@ function SequenceGame({ onExit, onFinish }) {
                   {card ? (
                     <button onClick={() => removeCard(card)} aria-label={`Retirar ${card.label}`}>
                       <img src={card.image} alt={card.label} />
+                      <strong className="sequence-card-label">{card.label}</strong>
                       <i>×</i>
                     </button>
                   ) : <p>Seleciona um cartão</p>}
@@ -839,15 +1015,65 @@ function LgpModal({ word, onClose }) {
 }
 
 function MemoryGame({ onExit, onFinish }) {
-  const [memoryItems] = useState(() => shuffle(allItems).slice(0, 9));
-  const [cards] = useState(() => shuffle(memoryItems.flatMap((item) => [
-    { key: `${item.id}-a`, pair: item.id, item },
-    { key: `${item.id}-b`, pair: item.id, item },
-  ])));
+  const levelConfigs = [
+    { level: 1, name: "Nível 1 - Fácil", pairs: 6, label: "6 pares · 12 cartões" },
+    { level: 2, name: "Nível 2 - Médio", pairs: 6, label: "6 pares · 12 cartões" },
+    { level: 3, name: "Nível 3 - Desafio", pairs: 6, label: "6 pares · 12 cartões" },
+  ];
+
+  const [currentLevelIdx, setCurrentLevelIdx] = useState(0);
+  const [accumulatedMoves, setAccumulatedMoves] = useState(0);
+  const [levelSuccess, setLevelSuccess] = useState(false);
+
+  const currentConfig = levelConfigs[currentLevelIdx];
+
+  function selectUniqueMemoryItems(count) {
+    const seen = new Set();
+    const selected = [];
+    const shuffled = shuffle(allItems);
+    for (const item of shuffled) {
+      const key = `${item.id}|${item.image}|${item.word}`.toLowerCase();
+      if (!seen.has(key) && !seen.has(item.id) && !seen.has(item.image)) {
+        seen.add(key);
+        seen.add(item.id);
+        seen.add(item.image);
+        selected.push(item);
+        if (selected.length === count) break;
+      }
+    }
+    return selected;
+  }
+
+  const [cards, setCards] = useState(() => {
+    const items = selectUniqueMemoryItems(currentConfig.pairs);
+    return shuffle(items.flatMap((item) => [
+      { key: `${item.id}-a`, pair: item.id, item },
+      { key: `${item.id}-b`, pair: item.id, item },
+    ]));
+  });
+
   const [open, setOpen] = useState([]);
   const [matched, setMatched] = useState([]);
-  const [moves, setMoves] = useState(0);
+  const [levelMoves, setLevelMoves] = useState(0);
   const [locked, setLocked] = useState(false);
+
+  function startLevel(idx, totalMovesSoFar) {
+    const config = levelConfigs[idx];
+    const items = selectUniqueMemoryItems(config.pairs);
+    setCards(shuffle(items.flatMap((item) => [
+      { key: `${item.id}-a`, pair: item.id, item },
+      { key: `${item.id}-b`, pair: item.id, item },
+    ])));
+    setOpen([]);
+    setMatched([]);
+    setLevelMoves(0);
+    setLocked(false);
+    setLevelSuccess(false);
+    setCurrentLevelIdx(idx);
+    if (typeof totalMovesSoFar === "number") {
+      setAccumulatedMoves(totalMovesSoFar);
+    }
+  }
 
   useEffect(() => {
     if (open.length !== 2) return undefined;
@@ -862,32 +1088,50 @@ function MemoryGame({ onExit, onFinish }) {
   }, [open, cards]);
 
   useEffect(() => {
-    if (matched.length === memoryItems.length) {
-      const timer = setTimeout(() => onFinish({ type: "memory", moves, total: memoryItems.length }), 500);
+    if (cards.length > 0 && matched.length === currentConfig.pairs) {
+      setLevelSuccess(true);
+      const timer = setTimeout(() => {
+        const nextMoves = accumulatedMoves + levelMoves;
+        if (currentLevelIdx < levelConfigs.length - 1) {
+          startLevel(currentLevelIdx + 1, nextMoves);
+        } else {
+          onFinish({ type: "memory", moves: nextMoves, total: 18 });
+        }
+      }, 1200);
       return () => clearTimeout(timer);
     }
     return undefined;
-  }, [matched, memoryItems, moves, onFinish]);
+  }, [matched, currentConfig, currentLevelIdx, accumulatedMoves, levelMoves, onFinish, cards]);
 
   function turn(card) {
-    if (locked || open.includes(card.key) || matched.includes(card.pair)) return;
-    if (open.length === 0) setMoves((value) => value + 1);
+    if (locked || open.includes(card.key) || matched.includes(card.pair) || levelSuccess) return;
+    if (open.length === 0) setLevelMoves((value) => value + 1);
     if (open.length === 1) setLocked(true);
     setOpen((values) => [...values, card.key]);
   }
+
+  const totalMoves = accumulatedMoves + levelMoves;
 
   return (
     <main className="game-shell memory-page" style={{ "--theme": gameColors.color, "--theme-light": gameColors.light }}>
       <div className="game-topbar">
         <button className="back-button" onClick={onExit}>× Sair do jogo</button>
-        <span className="score-chip">Jogadas <b>{moves}</b></span>
+        <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+          <span className="score-chip">Nível <b>{currentConfig.level}/3</b></span>
+          <span className="score-chip">Jogadas <b>{totalMoves}</b></span>
+        </div>
       </div>
-      <Progress current={matched.length} total={memoryItems.length} label="Pares encontrados" />
+      <Progress current={matched.length} total={currentConfig.pairs} label={`Nível ${currentConfig.level} · Pares encontrados`} />
       <div className="memory-heading">
-        <span className="theme-pill">9 pares · 18 cartões</span>
+        <span className="theme-pill">NÍVEL {currentConfig.level} DE 3 · {currentConfig.label}</span>
         <h1>Encontra as duas imagens iguais</h1>
       </div>
-      <section className="memory-grid">
+      {levelSuccess && (
+        <div className="level-toast" style={{ margin: "0 auto 16px", padding: "12px 24px", background: "#4caf50", color: "#fff", borderRadius: "12px", fontWeight: "bold", textAlign: "center", maxWidth: "400px" }}>
+          🎉 Nível {currentConfig.level} Concluído! {currentLevelIdx < 2 ? "A preparar o próximo nível..." : "Parabéns!"}
+        </div>
+      )}
+      <section className={`memory-grid level-${currentConfig.level}`}>
         {cards.map((card) => {
           const visible = open.includes(card.key) || matched.includes(card.pair);
           return (
@@ -939,12 +1183,19 @@ function Result({ result, onAgain, onActivities, onHome }) {
         <span className="result-icon">✓</span>
         <small>ATIVIDADE CONCLUÍDA</small>
         <h1>{excellent ? "Excelente trabalho!" : "Muito bem!"}</h1>
-        <p>{isSequence ? "Organizaste as quatro etapas da consulta dentária." : "Terminaste esta atividade de saúde oral."}</p>
+        <p>
+          {isSequence
+            ? "Organizaste as quatro etapas da consulta dentária."
+            : isKnowledgeQuiz
+              ? "Exploraste todos os 18 cartões de aprendizagem de saúde oral."
+              : "Terminaste esta atividade de saúde oral."}
+        </p>
         <div className="result-score">
           {isImageWord && <><strong>{result.score}<small> / {result.total}</small></strong><span>pares formados</span></>}
-          {isScoredActivity && <><strong>{result.score}<small> / {result.total}</small></strong><span>respostas corretas</span></>}
+          {isKnowledgeQuiz && <><strong>{result.total}<small> / {result.total}</small></strong><span>cartões explorados</span></>}
+          {isTrueFalse && <><strong>{result.score}<small> / {result.total}</small></strong><span>respostas corretas</span></>}
           {isSequence && <><strong>4<small> / 4</small></strong><span>etapas ordenadas</span></>}
-          {!isImageWord && !isScoredActivity && !isSequence && <><strong>{result.moves}</strong><span>jogadas</span></>}
+          {!isImageWord && !isKnowledgeQuiz && !isTrueFalse && !isSequence && <><strong>{result.moves}</strong><span>jogadas</span></>}
         </div>
         <div className="result-actions">
           <button className="primary-button" onClick={onAgain}>Jogar novamente</button>
@@ -959,6 +1210,37 @@ function Result({ result, onAgain, onActivities, onHome }) {
 export default function Page() {
   const [screen, setScreen] = useState("home");
   const [result, setResult] = useState(null);
+
+  useEffect(() => {
+    function purgeOverlays() {
+      if (typeof document === "undefined") return;
+      const targets = document.querySelectorAll(
+        '[class*="extension"], [id*="extension"], [class*="toaster"], [class*="sleex"], [class*="be_skin"], [id*="sleex"], [id*="be_skin"]'
+      );
+      targets.forEach((el) => {
+        if (el.id === "root" || el.tagName === "SCRIPT" || el.tagName === "BODY" || el.tagName === "HTML" || el.tagName === "HEAD") return;
+        try {
+          el.remove();
+        } catch (e) {
+          el.style.display = "none";
+        }
+      });
+    }
+
+    purgeOverlays();
+    const interval = setInterval(purgeOverlays, 60);
+
+    let observer = null;
+    if (typeof window !== "undefined" && window.MutationObserver && document.documentElement) {
+      observer = new MutationObserver(purgeOverlays);
+      observer.observe(document.documentElement, { childList: true, subtree: true });
+    }
+
+    return () => {
+      clearInterval(interval);
+      if (observer) observer.disconnect();
+    };
+  }, []);
 
   const compact = useMemo(() => screen !== "home", [screen]);
 

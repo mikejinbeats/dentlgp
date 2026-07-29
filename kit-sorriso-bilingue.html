@@ -3,8 +3,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <title>Kit Sorriso Bilingue | Jogo Digital em LGP | DentLGP</title>
   <meta name="description" content="Jogo digital e plataforma pedagógica interativa bilingue em Língua Gestual Portuguesa e Português Escrito dedicada à educação para a saúde oral.">
+  <link rel="canonical" href="https://dentlgp.pt/kit-sorriso-bilingue">
+  <meta property="og:url" content="https://dentlgp.pt/kit-sorriso-bilingue">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kit Sorriso Bilingue | Jogo Digital em LGP | DentLGP">
+  <meta property="og:description" content="Jogo digital e plataforma pedagógica interativa bilingue em Língua Gestual Portuguesa e Português Escrito dedicada à educação para a saúde oral.">
+
+  <!-- ======= Schema.org JSON-LD Structured Data ======= -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Kit Sorriso Bilingue - Jogo Digital em LGP",
+    "url": "https://dentlgp.pt/kit-sorriso-bilingue",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Web",
+    "description": "Jogo digital pedagógico interativo bilingue em Língua Gestual Portuguesa (LGP) e Português Escrito para promoção da Saúde Oral.",
+    "inLanguage": ["pt-PT", "por"],
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "DentLGP",
+      "url": "https://dentlgp.pt/"
+    }
+  }
+  </script>
   
   <!-- Favicon / Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,13 +64,346 @@
     #como-jogar span,
     .how-section h2,
     .how-section p,
-    .how-section span,
-    [class*="teacher"] h3,
-    [class*="teacher"] p,
-    [class*="how"] h2,
-    [class*="how"] p {
+    .how-section span {
       color: #ffffff !important;
       opacity: 1 !important;
+    }
+
+    /* Guia do Professor - Black text for notes and observation section */
+    .teacher-guide-page .guide-note,
+    .teacher-guide-page .observation-section p,
+    .teacher-guide-page .guide-split-section p {
+      color: #000000 !important;
+      font-weight: 700 !important;
+      opacity: 1 !important;
+    }
+
+    /* Guia do Professor - Perfect High Contrast & Readability */
+    .guide-hero {
+      background: linear-gradient(135deg, #041642 0%, #071f58 60%, #063780 100%) !important;
+      color: #ffffff !important;
+    }
+    .guide-hero h1,
+    .guide-hero-copy h1 {
+      color: #ffffff !important;
+    }
+    .guide-hero .guide-kicker {
+      color: #6de5ee !important;
+    }
+    .guide-hero-copy > p {
+      color: rgba(255, 255, 255, 0.95) !important;
+      font-size: 1.05rem !important;
+    }
+
+    @media (max-width: 991.98px) {
+      .back-to-home-link {
+        display: none !important;
+      }
+    }
+    @media (max-width: 768px) {
+      .compact-list li,
+      .accessibility-section .check-list li {
+        font-size: 0.85rem !important;
+        line-height: 1.4 !important;
+        padding: 9px 14px 9px 38px !important;
+      }
+    }
+    @media (max-width: 991.98px) {
+        text-align: center !important;
+      }
+      .guide-hero-copy {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      .guide-hero-copy .guide-kicker,
+      .guide-hero-copy h1,
+      .guide-hero-copy p {
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      .guide-downloads {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        gap: 12px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      .guide-downloads a {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
+      }
+    }
+
+    .guide-intro-grid .guide-panel:not(.principles-panel) {
+      background-color: #ffffff !important;
+      border: 1px solid rgba(0, 40, 104, 0.15) !important;
+      box-shadow: 0 8px 24px rgba(0, 40, 104, 0.06) !important;
+      text-align: center !important;
+    }
+    .guide-intro-grid .guide-panel:not(.principles-panel) h2 {
+      color: #002868 !important;
+      text-align: center !important;
+    }
+    .guide-intro-grid .guide-panel:not(.principles-panel) p {
+      color: #0f172a !important;
+      opacity: 1 !important;
+      font-size: 1.05rem !important;
+      text-align: center !important;
+    }
+
+    .guide-intro-grid .principles-panel {
+      background: linear-gradient(135deg, #002868 0%, #004b87 100%) !important;
+      color: #ffffff !important;
+      border: none !important;
+      text-align: center !important;
+    }
+    .guide-intro-grid .principles-panel h2 {
+      color: #ffffff !important;
+      text-align: center !important;
+    }
+    .guide-intro-grid .principles-panel ul {
+      text-align: center !important;
+      list-style-position: inside !important;
+      padding-left: 0 !important;
+    }
+    .guide-intro-grid .principles-panel ul li {
+      color: #ffffff !important;
+      font-size: 1rem !important;
+      margin-bottom: 8px !important;
+    }
+
+    .guide-split-section {
+      text-align: center !important;
+    }
+    .guide-split-section h2 {
+      color: #002868 !important;
+      text-align: center !important;
+    }
+    .guide-split-section p {
+      color: #000000 !important;
+      font-weight: 600 !important;
+      opacity: 1 !important;
+      text-align: center !important;
+    }
+    .check-list {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 10px !important;
+      padding-left: 0 !important;
+    }
+    .check-list li {
+      width: 100% !important;
+      max-width: 680px !important;
+      background-color: #ffffff !important;
+      color: #0f172a !important;
+      border: 1px solid rgba(0, 40, 104, 0.15) !important;
+      border-radius: 12px !important;
+      padding: 12px 20px 12px 44px !important;
+      font-size: 1rem !important;
+      font-weight: 700 !important;
+      text-align: left !important;
+      box-shadow: 0 4px 12px rgba(0, 40, 104, 0.05) !important;
+    }
+    .check-list.plain-list li::before {
+      display: none !important;
+      content: "" !important;
+    }
+    .check-list.plain-list li {
+      padding: 12px 20px !important;
+      text-align: center !important;
+    }
+    .activity-game-card.online::before {
+      content: "EXCLUSIVO - ONLINE" !important;
+    }
+
+    .guide-theme-grid article {
+      background-color: #f8fafc !important;
+      border: 1.5px solid rgba(0, 40, 104, 0.15) !important;
+      border-radius: 16px !important;
+      padding: 24px !important;
+      text-align: center !important;
+    }
+    .guide-theme-grid article span {
+      color: #002868 !important;
+      font-weight: 900 !important;
+      font-size: 0.85rem !important;
+      display: block !important;
+      margin-bottom: 6px !important;
+      text-align: center !important;
+    }
+    .guide-theme-grid article h3 {
+      color: #002868 !important;
+      font-size: 1.4rem !important;
+      font-weight: 800 !important;
+      margin-bottom: 12px !important;
+      text-align: center !important;
+    }
+    .guide-theme-grid article p {
+      color: #0f172a !important;
+      font-size: 1.05rem !important;
+      font-weight: 600 !important;
+      opacity: 1 !important;
+      text-align: center !important;
+    }
+
+    .card-exploration {
+      background: linear-gradient(135deg, #001f54 0%, #002868 100%) !important;
+      color: #ffffff !important;
+      border-radius: 16px !important;
+      padding: 24px !important;
+      text-align: center !important;
+    }
+    .card-exploration strong {
+      color: #ffffff !important;
+      font-size: 1.2rem !important;
+      display: block !important;
+      margin-bottom: 14px !important;
+    }
+    .card-exploration ol {
+      color: #ffffff !important;
+      list-style-position: inside !important;
+      text-align: center !important;
+      padding-left: 0 !important;
+    }
+    .card-exploration ol li {
+      color: #ffffff !important;
+      font-size: 1rem !important;
+      margin-bottom: 8px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      text-align: center !important;
+    }
+    .card-exploration ol li::before {
+      counter-increment: card-step;
+      content: counter(card-step);
+      width: 28px !important;
+      height: 28px !important;
+      margin: 0 auto 10px auto !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      text-align: center !important;
+      line-height: 1 !important;
+      border-radius: 8px !important;
+      color: #002868 !important;
+      background: #6de6ed !important;
+      font-weight: 900 !important;
+    }
+
+    .guide-activity-grid article {
+      background-color: #ffffff !important;
+      border: 1.5px solid rgba(0, 40, 104, 0.15) !important;
+      border-top: 6px solid var(--activity-color, #002868) !important;
+      border-radius: 20px !important;
+      padding: 24px !important;
+      box-shadow: 0 8px 24px rgba(0, 40, 104, 0.08) !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      text-align: center !important;
+    }
+    .guide-activity-grid article > span {
+      margin-left: auto !important;
+      margin-right: auto !important;
+      margin-bottom: 12px !important;
+      width: 44px !important;
+      height: 44px !important;
+      font-size: 1.2rem !important;
+    }
+    .guide-activity-grid article small {
+      color: var(--activity-color, #007f96) !important;
+      font-weight: 900 !important;
+      font-size: 0.85rem !important;
+      letter-spacing: 0.1em !important;
+      display: block !important;
+      margin-bottom: 6px !important;
+      text-align: center !important;
+    }
+    .guide-activity-grid article h3 {
+      color: #002868 !important;
+      font-size: 1.45rem !important;
+      font-weight: 800 !important;
+      margin: 6px 0 12px 0 !important;
+      text-align: center !important;
+    }
+    .guide-activity-grid article p {
+      color: #0f172a !important;
+      font-size: 1.05rem !important;
+      line-height: 1.6 !important;
+      opacity: 1 !important;
+      margin-bottom: 14px !important;
+      min-height: auto !important;
+      text-align: center !important;
+    }
+    .guide-activity-grid article b {
+      color: #1e293b !important;
+      font-size: 0.95rem !important;
+      font-weight: 700 !important;
+      line-height: 1.5 !important;
+      background-color: #f1f5f9 !important;
+      border-radius: 10px !important;
+      padding: 10px 14px !important;
+      display: block !important;
+      width: 100% !important;
+      text-align: center !important;
+    }
+
+    .guide-digital-extras article {
+      background-color: #ffffff !important;
+      border: 1px solid rgba(0, 40, 104, 0.15) !important;
+      border-radius: 16px !important;
+      padding: 24px !important;
+      text-align: center !important;
+    }
+    .guide-digital-extras article small {
+      color: #007f96 !important;
+      font-weight: 800 !important;
+    }
+    .guide-digital-extras article h3 {
+      color: #002868 !important;
+      text-align: center !important;
+    }
+    .guide-digital-extras article p {
+      color: #1e293b !important;
+      text-align: center !important;
+    }
+    .guide-note {
+      color: #000000 !important;
+    }
+
+    .observation-section h2,
+    .observation-section span {
+      color: #002868 !important;
+      text-align: center !important;
+    }
+    .observation-section p {
+      color: #000000 !important;
+      text-align: center !important;
+    }
+    .observation-row.header {
+      background-color: #002868 !important;
+      color: #ffffff !important;
+    }
+    .observation-row:not(.header) {
+      background-color: #ffffff !important;
+      color: #0f172a !important;
+      border-bottom: 1px solid #e2e8f0 !important;
+    }
+    .health-disclaimer {
+      color: #334155 !important;
+      font-weight: 600 !important;
+      text-align: center !important;
     }
 
     /* Back to main website floating navigation button */
@@ -94,6 +458,15 @@
             <div><strong>Vídeos em Língua Gestual Portuguesa (LGP):</strong> Pedro Ribeiro</div>
             <div><strong>Instituição:</strong> Universidade Católica Portuguesa &bull; 2026</div>
           </div>
+
+          <!-- Legal Pages Links -->
+          <div class="mt-3 pt-2 border-top border-white border-opacity-25 d-flex flex-wrap gap-3 small">
+            <a href="politica-de-privacidade.html" class="text-white text-decoration-underline fw-semibold">Política de Privacidade</a>
+            <span class="text-white opacity-50">&bull;</span>
+            <a href="termos-e-condicoes.html" class="text-white text-decoration-underline fw-semibold">Termos e Condições</a>
+            <span class="text-white opacity-50">&bull;</span>
+            <a href="politica-de-cookies.html" class="text-white text-decoration-underline fw-semibold">Política de Cookies</a>
+          </div>
         </div>
         
         <!-- Right Column: Contact -->
@@ -104,7 +477,7 @@
               <div class="icon p-2 rounded-circle text-white d-flex align-items-center justify-content-center flex-shrink-0" style="background-color: #002868; width: 42px; height: 42px;"><i class="bi bi-envelope-fill fs-5"></i></div>
               <span class="text-nowrap" style="color: #002868 !important;">Contacto: <a href="mailto:geral@dentlgp.pt" class="fw-bold text-decoration-underline" style="color: #002868 !important;">geral@dentlgp.pt</a></span>
             </div>
-            <p class="small mb-0 ms-5 ps-2" style="color: #4a5568 !important; font-weight: 500;">Universidade Católica Portuguesa &bull; Lisboa, Portugal</p>
+            <p class="small mb-0 ms-5 ps-2" style="color: #4a5568 !important; font-weight: 500;">DentLGP &bull; Barreiro, Portugal</p>
           </div>
         </div>
       </div>
@@ -121,15 +494,6 @@
     </div>
   </footer>
   <!-- End Footer-->
-
-  <!-- Floating Back Link -->
-  <a href="index.html" class="back-to-site-btn" title="Regressar ao site principal da DentLGP">
-    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-      <line x1="19" y1="12" x2="5" y2="12"></line>
-      <polyline points="12 19 5 12 12 5"></polyline>
-    </svg>
-    Voltar à DentLGP
-  </a>
 
   <!-- Bundled Game Application JavaScript -->
   <script src="assets/js/jogo-app.bundle.js"></script>

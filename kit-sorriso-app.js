@@ -26,6 +26,8 @@
           id: "dentista",
           word: "Dentista",
           image: "/imagens/01_dentista.png",
+          video: "assets/videos/Dentista.mp4",
+          youtubeId: "EBtvL2n6vQ0",
           quizPrompt: "Que profissional observa, previne e trata problemas de sa\xFAde oral?",
           definition: "O dentista \xE9 o profissional de sa\xFAde que observa, previne e trata problemas dos dentes, das gengivas e da boca.",
           sentence: "O dentista observa os dentes do paciente."
@@ -34,6 +36,8 @@
           id: "assistente",
           word: "Assistente dent\xE1ria",
           image: "/imagens/02_assistente.png",
+          video: "assets/videos/Assistente Dentario.mp4",
+          youtubeId: "q3FRB3oDFI0",
           quizPrompt: "Quem prepara os instrumentos e apoia o profissional durante a consulta?",
           definition: "A assistente dent\xE1ria apoia o dentista durante a consulta, prepara os materiais e ajuda a manter o consult\xF3rio organizado.",
           sentence: "A assistente dent\xE1ria prepara os instrumentos para a consulta."
@@ -42,6 +46,8 @@
           id: "paciente",
           word: "Paciente",
           image: "/imagens/03_paciente.png",
+          video: "assets/videos/Paciente.mp4",
+          youtubeId: "yVDPzVkv6TA",
           quizPrompt: "Como se chama a pessoa que recebe cuidados durante uma consulta?",
           definition: "O paciente \xE9 a pessoa que vai ao dentista para cuidar da sua sa\xFAde oral.",
           sentence: "O paciente est\xE1 na consulta."
@@ -50,6 +56,8 @@
           id: "consultorio",
           word: "Consult\xF3rio",
           image: "/imagens/04_consultorio.png",
+          video: "assets/videos/Consultorio.mp4",
+          youtubeId: "2_fmRYFmuGk",
           quizPrompt: "Em que sala da cl\xEDnica s\xE3o realizados os exames e os tratamentos?",
           definition: "O consult\xF3rio \xE9 a sala onde o dentista atende o paciente e realiza os tratamentos.",
           sentence: "O dentista trabalha no consult\xF3rio."
@@ -58,6 +66,8 @@
           id: "sala-espera",
           word: "Sala de espera",
           image: "/imagens/05_sala_espera.png",
+          video: "assets/videos/Sala De Espera.mp4",
+          youtubeId: "0THkOgh5bEY",
           quizPrompt: "Em que espa\xE7o da cl\xEDnica as pessoas aguardam at\xE9 serem chamadas?",
           definition: "A sala de espera \xE9 o espa\xE7o onde os pacientes aguardam pela consulta.",
           sentence: "O paciente espera na sala de espera pela sua vez."
@@ -66,6 +76,8 @@
           id: "rececionista",
           word: "Rececionista",
           image: "/imagens/06_rececionista.png",
+          video: "assets/videos/Rececionista.mp4",
+          youtubeId: "6Hn6cyRBFOw",
           quizPrompt: "Quem recebe as pessoas, confirma marca\xE7\xF5es e fornece informa\xE7\xF5es \xE0 entrada da cl\xEDnica?",
           definition: "A rececionista \xE9 a profissional que recebe os pacientes, confirma as marca\xE7\xF5es e d\xE1 informa\xE7\xF5es na rece\xE7\xE3o da cl\xEDnica.",
           sentence: "O paciente fala com a rececionista quando chega \xE0 cl\xEDnica."
@@ -78,13 +90,15 @@
       title: "Conhecer a boca",
       short: "Conhecer a boca",
       description: "Partes da boca e estruturas relacionadas.",
-      color: "#1768ca",
-      light: "#e5f0ff",
+      color: "#079eb3",
+      light: "#dff8fb",
       items: [
         {
           id: "boca",
           word: "Boca",
           image: "/imagens/07_boca.png",
+          video: "assets/videos/Boca.mp4",
+          youtubeId: "xYKPJSK2EYQ",
           quizPrompt: "Que parte do corpo re\xFAne os dentes, as gengivas e a l\xEDngua?",
           definition: "A boca \xE9 a parte do corpo onde se encontram os dentes, as gengivas e a l\xEDngua.",
           sentence: "Abrimos a boca para o dentista observar os dentes."
@@ -93,6 +107,8 @@
           id: "dentes",
           word: "Dentes",
           image: "/imagens/08_dentes.png",
+          video: "assets/videos/Dentes.mp4",
+          youtubeId: "NBdQsBb0TDE",
           quizPrompt: "Que estruturas ajudam a cortar e mastigar os alimentos e tamb\xE9m participam na fala?",
           definition: "Os dentes ajudam a mastigar os alimentos e tamb\xE9m s\xE3o importantes para falar.",
           sentence: "Devemos cuidar dos dentes todos os dias."
@@ -101,6 +117,8 @@
           id: "gengivas",
           word: "Gengivas",
           image: "/imagens/09_gengivas.png",
+          video: "assets/videos/Gengivas.mp4",
+          youtubeId: "Y4d81_3XiOQ",
           quizPrompt: "Que tecidos rodeiam e ajudam a proteger a base dos dentes?",
           definition: "As gengivas s\xE3o os tecidos que envolvem e ajudam a proteger os dentes.",
           sentence: "Devemos escovar suavemente junto \xE0s gengivas."
@@ -109,6 +127,8 @@
           id: "lingua",
           word: "L\xEDngua",
           image: "/imagens/10_lingua.png",
+          video: "assets/videos/Lingua.mp4",
+          youtubeId: "7q9YAMxogBo",
           quizPrompt: "Que \xF3rg\xE3o muscular permite saborear, engolir e articular a fala?",
           definition: "A l\xEDngua ajuda a saborear os alimentos, a engolir e a falar.",
           sentence: "A l\xEDngua tamb\xE9m deve ser limpa."
@@ -117,6 +137,8 @@
           id: "labios",
           word: "L\xE1bios",
           image: "/imagens/11_labios.png",
+          video: "assets/videos/Labios.mp4",
+          youtubeId: "iVVbayajF64",
           quizPrompt: "Que estruturas m\xF3veis ajudam a fechar a boca, a falar e a expressar emo\xE7\xF5es?",
           definition: "Os l\xE1bios ajudam a fechar a boca, a falar e a expressar emo\xE7\xF5es.",
           sentence: "O dentista observa os l\xE1bios e a boca."
@@ -125,6 +147,8 @@
           id: "maxilares",
           word: "Maxilares",
           image: "/imagens/12_maxilares.png",
+          video: "assets/videos/Maxilares.mp4",
+          youtubeId: "1cm1h5HOQyE",
           quizPrompt: "Que ossos sustentam os dentes e participam nos movimentos da mastiga\xE7\xE3o?",
           definition: "Os maxilares s\xE3o os ossos que sustentam os dentes e ajudam nos movimentos da boca.",
           sentence: "Os dentes encontram-se nos maxilares."
@@ -137,13 +161,15 @@
       title: "Cuidados de sa\xFAde oral",
       short: "Sa\xFAde oral",
       description: "Objetos, a\xE7\xF5es e h\xE1bitos para cuidar da boca.",
-      color: "#69a900",
-      light: "#eef8dc",
+      color: "#079eb3",
+      light: "#dff8fb",
       items: [
         {
           id: "escova",
           word: "Escova de dentes",
           image: "/imagens/13_escova_dentes.png",
+          video: "assets/videos/Escova De Dentes.mp4",
+          youtubeId: "bSx66fRsqVg",
           quizPrompt: "Que objeto com cabo e cerdas \xE9 usado na limpeza di\xE1ria da boca?",
           definition: "A escova de dentes \xE9 utilizada para remover restos de alimentos e placa bacteriana dos dentes.",
           sentence: "Colocamos pasta dent\xEDfrica na escova de dentes."
@@ -152,6 +178,8 @@
           id: "pasta",
           word: "Pasta dent\xEDfrica",
           image: "/imagens/14_pasta_dentifrica.png",
+          video: "assets/videos/Pasta Dentifrica.mp4",
+          youtubeId: "pn1KuRXsILI",
           quizPrompt: "Que produto \xE9 colocado nas cerdas para ajudar a limpar e proteger a superf\xEDcie dent\xE1ria?",
           definition: "A pasta dent\xEDfrica \xE9 um produto usado com a escova para ajudar a limpar e proteger os dentes.",
           sentence: "Usamos uma pequena quantidade de pasta dent\xEDfrica."
@@ -160,6 +188,8 @@
           id: "fio",
           word: "Fio dent\xE1rio",
           image: "/imagens/15_fio_dentario.png",
+          video: "assets/videos/Fio Dentario.mp4",
+          youtubeId: "PK8JIpzGigo",
           quizPrompt: "Que recurso fino limpa os espa\xE7os onde as cerdas n\xE3o chegam facilmente?",
           definition: "O fio dent\xE1rio ajuda a limpar os espa\xE7os entre os dentes, onde a escova n\xE3o chega facilmente.",
           sentence: "O fio dent\xE1rio passa suavemente entre os dentes."
@@ -168,6 +198,8 @@
           id: "colutorio",
           word: "Colut\xF3rio",
           image: "/imagens/16_colutorio.png",
+          video: "assets/videos/Colutorio.mp4",
+          youtubeId: "oANMlZKHPSM",
           quizPrompt: "Que l\xEDquido pode ser usado para bochechar quando recomendado por um profissional?",
           definition: "O colut\xF3rio \xE9 um l\xEDquido utilizado para bochechar, quando recomendado por um profissional de sa\xFAde oral.",
           sentence: "O colut\xF3rio n\xE3o deve ser engolido."
@@ -176,6 +208,8 @@
           id: "escovar",
           word: "Escovar os dentes",
           image: "/imagens/17_escovar_dentes.png",
+          video: "assets/videos/Escovar Dentes.mp4",
+          youtubeId: "mtQhDy-ncVw",
           quizPrompt: "Que a\xE7\xE3o di\xE1ria remove a placa bacteriana das superf\xEDcies dent\xE1rias?",
           definition: "Escovar os dentes ajuda a remover a placa bacteriana e a prevenir problemas de sa\xFAde oral.",
           sentence: "Devemos escovar todas as superf\xEDcies dos dentes."
@@ -184,6 +218,8 @@
           id: "consulta-rotina",
           word: "Consulta de rotina",
           image: "/imagens/18_consulta_rotina.png",
+          video: "assets/videos/Consulta De Rotina.mp4",
+          youtubeId: "ODOWZxOyK9s",
           quizPrompt: "Que tipo de visita permite verificar a boca e identificar precocemente poss\xEDveis problemas?",
           definition: "A consulta de rotina permite ao dentista observar a boca, verificar os dentes e identificar poss\xEDveis problemas.",
           sentence: "O paciente vai ao dentista para uma consulta de rotina."
@@ -311,6 +347,18 @@
   // app/page.jsx
   var import_jsx_runtime = __require("react/jsx-runtime");
   var allItems = themes.flatMap((theme) => theme.items);
+  var allCards = themes.flatMap((theme, themeIdx) =>
+    theme.items.map((item, itemIdx) => ({
+      ...item,
+      themeId: theme.id,
+      themeTitle: theme.title,
+      themeNumber: theme.number,
+      themeColor: theme.color,
+      themeLight: theme.light,
+      cardNumberInTheme: itemIdx + 1,
+      globalCardNumber: themeIdx * 6 + itemIdx + 1,
+    }))
+  );
   var allTrueFalseStatements = Object.values(trueFalseStatements).flat();
   var gameColors = { color: "#079eb3", light: "#dff8fb" };
   function shuffle(list) {
@@ -336,12 +384,7 @@
       ) }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "header-tags", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "guide-nav-button", onClick: onGuide, children: "Guia do Professor" }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { className: "bilingual-tag", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", {}),
-          " LGP ",
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: "\u2014" }),
-          " PORTUGU\xCAS"
-        ] })
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", { className: "dentlgp-brand-tag", href: "index.html", title: "Ir para a página principal da DentLGP", style: { display: "inline-flex", alignItems: "center", background: "#ffffff", padding: "5px 14px", borderRadius: "50px", border: "1px solid rgba(255,255,255,0.4)", boxShadow: "0 4px 12px rgba(0,0,0,0.12)", textDecoration: "none" }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", { src: "assets/images/dentlgp/logo dentlgp.png", alt: "DentLGP Principal", style: { height: "30px", width: "auto", objectFit: "contain" } }) })
       ] })
     ] });
   }
@@ -349,10 +392,15 @@
     return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", { children: [
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", { className: "hero", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "hero-copy", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", { className: "back-to-home-link", href: "index.html", style: { display: "inline-flex", alignItems: "center", gap: "8px", padding: "8px 18px", background: "#ffffff", color: "#000000", border: "1.5px solid #000000", borderRadius: "50px", textDecoration: "none", fontWeight: "700", fontSize: "14px", marginTop: "-12px", marginBottom: "20px", boxShadow: "0 4px 12px rgba(0,0,0,0.12)" }, children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { "aria-hidden": "true", children: "\u2190" }),
+            " Voltar \xE0 DentLGP"
+          ] }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "eyebrow", children: "O jogo digital do Kit Sorriso Bilingue" }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h1", { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Aprende sa\xFAde oral" }),
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("em", { children: "a jogar!" })
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "hero-w1", children: "Aprende " }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "hero-w2", children: "sa\xFAde oral " }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("em", { className: "hero-w3", children: "a jogar conosco!" })
           ] }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Explora imagens, palavras em portugu\xEAs e conte\xFAdos em L\xEDngua Gestual Portuguesa atrav\xE9s de desafios claros, visuais e divertidos." }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "hero-actions", children: [
@@ -492,21 +540,16 @@
               ] })
             ] })
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { className: "activity-game-card teal online", onClick: () => onStart("knowledge-quiz"), children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { className: "activity-game-card teal", onClick: () => onStart("knowledge-quiz"), children: [
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "play-badge", "aria-hidden": "true", children: "\u25B6" }),
-            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "activity-visual quiz-visual", "aria-hidden": "true", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", { src: "/imagens/07_boca.png", alt: "" }),
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "?" })
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "activity-visual quiz-visual", "aria-hidden": "true", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", { src: "assets/images/pedro-lgp - Copy.png", alt: "" })
             ] }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "activity-card-copy", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "activity-card-label", children: [
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: "+" }),
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("small", { children: "EXCLUSIVO ONLINE" })
-              ] }),
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "Quiz de Sa\xFAde Oral" }),
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Responde a 18 perguntas de escolha m\xFAltipla sobre os conceitos dos cart\xF5es." }),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "Cart\xF5es de Aprendizagem" }),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Explora os 18 cart\xF5es com imagem, defini\xE7\xE3o, frase de exemplo e v\xEDdeo em LGP." }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { className: "game-cta", children: [
-                "Come\xE7ar o quiz ",
+                "Explorar Cart\xF5es ",
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { "aria-hidden": "true", children: "\u2192" })
               ] })
             ] })
@@ -521,7 +564,7 @@
             /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "activity-card-copy", children: [
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "activity-card-label", children: [
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: "+" }),
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("small", { children: "EXCLUSIVO ONLINE" })
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("small", { children: "EXCLUSIVO - ONLINE" })
               ] }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "Jogo de Mem\xF3ria" }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Vira os cart\xF5es e encontra os pares formados por duas imagens iguais." }),
@@ -608,7 +651,14 @@
             ] })
           ] })
         ] })
-      ] })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+        className: "scroll-to-top-fab",
+        onClick: () => window.scrollTo({ top: 0, behavior: "smooth" }),
+        title: "Voltar ao in\xEDcio",
+        "aria-label": "Voltar ao in\xEDcio",
+        children: "\u2191"
+      })
     ] });
   }
   function TeacherGuide({ onBack }) {
@@ -624,7 +674,7 @@
       "Testar previamente o acesso aos v\xEDdeos em LGP.",
       "Garantir boa ilumina\xE7\xE3o e contacto visual antes de cada explica\xE7\xE3o.",
       "Apresentar uma informa\xE7\xE3o de cada vez e dar tempo para observar.",
-      "Respeitar a variedade lingu\xEDstica da LGP e esclarecer variantes quando necess\xE1rio."
+      "Respeitar a variedade e esclarecer variantes da LGP."
     ];
     const activities = [
       {
@@ -656,15 +706,9 @@
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "guide-kicker", children: "KIT SORRISO BILINGUE \xB7 LGP\u2013PORTUGU\xCAS" }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", { children: "Guia do Professor" }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Orienta\xE7\xF5es para explorar os conte\xFAdos de sa\xFAde oral com alunos Surdos do 1.\xBA Ciclo, atrav\xE9s dos cart\xF5es f\xEDsicos e das atividades digitais." }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "guide-downloads", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", { className: "primary-button", href: "/documentos/guia-do-professor.pdf", target: "_blank", rel: "noreferrer", children: "Abrir o guia em PDF" }),
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", { className: "guide-outline-button", href: "/documentos/instrucoes-das-atividades.pdf", target: "_blank", rel: "noreferrer", children: "Instru\xE7\xF5es das atividades" })
-          ] })
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "guide-downloads", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", { className: "primary-button", href: "assets/Guia_do_Professor_A5.pdf", target: "_blank", rel: "noreferrer", children: "Abrir o guia em PDF" }) })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "guide-hero-mark", "aria-hidden": "true", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "\u25A4" }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: "GUIA" })
-        ] })
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "guide-hero-mark", style: { width: "240px", height: "320px", padding: "8px", background: "#ffffff", borderRadius: "18px", boxShadow: "0 20px 45px rgba(0,0,0,0.3)", transform: "rotate(2deg)", display: "flex", alignItems: "center", justifyContent: "center" }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", { src: "assets/images/capa guia do professor.png", alt: "Capa Guia do Professor", style: { width: "100%", height: "100%", objectFit: "cover", borderRadius: "12px" } }) })
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", { className: "guide-content", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", { className: "guide-index", "aria-label": "Conte\xFAdos do guia", children: [
@@ -696,9 +740,9 @@
           /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "eyebrow", children: "P\xFAblico-alvo e objetivos" }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: "Aprender com diferentes n\xEDveis de apoio" }),
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Destina-se principalmente a alunos Surdos do 1.\xBA Ciclo. Pode tamb\xE9m apoiar turmas bilingues, fam\xEDlias, docentes, int\xE9rpretes de LGP e a\xE7\xF5es de literacia em sa\xFAde oral." })
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { style: { color: "#000000", fontWeight: "600", opacity: 1 }, children: "Destina-se principalmente a alunos Surdos do 1.\xBA Ciclo. Pode tamb\xE9m apoiar turmas bilingues, fam\xEDlias, docentes, int\xE9rpretes de LGP e a\xE7\xF5es de literacia em sa\xFAde oral." })
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", { className: "check-list", children: objectives.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: item }, item)) })
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", { className: "check-list plain-list", children: objectives.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: item }, item)) })
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", { className: "guide-themes", children: [
           /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "guide-section-heading", children: [
@@ -732,7 +776,7 @@
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "eyebrow", children: "Prepara\xE7\xE3o e acessibilidade" }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: "Antes de come\xE7ar" }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", { className: "check-list compact-list", children: preparation.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: item }, item)) }),
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "guide-note", children: "Evite falar ou produzir LGP enquanto o aluno observa outro suporte. Organize o espa\xE7o para que todos vejam as m\xE3os, o rosto e os materiais." })
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "guide-note", style: { color: "#000000", fontWeight: "600", opacity: 1 }, children: "Evite falar ou produzir LGP enquanto o aluno observa outro suporte. Organize o espa\xE7o para que todos vejam as m\xE3os, o rosto e os materiais." })
           ] })
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", { className: "guide-activities", id: "guia-atividades", children: [
@@ -749,12 +793,11 @@
           ] }, activity.number)) }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "guide-digital-extras", children: [
             /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { children: [
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("small", { children: "ATIVIDADE DIGITAL EXTRA" }),
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "Quiz de Sa\xFAde Oral" }),
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "O aluno l\xEA uma defini\xE7\xE3o e escolhe o conceito correto entre quatro op\xE7\xF5es. A corre\xE7\xE3o apresenta a imagem e uma frase de exemplo." })
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "Cart\xF5es de Aprendizagem" }),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Vers\xE3o digital interativa dos 18 cart\xF5es com imagem, defini\xE7\xE3o, frase de exemplo e v\xEDdeo em LGP." })
             ] }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { children: [
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("small", { children: "ATIVIDADE DIGITAL EXTRA" }),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("small", { children: "EXCLUSIVO - ONLINE" }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "Jogo de Mem\xF3ria" }),
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "O aluno vira dois cart\xF5es de cada vez e procura os pares formados por duas imagens iguais." })
             ] })
@@ -764,7 +807,7 @@
           /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "eyebrow", children: "Acompanhamento pedag\xF3gico" }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: "Grelha de observa\xE7\xE3o" }),
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "O professor pode registar o grau de autonomia demonstrado em cada aspeto." })
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { style: { color: "#000000", fontWeight: "600", opacity: 1 }, children: "O professor pode registar o grau de autonomia demonstrado em cada aspeto." })
           ] }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "observation-table", role: "table", "aria-label": "Grelha de observa\xE7\xE3o", children: [
             /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "observation-row header", role: "row", children: [
@@ -782,7 +825,22 @@
           ] })
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "health-disclaimer", children: "Este recurso \xE9 educativo e n\xE3o substitui a avalia\xE7\xE3o nem as recomenda\xE7\xF5es de um profissional de sa\xFAde oral." })
-      ] })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+        type: "button",
+        className: "scroll-to-top-fab",
+        onClick: () => {
+          const hero = document.querySelector(".guide-hero") || document.querySelector(".teacher-guide-page");
+          if (hero) {
+            hero.scrollIntoView({ behavior: "smooth", block: "start" });
+          } else {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }
+        },
+        title: "Voltar ao topo",
+        "aria-label": "Voltar ao topo",
+        children: "\u2191"
+      })
     ] });
   }
   function Progress({ current, total, label }) {
@@ -1035,112 +1093,287 @@
       ] })
     ] });
   }
-  function KnowledgeQuiz({ onExit, onFinish }) {
-    const [questions] = (0, import_react.useState)(() => shuffle(allItems).map((item) => {
-      const itemTheme = themes.find((theme) => theme.items.some((candidate) => candidate.id === item.id));
-      const distractors = shuffle(itemTheme.items.filter((candidate) => candidate.id !== item.id)).slice(0, 3);
-      return { item, options: shuffle([item, ...distractors]) };
-    }));
-    const [current, setCurrent] = (0, import_react.useState)(0);
-    const [score, setScore] = (0, import_react.useState)(0);
-    const [selected, setSelected] = (0, import_react.useState)(null);
-    const [showLgp, setShowLgp] = (0, import_react.useState)(false);
-    const question = questions[current];
-    const isCorrect = selected === question.item.id;
-    const finished = current === questions.length - 1;
-    function answer(item) {
-      if (selected !== null) return;
-      setSelected(item.id);
-      if (item.id === question.item.id) setScore((value) => value + 1);
-    }
-    function next() {
-      if (finished) {
-        onFinish({ type: "knowledge-quiz", score, total: questions.length });
-        return;
+  function NativeLgpVideoPlayer({ src, themeColor }) {
+    const [isPlaying, setIsPlaying] = (0, import_react.useState)(false);
+    const [hasStarted, setHasStarted] = (0, import_react.useState)(false);
+    const videoRef = (0, import_react.useRef)(null);
+
+    (0, import_react.useEffect)(() => {
+      setIsPlaying(false);
+      setHasStarted(false);
+      if (videoRef.current) {
+        videoRef.current.pause();
+        try {
+          videoRef.current.currentTime = 0;
+        } catch (e) {}
       }
-      setCurrent((value) => value + 1);
-      setSelected(null);
-      setShowLgp(false);
-      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, [src]);
+
+    const handleTogglePlay = (e) => {
+      if (e) e.stopPropagation();
+
+      if (isPlaying) {
+        setIsPlaying(false);
+        if (videoRef.current) {
+          videoRef.current.pause();
+        }
+      } else {
+        setIsPlaying(true);
+        setHasStarted(true);
+        if (videoRef.current) {
+          videoRef.current.play().catch(() => {});
+        }
+      }
+    };
+
+    const handleEnded = () => {
+      setIsPlaying(false);
+      setHasStarted(false);
+      if (videoRef.current) {
+        try {
+          videoRef.current.currentTime = 0;
+        } catch (err) {}
+      }
+    };
+
+    return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
+      "div",
+      {
+        className: "lgp-video-player",
+        style: { position: "relative", overflow: "hidden", borderRadius: "14px", cursor: "pointer" },
+        onClick: handleTogglePlay,
+        children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("video", {
+            ref: videoRef,
+            key: src,
+            src,
+            onEnded: handleEnded,
+            muted: true,
+            playsInline: true,
+            preload: "auto",
+            style: {
+              width: "100%",
+              height: "100%",
+              objectFit: "contain",
+              backgroundColor: "#100a1c",
+              borderRadius: "14px",
+              display: "block",
+              pointerEvents: "none"
+            }
+          }),
+          !isPlaying && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
+            "div",
+            {
+              className: "lgp-video-play-overlay",
+              onClick: handleTogglePlay,
+              children: [
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+                  "div",
+                  {
+                    className: "lgp-video-play-btn",
+                    style: {
+                      backgroundColor: themeColor || "var(--theme, #079eb3)"
+                    },
+                    children: "\u25B6"
+                  }
+                ),
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+                  "span",
+                  {
+                    className: "lgp-video-play-text",
+                    children: hasStarted ? "Clique para continuar a ver" : "Ver v\xEDdeo em LGP"
+                  }
+                )
+              ]
+            }
+          )
+        ]
+      }
+    );
+  }
+  function KnowledgeQuiz({ onExit, onFinish }) {
+    const [currentIndex, setCurrentIndex] = (0, import_react.useState)(0);
+    const [showLgp, setShowLgp] = (0, import_react.useState)(false);
+
+    const currentCard = allCards[currentIndex] || allCards[0];
+
+    function scrollToTop() {
+      const el = document.querySelector(".learning-cards-page") || document.querySelector(".learning-workspace");
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
     }
-    return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", { className: "knowledge-quiz-page", style: { "--theme": gameColors.color, "--theme-light": gameColors.light }, children: [
-      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "game-topbar", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "back-button", onClick: onExit, children: "\xD7 Sair do jogo" }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { className: "score-chip quiz-score-chip", children: [
-          "Pontos ",
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: score })
-        ] })
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Progress, { current: current + (selected !== null ? 1 : 0), total: questions.length, label: "Perguntas respondidas" }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "knowledge-heading", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "knowledge-pill", children: "QUIZ DIGITAL \xB7 18 CONCEITOS" }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", { children: "Quiz de Sa\xFAde Oral" }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "L\xEA a pista e escolhe o conceito correto." })
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", { className: "knowledge-card", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "question-number", children: [
-          "PERGUNTA ",
-          current + 1,
-          " DE ",
-          questions.length
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "knowledge-question-layout", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figure", { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", { src: question.item.image, alt: "Imagem do conceito apresentado na pergunta" }),
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("figcaption", { children: "Pista visual" })
-          ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "knowledge-question-copy", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: "Escolhe a resposta correta" }),
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("blockquote", { children: question.item.quizPrompt }),
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "knowledge-options", children: question.options.map((item, index) => {
-              const chosen = selected === item.id;
-              const correct = selected !== null && item.id === question.item.id;
-              const wrong = chosen && !correct;
-              return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
-                "button",
-                {
-                  className: `${chosen ? "selected" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}`,
-                  onClick: () => answer(item),
-                  disabled: selected !== null,
+
+    function nextCard() {
+      if (currentIndex < allCards.length - 1) {
+        setCurrentIndex((i) => i + 1);
+        setShowLgp(false);
+        scrollToTop();
+      } else {
+        onFinish({ type: "knowledge-quiz", score: allCards.length, total: allCards.length });
+      }
+    }
+
+    function prevCard() {
+      if (currentIndex > 0) {
+        setCurrentIndex((i) => i - 1);
+        setShowLgp(false);
+        scrollToTop();
+      }
+    }
+
+    return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", {
+      className: "learning-cards-page",
+      style: { "--theme": currentCard.themeColor, "--theme-light": currentCard.themeLight },
+      children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+          className: "game-topbar",
+          children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "back-button", onClick: onExit, children: "\xD7 Voltar ao menu" })
+        }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+          className: "learning-heading",
+          children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { className: "knowledge-pill", children: ["VERS\xC3O DIGITAL DOS CART\xD5ES \xB7 CART\xC3O ", currentCard.globalCardNumber, " DE ", allCards.length] }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", { children: "Cart\xF5es de Aprendizagem" })
+          ]
+        }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+          className: "learning-workspace",
+          children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+              className: "learning-card-container",
+              children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+                className: "learning-card-a6",
+                children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+                    className: "card-a6-header",
+                    children: [
+                      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { className: "card-word-title", children: currentCard.word }),
+                      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "card-number-badge", children: currentCard.globalCardNumber })
+                    ]
+                  }),
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+                    className: "card-a6-image-box",
+                    children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", { src: currentCard.image, alt: currentCard.word })
+                  }),
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+                    className: "card-a6-content",
+                    children: [
+                      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+                        className: "card-section",
+                        children: [
+                          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "O que \xE9?" }),
+                          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: currentCard.definition })
+                        ]
+                      }),
+                      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+                        className: "card-section",
+                        children: [
+                          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "Frase de exemplo:" }),
+                          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "card-example-sentence", children: currentCard.sentence })
+                        ]
+                      })
+                    ]
+                  })
+                ]
+              })
+            }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+              className: "lgp-video-card",
+              children: [
+                /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+                  className: "lgp-video-header",
                   children: [
-                    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: String.fromCharCode(65 + index) }),
-                    item.word,
-                    correct && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: "\u2713" }),
-                    wrong && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: "\xD7" })
+                    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "lgp-video-badge", children: "\u25B6 V\xCDDEO EM LGP" }),
+                    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: currentCard.word })
                   ]
+                }),
+                currentCard.video ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(NativeLgpVideoPlayer, { src: currentCard.video, themeColor: currentCard.themeColor }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+                  className: "lgp-video-player",
+                  style: { position: "relative" },
+                  children: currentCard.youtubeId ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, {
+                    children: [
+                      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("iframe", {
+                        src: `https://www.youtube-nocookie.com/embed/${currentCard.youtubeId}?enablejsapi=1&autoplay=1&mute=1&loop=1&playlist=${currentCard.youtubeId}&controls=0&modestbranding=1&showinfo=0&iv_load_policy=3&disablekb=1&rel=0&playsinline=1&fs=0`,
+                        title: `V\xEDdeo em LGP: ${currentCard.word}`,
+                        allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+                        allowFullScreen: true,
+                        style: { width: "100%", height: "100%", border: 0, borderRadius: "14px", pointerEvents: "none" }
+                      }),
+                      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+                        style: { position: "absolute", top: 0, left: 0, width: "100%", height: "100%", zIndex: 10, background: "transparent", pointerEvents: "auto" }
+                      })
+                    ]
+                  }) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+                    className: "lgp-video-screen",
+                    children: [
+                      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "play-icon-large", children: "\u25B6" }),
+                      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "L\xEDngua Gestual Portuguesa" })
+                    ]
+                  })
+                }),
+                /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { className: "lgp-video-note", children: ["Demonstra\xE7\xE3o do gesto em L\xEDngua Gestual Portuguesa correspondente a \xAB", currentCard.word, "\xBB."] })
+              ]
+            })
+          ]
+        }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+          className: "card-pagination-grid",
+          children: allCards.map((card, idx) =>
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+              "button",
+              {
+                className: `card-nav-dot ${idx === currentIndex ? "active" : ""}`,
+                onClick: () => {
+                  setCurrentIndex(idx);
+                  setShowLgp(false);
+                  scrollToTop();
                 },
-                item.id
-              );
-            }) })
-          ] })
-        ] })
-      ] }),
-      selected !== null && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: `knowledge-feedback ${isCorrect ? "correct" : "wrong"}`, role: "status", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: isCorrect ? "Resposta correta!" : `A resposta correta \xE9 \xAB${question.item.word}\xBB.` }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: question.item.definition }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("small", { children: [
-            "Exemplo: ",
-            question.item.sentence
-          ] })
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { className: "lgp-button", onClick: () => setShowLgp(true), children: [
-          "LGP ",
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "\u25B6" })
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { className: "next-question-button", onClick: next, children: [
-          finished ? "Ver resultado" : "Pr\xF3xima pergunta",
-          " \u2192"
-        ] })
-      ] }),
-      showLgp && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(LgpModal, { word: question.item.word, onClose: () => setShowLgp(false) })
-    ] });
+                title: `${card.globalCardNumber}. ${card.word}`,
+                children: card.globalCardNumber
+              },
+              card.id
+            )
+          )
+        }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+          className: "learning-controls",
+          children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+              className: "secondary-button",
+              onClick: prevCard,
+              disabled: currentIndex === 0,
+              children: [
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "btn-label-desktop", children: "\u2190 Cart\xE3o anterior" }),
+                /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { className: "btn-label-mobile", children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "btn-word", children: "Anterior" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "btn-arrow", children: "\u2190" })
+                ] })
+              ]
+            }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+              className: "primary-button",
+              onClick: nextCard,
+              children: currentIndex < allCards.length - 1 ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "btn-label-desktop", children: "Pr\xF3ximo cart\xE3o \u2192" }),
+                /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { className: "btn-label-mobile", children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "btn-word", children: "Pr\xF3ximo" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "btn-arrow", children: "\u2192" })
+                ] })
+              ] }) : "Concluir cart\xF5es \u2713"
+            })
+          ]
+        })
+      ]
+    });
   }
   var sequenceCards = [
-    { id: "rececionista", label: "Falar com a rececionista", image: "/imagens/sequencia/01-falar-rececionista.png" },
-    { id: "espera", label: "Esperar na sala de espera", image: "/imagens/sequencia/02-sala-espera.png" },
-    { id: "consultorio", label: "Entrar no consult\xF3rio", image: "/imagens/sequencia/03-consultorio.png" },
-    { id: "consulta", label: "Realizar a consulta", image: "/imagens/sequencia/04-consulta.png" }
+    { id: "rececionista", label: "Falar com a rececionista", image: "/imagens/06_rececionista.png" },
+    { id: "espera", label: "Esperar na sala de espera", image: "/imagens/05_sala_espera.png" },
+    { id: "consultorio", label: "Entrar no consult\xF3rio", image: "/imagens/04_consultorio.png" },
+    { id: "consulta", label: "Realizar a consulta", image: "/imagens/18_consulta_rotina.png" }
   ];
   function SequenceGame({ onExit, onFinish }) {
     const [cards] = (0, import_react.useState)(() => shuffle(sequenceCards));
@@ -1189,7 +1422,7 @@
             const used = ordered.some((item) => item.id === card.id);
             return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { className: used ? "used" : "", onClick: () => addCard(card), disabled: used, children: [
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", { src: card.image, alt: card.label }),
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: used ? "Adicionado \u2713" : "Adicionar \xE0 sequ\xEAncia" })
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { className: "sequence-card-label", children: card.label })
             ] }, card.id);
           }) })
         ] }),
@@ -1201,6 +1434,7 @@
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "slot-number", children: index + 1 }),
               card ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { onClick: () => removeCard(card), "aria-label": `Retirar ${card.label}`, children: [
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", { src: card.image, alt: card.label }),
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { className: "sequence-card-label", children: card.label }),
                 /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { children: "\xD7" })
               ] }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Seleciona um cart\xE3o" })
             ] }, index);
@@ -1229,15 +1463,61 @@
     ] }) });
   }
   function MemoryGame({ onExit, onFinish }) {
-    const [memoryItems] = (0, import_react.useState)(() => shuffle(allItems).slice(0, 9));
-    const [cards] = (0, import_react.useState)(() => shuffle(memoryItems.flatMap((item) => [
-      { key: `${item.id}-a`, pair: item.id, item },
-      { key: `${item.id}-b`, pair: item.id, item }
-    ])));
+    const levelConfigs = [
+      { level: 1, name: "Nível 1 - Fácil", pairs: 6, label: "6 pares · 12 cartões" },
+      { level: 2, name: "Nível 2 - Médio", pairs: 6, label: "6 pares · 12 cartões" },
+      { level: 3, name: "Nível 3 - Desafio", pairs: 6, label: "6 pares · 12 cartões" }
+    ];
+    const [currentLevelIdx, setCurrentLevelIdx] = (0, import_react.useState)(0);
+    const [accumulatedMoves, setAccumulatedMoves] = (0, import_react.useState)(0);
+    const [levelSuccess, setLevelSuccess] = (0, import_react.useState)(false);
+    const currentConfig = levelConfigs[currentLevelIdx];
+    function selectUniqueMemoryItems(count) {
+      const seen = new Set();
+      const selected = [];
+      const shuffled = shuffle(allItems);
+      for (const item of shuffled) {
+        const key = `${item.id}|${item.image}|${item.word}`.toLowerCase();
+        if (!seen.has(key) && !seen.has(item.id) && !seen.has(item.image)) {
+          seen.add(key);
+          seen.add(item.id);
+          seen.add(item.image);
+          selected.push(item);
+          if (selected.length === count) break;
+        }
+      }
+      return selected;
+    }
+    const [cards, setCards] = (0, import_react.useState)(() => {
+      const items = selectUniqueMemoryItems(currentConfig.pairs);
+      return shuffle(items.flatMap((item) => [
+        { key: `${item.id}-a`, pair: item.id, item },
+        { key: `${item.id}-b`, pair: item.id, item }
+      ]));
+    });
     const [open, setOpen] = (0, import_react.useState)([]);
     const [matched, setMatched] = (0, import_react.useState)([]);
-    const [moves, setMoves] = (0, import_react.useState)(0);
+    const [levelMoves, setLevelMoves] = (0, import_react.useState)(0);
     const [locked, setLocked] = (0, import_react.useState)(false);
+
+    function startLevel(idx, totalMovesSoFar) {
+      const config = levelConfigs[idx];
+      const items = selectUniqueMemoryItems(config.pairs);
+      setCards(shuffle(items.flatMap((item) => [
+        { key: `${item.id}-a`, pair: item.id, item },
+        { key: `${item.id}-b`, pair: item.id, item }
+      ])));
+      setOpen([]);
+      setMatched([]);
+      setLevelMoves(0);
+      setLocked(false);
+      setLevelSuccess(false);
+      setCurrentLevelIdx(idx);
+      if (typeof totalMovesSoFar === "number") {
+        setAccumulatedMoves(totalMovesSoFar);
+      }
+    }
+
     (0, import_react.useEffect)(() => {
       if (open.length !== 2) return void 0;
       const [first, second] = open.map((key) => cards.find((card) => card.key === key));
@@ -1249,33 +1529,58 @@
       }, isMatch ? 600 : 950);
       return () => clearTimeout(timer);
     }, [open, cards]);
+
     (0, import_react.useEffect)(() => {
-      if (matched.length === memoryItems.length) {
-        const timer = setTimeout(() => onFinish({ type: "memory", moves, total: memoryItems.length }), 500);
+      if (cards.length > 0 && matched.length === currentConfig.pairs) {
+        setLevelSuccess(true);
+        const timer = setTimeout(() => {
+          const nextMoves = accumulatedMoves + levelMoves;
+          if (currentLevelIdx < levelConfigs.length - 1) {
+            startLevel(currentLevelIdx + 1, nextMoves);
+          } else {
+            onFinish({ type: "memory", moves: nextMoves, total: 18 });
+          }
+        }, 1200);
         return () => clearTimeout(timer);
       }
       return void 0;
-    }, [matched, memoryItems, moves, onFinish]);
+    }, [matched, currentConfig, currentLevelIdx, accumulatedMoves, levelMoves, onFinish, cards]);
+
     function turn(card) {
-      if (locked || open.includes(card.key) || matched.includes(card.pair)) return;
-      if (open.length === 0) setMoves((value) => value + 1);
+      if (locked || open.includes(card.key) || matched.includes(card.pair) || levelSuccess) return;
+      if (open.length === 0) setLevelMoves((value) => value + 1);
       if (open.length === 1) setLocked(true);
       setOpen((values) => [...values, card.key]);
     }
+
+    const totalMoves = accumulatedMoves + levelMoves;
+
     return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", { className: "game-shell memory-page", style: { "--theme": gameColors.color, "--theme-light": gameColors.light }, children: [
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "game-topbar", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "back-button", onClick: onExit, children: "\xD7 Sair do jogo" }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { className: "score-chip", children: [
-          "Jogadas ",
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: moves })
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { style: { display: "flex", gap: "10px", alignItems: "center" }, children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { className: "score-chip", children: [
+            "N\xEDvel ",
+            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("b", { children: [currentConfig.level, "/3"] })
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { className: "score-chip", children: [
+            "Jogadas ",
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: totalMoves })
+          ] })
         ] })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Progress, { current: matched.length, total: memoryItems.length, label: "Pares encontrados" }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Progress, { current: matched.length, total: currentConfig.pairs, label: `N\xEDvel ${currentConfig.level} \xB7 Pares encontrados` }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "memory-heading", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "theme-pill", children: "9 pares \xB7 18 cart\xF5es" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { className: "theme-pill", children: ["N\xCDVEL ", currentConfig.level, " DE 3 \xB7 ", currentConfig.label] }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", { children: "Encontra as duas imagens iguais" })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", { className: "memory-grid", children: cards.map((card) => {
+      levelSuccess && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "level-toast", style: { margin: "0 auto 16px", padding: "12px 24px", background: "#4caf50", color: "#fff", borderRadius: "12px", fontWeight: "bold", textAlign: "center", maxWidth: "400px" }, children: [
+        "\u2728 N\xEDvel ",
+        currentConfig.level,
+        " Conclu\xEDdo! ",
+        currentLevelIdx < 2 ? "A preparar o pr\xF3ximo n\xEDvel..." : "Parab\xE9ns!"
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", { className: `memory-grid level-${currentConfig.level}`, children: cards.map((card) => {
         const visible = open.includes(card.key) || matched.includes(card.pair);
         return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
           "button",
@@ -1369,6 +1674,33 @@
   function Page() {
     const [screen, setScreen] = (0, import_react.useState)("home");
     const [result, setResult] = (0, import_react.useState)(null);
+    (0, import_react.useEffect)(() => {
+      function purgeOverlays() {
+        if (typeof document === "undefined") return;
+        const targets = document.querySelectorAll(
+          '[class*="extension"], [id*="extension"], [class*="toaster"], [class*="sleex"], [class*="be_skin"], [id*="sleex"], [id*="be_skin"]'
+        );
+        targets.forEach((el) => {
+          if (el.id === "root" || el.tagName === "SCRIPT" || el.tagName === "BODY" || el.tagName === "HTML" || el.tagName === "HEAD") return;
+          try {
+            el.remove();
+          } catch (e) {
+            el.style.display = "none";
+          }
+        });
+      }
+      purgeOverlays();
+      const interval = setInterval(purgeOverlays, 60);
+      let observer = null;
+      if (typeof window !== "undefined" && window.MutationObserver && document.documentElement) {
+        observer = new MutationObserver(purgeOverlays);
+        observer.observe(document.documentElement, { childList: true, subtree: true });
+      }
+      return () => {
+        clearInterval(interval);
+        if (observer) observer.disconnect();
+      };
+    }, []);
     const compact = (0, import_react.useMemo)(() => screen !== "home", [screen]);
     function home() {
       setScreen("home");

@@ -6,680 +6,934 @@ Author website: https://freebootstrap.net/
 License: https://freebootstrap.net/license
 -->
 <html lang="pt">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DentLGP | LGP, educação e saúde oral</title>
-    <meta name="description" content="A DentLGP cria recursos educativos bilingues que ligam a Língua Gestual Portuguesa, o português escrito e a Medicina Dentária.">
-    <meta property="og:title" content="DentLGP | LGP, educação e saúde oral">
-    <meta property="og:description" content="Conheça a DentLGP e o Kit Sorriso Bilingue: recursos físicos e digitais para aprender saúde oral através da LGP, da imagem e do português escrito.">
-     
-    <!-- ======= Google Font =======-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
-    <!-- End Google Font-->
-    
-    <!-- ======= Styles =======-->
-    <link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendors/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link href="assets/vendors/glightbox/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="assets/vendors/aos/aos.css" rel="stylesheet">
-    <!-- End Styles-->
-    
-    <!-- ======= Theme Style =======-->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <!-- End Theme Style-->
-    
-    <!-- ======= Apply theme =======-->
-    <script>
-      // Apply the theme as early as possible to avoid flicker
-      (function() {
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <title>DentLGP | LGP, educação e saúde oral</title>
+  <meta name="description"
+    content="A DentLGP cria recursos educativos bilingues que ligam a Língua Gestual Portuguesa, o português escrito e a Medicina Dentária.">
+  <link rel="canonical" href="https://dentlgp.pt/">
+  <meta property="og:url" content="https://dentlgp.pt/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DentLGP | LGP, educação e saúde oral">
+  <meta property="og:description"
+    content="Conheça a DentLGP e o Kit Sorriso Bilingue: recursos físicos e digitais para aprender saúde oral através da LGP, da imagem e do português escrito.">
+
+  <!-- ======= Schema.org JSON-LD Structured Data ======= -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "DentLGP | LGP, educação e saúde oral",
+    "url": "https://dentlgp.pt/",
+    "description": "A DentLGP cria recursos educativos bilingues que ligam a Língua Gestual Portuguesa, o português escrito e a Medicina Dentária.",
+    "inLanguage": ["pt-PT", "por"],
+    "educationalUse": "Saúde Oral, Língua Gestual Portuguesa, Educação Bilingue",
+    "publisher": {
+      "@type": "Organization",
+      "name": "DentLGP",
+      "url": "https://dentlgp.pt/"
+    }
+  }
+  </script>
+
+  <!-- ======= Google Font =======-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- End Google Font-->
+
+  <!-- ======= Styles =======-->
+  <link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendors/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/vendors/glightbox/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendors/aos/aos.css" rel="stylesheet">
+  <!-- End Styles-->
+
+  <!-- ======= Theme Style =======-->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- End Theme Style-->
+
+  <!-- ======= Apply theme =======-->
+  <script>
+    // Apply the theme as early as possible to avoid flicker
+    (function () {
       const storedTheme = localStorage.getItem('theme') || 'light';
       document.documentElement.setAttribute('data-bs-theme', storedTheme);
-      })();
-    </script>
-  </head>
-  <body>
-    
-    
-    <!-- ======= Site Wrap =======-->
-    <div class="site-wrap">
-      
-      
-      <!-- ======= Header =======-->
-      <header class="fbs__net-navbar navbar navbar-expand-lg bg-white" aria-label="DentLGP navbar">
-        <div class="container d-flex align-items-center justify-content-between">
-          
-          
-          <!-- Start Logo-->
-          <a class="navbar-brand w-auto d-flex align-items-center" href="index.html">
-            <img class="logo img-fluid" src="assets/images/dentlgp/logo dentlgp.png" alt="DentLGP" style="height: 75px !important; max-height: 75px !important; width: auto !important; object-fit: contain; margin-top: -15px; margin-bottom: -15px;">
-          </a>
-          <!-- End Logo-->
-          
-          <!-- Start offcanvas-->
-          <div class="offcanvas offcanvas-start w-75" id="fbs__net-navbars" tabindex="-1" aria-labelledby="fbs__net-navbarsLabel">
-            
-            
-            <div class="offcanvas-header">
-              <div class="offcanvas-header-logo">
-                <a class="logo-link d-flex align-items-center" id="fbs__net-navbarsLabel" href="index.html">
-                  <img class="logo img-fluid" src="assets/images/dentlgp/logo dentlgp.png" alt="DentLGP" style="height: 75px !important; max-height: 75px !important; width: auto !important; object-fit: contain; margin-top: -15px; margin-bottom: -15px;">
-                </a>
-              </div>
-              <button class="btn-close btn-close-black" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    })();
+  </script>
+</head>
+
+<body>
+
+
+  <!-- ======= Site Wrap =======-->
+  <div class="site-wrap">
+
+
+    <!-- ======= Header =======-->
+    <header class="fbs__net-navbar navbar navbar-expand-lg bg-white" aria-label="DentLGP navbar">
+      <div class="container d-flex align-items-center justify-content-between">
+
+
+        <!-- Start Logo-->
+        <a class="navbar-brand w-auto d-flex align-items-center" href="index.html">
+          <img class="logo img-fluid" src="assets/images/dentlgp/logo dentlgp.png" alt="DentLGP"
+            style="height: 75px !important; max-height: 75px !important; width: auto !important; object-fit: contain; margin-top: -15px; margin-bottom: -15px;">
+        </a>
+        <!-- End Logo-->
+
+        <!-- Start offcanvas-->
+        <div class="offcanvas offcanvas-start w-75" id="fbs__net-navbars" tabindex="-1"
+          aria-labelledby="fbs__net-navbarsLabel">
+
+
+          <div class="offcanvas-header">
+            <div class="offcanvas-header-logo">
+              <a class="logo-link d-flex align-items-center" id="fbs__net-navbarsLabel" href="index.html">
+                <img class="logo img-fluid" src="assets/images/dentlgp/logo dentlgp.png" alt="DentLGP"
+                  style="height: 75px !important; max-height: 75px !important; width: auto !important; object-fit: contain; margin-top: -15px; margin-bottom: -15px;">
+              </a>
             </div>
-            
-            <div class="offcanvas-body align-items-lg-center">
-              
-              
-              <ul class="navbar-nav nav me-auto ps-lg-4 mb-2 mb-lg-0 d-flex align-items-center flex-nowrap">
-                <li class="nav-item"><a class="nav-link scroll-link active" aria-current="page" href="#home">Início</a></li>
-                <li class="nav-item"><a class="nav-link scroll-link" href="#about">Sobre a DentLGP</a></li>
-                <li class="nav-item"><a class="nav-link scroll-link" href="#pricing">Kit Sorriso Bilingue</a></li>
-                <li class="nav-item"><a class="nav-link scroll-link" href="#services">O que fazemos?</a></li>
-                <li class="nav-item"><a class="nav-link scroll-link" href="#contact">Contactos</a></li>
-              </ul>
-              
-            </div>
+            <button class="btn-close btn-close-black" type="button" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
           </div>
-          <!-- End offcanvas-->
-          
-          <div class="ms-auto w-auto">
-            
-            
-            <div class="header-social d-flex align-items-center gap-1"><a class="btn btn-white p-0 d-inline-flex align-items-center justify-content-center rounded-3 shadow-sm" href="kit-sorriso-bilingue.html" title="Jogar agora - Kit Sorriso Bilingue" style="background-color: #ffffff !important; border: 0.5px solid rgba(0, 40, 104, 0.4) !important; height: 42px; overflow: hidden; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'"><img src="assets/images/kit jogo sorriso bilingue/jogar agora - logo kit sorriso bilingue.png" alt="Jogar agora - Kit Sorriso Bilingue" style="height: 100%; max-height: 42px; width: auto; object-fit: contain;"></a>
-              
-              <button class="fbs__net-navbar-toggler justify-content-center align-items-center ms-auto" data-bs-toggle="offcanvas" data-bs-target="#fbs__net-navbars" aria-controls="fbs__net-navbars" aria-label="Toggle navigation" aria-expanded="false">
-                <svg class="fbs__net-icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="21" x2="3" y1="6" y2="6"></line>
-                  <line x1="15" x2="3" y1="12" y2="12"></line>
-                  <line x1="17" x2="3" y1="18" y2="18"></line>
-                </svg>
-                <svg class="fbs__net-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 6 6 18"></path>
-                  <path d="m6 6 12 12"></path>
-                </svg>
-              </button>
-              
-            </div>
-            
+
+          <div class="offcanvas-body align-items-lg-center">
+
+
+            <ul class="navbar-nav nav me-auto ps-lg-4 mb-2 mb-lg-0 d-flex align-items-center flex-nowrap">
+              <li class="nav-item"><a class="nav-link scroll-link active" aria-current="page" href="#home">Início</a>
+              </li>
+              <li class="nav-item"><a class="nav-link scroll-link" href="#about">Sobre a DentLGP</a></li>
+              <li class="nav-item"><a class="nav-link scroll-link" href="#pricing">Kit Sorriso Bilingue</a></li>
+              <li class="nav-item"><a class="nav-link scroll-link" href="#services">O que fazemos?</a></li>
+              <li class="nav-item"><a class="nav-link scroll-link" href="#contact">Contactos</a></li>
+              <li class="nav-item d-lg-none mt-3 pt-3 border-top w-100 text-center">
+                <a class="btn w-100 d-inline-flex align-items-center justify-content-center p-2 rounded-3 shadow-sm"
+                  href="kit-sorriso-bilingue.html"
+                  style="background-color: #ffffff !important; border: 1.5px solid #002868 !important; height: 50px;">
+                  <img src="assets/images/kit jogo sorriso bilingue/jogar agora - logo kit sorriso bilingue.png"
+                    alt="Jogar agora - Kit Sorriso Bilingue" style="height: 42px; width: auto; object-fit: contain;">
+                </a>
+              </li>
+            </ul>
+
           </div>
         </div>
-      </header>
-      <!-- End Header-->
-      
-      <!-- ======= Main =======-->
-      <main>
-        
-        
-        <!-- ======= Hero =======-->
-        <section class="hero__v6 section" id="home">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-6 mb-4 mb-lg-0">
-                <div class="row">
-                  <div class="col-lg-11"><span class="hero-subtitle text-uppercase" data-aos="fade-up" data-aos-delay="0">LGP • EDUCAÇÃO • SAÚDE ORAL</span>
-                    <h1 class="hero-title mb-3" data-aos="fade-up" data-aos-delay="100">Ligamos a Língua Gestual Portuguesa à Medicina Dentária</h1>
-                    <p class="hero-description mb-3 mb-lg-3" data-aos="fade-up" data-aos-delay="200">A DentLGP desenvolve recursos educativos bilingues e multimodais que combinam Língua Gestual Portuguesa, português escrito, imagem, vídeo e atividades interativas.</p>
-                    <div class="cta d-flex flex-wrap gap-3" data-aos="fade-up" data-aos-delay="300"><a class="btn btn-lg scroll-link px-4 py-3" href="#about" style="font-size: 1.05rem;">Conhecer a DentLGP</a><a class="btn btn-lg btn-white-outline px-4 py-3" href="kit-sorriso-bilingue.html" style="font-size: 1.05rem;">Descobrir o Kit Sorriso Bilingue 
-                        <svg class="lucide lucide-arrow-up-right ms-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <path d="M7 7h10v10"></path>
-                          <path d="M7 17 17 7"></path>
-                        </svg></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="hero-img"><img class="img-card img-fluid" src="assets/images/card-expenses.png" alt="Card DentLGP" data-aos="fade-down" data-aos-delay="600"><img class="img-main img-fluid rounded-4" src="assets/images/hero-img-1-min.jpg" alt="DentLGP Hero" data-aos="fade-in" data-aos-delay="500"></div>
-              </div>
-            </div>
-          </div>
-          <!-- End Hero-->
-        </section>
-        <!-- End Hero-->
-        
-        <!-- ======= About =======-->
-        <section class="about__v4 section pt-4 pt-lg-4" id="about">
-          <div class="container">
-            <div class="row align-items-center g-4 g-lg-5">
-              <div class="col-lg-6"> 
-                <div class="img-wrap position-relative"><img class="img-fluid rounded-4" src="assets/images/about_2-min.jpg" alt="DentLGP Sobre Nós" data-aos="fade-up" data-aos-delay="0">
-                  <div class="mission-statement p-4 rounded-4 d-flex gap-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="mission-icon text-center rounded-circle"><i class="bi bi-lightbulb fs-4"></i></div>
-                    <div>
-                      <h3 class="text-uppercase fw-bold">A Nossa Missão</h3>
-                      <p class="fs-6 mb-0">Desenvolver recursos educativos bilingues e multimodais que facilitem a aprendizagem e promovam a educação para a saúde oral junto das crianças Surdas.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="ps-lg-3">
-                  <span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">Sobre a DentLGP</span>
-                  <h2 class="mb-4" data-aos="fade-up" data-aos-delay="100">Criamos pontes entre comunicação, educação e saúde oral</h2>
-                  <div data-aos="fade-up" data-aos-delay="200">
-                    <p>A DentLGP é um projeto educativo que nasceu com o objetivo de aproximar a Língua Gestual Portuguesa da educação para a saúde oral e da Medicina Dentária. O seu desenvolvimento parte da necessidade de tornar a informação sobre saúde oral mais clara, visual, acessível e adequada aos alunos Surdos.</p>
-                    <p>Ao integrar o vocabulário em LGP, o português escrito, imagens ilustrativas e atividades pedagógicas, o projeto procura promover a autonomia, a prevenção e a literacia em saúde oral.</p>
-                  </div>
-                  <h4 class="small fw-bold mt-4 mb-3" data-aos="fade-up" data-aos-delay="300">Valores e Visão</h4>
-                  <ul class="d-flex flex-row flex-wrap list-unstyled gap-2 features" data-aos="fade-up" data-aos-delay="400">
-                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i class="bi bi-check"></i></span><span class="text">Respeito pela LGP</span></li>
-                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i class="bi bi-check"></i></span><span class="text">Acessibilidade linguística</span></li>
-                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i class="bi bi-check"></i></span><span class="text">Educação bilingue</span></li>
-                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i class="bi bi-check"></i></span><span class="text">Clareza visual</span></li>
-                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i class="bi bi-check"></i></span><span class="text">Rigor pedagógico</span></li>
-                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i class="bi bi-check"></i></span><span class="text">Aprendizagem participativa</span></li>
-                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i class="bi bi-check"></i></span><span class="text">Articulação educação/saúde</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End About-->
-        
-        <!-- ======= Features / A Nossa Abordagem =======-->
-        <section class="section features__v2" id="features">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="p-5 rounded-4 content" data-aos="fade-in" data-aos-delay="0">
-                  <div class="row g-4 g-lg-5 align-items-center">
-                    <div class="col-lg-5" data-aos="fade-up" data-aos-delay="0">
-                      <span class="subtitle text-uppercase mb-3 d-block" style="color: rgba(255, 255, 255, 0.8);">A Nossa Abordagem</span>
-                      <h2 class="mb-3 text-white">O que torna a DentLGP diferente?</h2>
-                      <p class="mb-4 text-white-50">Combinamos estratégias visuais e bilingues para aproximar a Língua Gestual Portuguesa da educação para a saúde oral, promovendo a acessibilidade e o rigor pedagógico.</p>
-                      <a class="btn btn-white-outline scroll-link" href="#pricing"><i class="bi bi-arrow-right me-1"></i> Conhecer o nosso projeto</a>
-                    </div>
-                    <div class="col-lg-7">
-                      <div class="row g-4">
-                        <div class="col-sm-6" data-aos="fade-up" data-aos-delay="0">
-                          <div class="p-4 rounded-4 h-100" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.18);">
-                            <div class="icon mb-3 d-inline-flex align-items-center justify-content-center rounded-circle" style="width: 42px; height: 42px; background: rgba(255, 255, 255, 0.2); color: #ffffff;">
-                              <i class="bi bi-translate fs-5"></i>
-                            </div>
-                            <h3 class="fs-6 fw-bold mb-2 text-white">Conteúdo bilingue</h3>
-                            <p class="small mb-0" style="color: rgba(255, 255, 255, 0.8) !important;">Articulação pedagógica entre Língua Gestual Portuguesa e português escrito.</p>
-                          </div>
-                        </div>
-                        <div class="col-sm-6" data-aos="fade-up" data-aos-delay="100">
-                          <div class="p-4 rounded-4 h-100" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.18);">
-                            <div class="icon mb-3 d-inline-flex align-items-center justify-content-center rounded-circle" style="width: 42px; height: 42px; background: rgba(255, 255, 255, 0.2); color: #ffffff;">
-                              <i class="bi bi-layers fs-5"></i>
-                            </div>
-                            <h3 class="fs-6 fw-bold mb-2 text-white">Aprendizagem multimodal</h3>
-                            <p class="small mb-0" style="color: rgba(255, 255, 255, 0.8) !important;">Uso de imagem, texto, vídeo em LGP e componentes lúdicos no mesmo material.</p>
-                          </div>
-                        </div>
-                        <div class="col-sm-6" data-aos="fade-up" data-aos-delay="200">
-                          <div class="p-4 rounded-4 h-100" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.18);">
-                            <div class="icon mb-3 d-inline-flex align-items-center justify-content-center rounded-circle" style="width: 42px; height: 42px; background: rgba(255, 255, 255, 0.2); color: #ffffff;">
-                              <i class="bi bi-box-seam fs-5"></i>
-                            </div>
-                            <h3 class="fs-6 fw-bold mb-2 text-white">Recursos físicos e digitais</h3>
-                            <p class="small mb-0" style="color: rgba(255, 255, 255, 0.8) !important;">Integração entre cartões físicos e atividades interativas online.</p>
-                          </div>
-                        </div>
-                        <div class="col-sm-6" data-aos="fade-up" data-aos-delay="300">
-                          <div class="p-4 rounded-4 h-100" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.18);">
-                            <div class="icon mb-3 d-inline-flex align-items-center justify-content-center rounded-circle" style="width: 42px; height: 42px; background: rgba(255, 255, 255, 0.2); color: #ffffff;">
-                              <i class="bi bi-heart-pulse fs-5"></i>
-                            </div>
-                            <h3 class="fs-6 fw-bold mb-2 text-white">Contextos reais de saúde oral</h3>
-                            <p class="small mb-0" style="color: rgba(255, 255, 255, 0.8) !important;">Organização em temas práticos da clínica, estruturas da boca e higiene diária.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End Features-->
-        
-        <!-- ======= Kit Sorriso Bilingue =======-->
-        <section class="section pricing__v2" id="pricing">
-          <div class="container">
-            <div class="row mb-5">
-              <div class="col-md-8 mx-auto text-center">
-                <span class="subtitle text-uppercase mb-3 d-inline-block px-3 py-1 rounded-pill fw-bold" data-aos="fade-up" data-aos-delay="0" style="background-color: #EBF8FA; color: #00A3C4; letter-spacing: 1px; font-size: 0.8rem; border: 1px solid rgba(0, 163, 196, 0.25);">1.º Projeto DentLGP &bull; Destaques</span>
-                <h2 class="mb-3 fw-bold" data-aos="fade-up" data-aos-delay="100" style="color: #002868; font-size: 2.3rem;">Kit Sorriso Bilingue</h2>
-                <p class="mb-0" data-aos="fade-up" data-aos-delay="200" style="font-size: 1.05rem; line-height: 1.65; color: #334155; font-weight: 400;">O <strong>1.º projeto da DentLGP</strong>: um recurso pedagógico bilingue dedicado à<br class="d-none d-md-inline"> Medicina Dentária e à Saúde Oral, pensado especialmente para alunos Surdos do 1.º Ciclo.</p>
-              </div>
-            </div>
-            <div class="row g-4">
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="p-5 rounded-4 price-table h-100 d-flex flex-column justify-content-between">
-                  <div>
-                    <h3 class="mb-3" style="color: #002868;">Kit físico de aprendizagem</h3>
-                    <p class="mb-4 text-muted">Caixa ilustrada com 81 cartões combinando ilustrações apelativas, vocabulário em LGP acessível por QR Code, frases contextualizadas, atividades e materiais pedagógicos de apoio para exploração em sala de aula ou em família.</p>
-                  </div>
-                  <div class="mt-3 text-center">
-                    <img src="assets/images/card-expenses2.png" alt="Kit Físico de Aprendizagem" class="img-fluid" style="max-height: 220px; object-fit: contain; filter: drop-shadow(0 15px 25px rgba(0, 40, 104, 0.15));">
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="p-5 rounded-4 price-table popular h-100 d-flex flex-column justify-content-between">
-                  <div>
-                    <h3 class="mb-3 text-white">Jogo online do Kit Sorriso Bilingue</h3>
-                    <p class="mb-4 text-white" style="color: #ffffff !important; opacity: 1;">Plataforma interativa online com 3 temas principais, 18 conceitos de saúde oral, 5 atividades lúdicas digitais, vídeos em LGP e desafios de associação e memória.</p>
-                    <div class="my-3 text-center">
-                      <img src="assets/images/kit jogo sorriso bilingue/jogo-online-print.png" alt="Jogo Online do Kit Sorriso Bilingue" class="img-fluid rounded-3" style="max-height: 220px; object-fit: contain; filter: drop-shadow(0 15px 25px rgba(0, 40, 104, 0.25));">
-                    </div>
-                  </div>
-                  <div class="w-100"><a class="btn btn-white hover-outline w-100 py-3 text-center fw-bold fs-6" href="kit-sorriso-bilingue.html">Explorar o jogo online <i class="bi bi-box-arrow-right ms-2"></i></a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End Pricing / Kit Sorriso Bilingue-->
-        
-        <!-- ======= How it works =======-->
-        <section class="section howitworks__v1" id="how-it-works">
-          <div class="container">
-            <div class="row mb-5">
-              <div class="col-md-7 text-center mx-auto"><span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">Metodologia</span>
-                <h2 data-aos="fade-up" data-aos-delay="100" style="color: #002868;">Como funciona a aprendizagem</h2>
-                <p data-aos="fade-up" data-aos-delay="200">O Kit Sorriso Bilingue foi concetualizado para permitir uma exploração flexível e articulada entre diferentes canais de comunicação.</p>
-              </div>
-            </div>
-            <div class="row g-md-5">
-              <div class="col-md-6 col-lg-3">
-                <div class="step-card text-center h-100 d-flex flex-column justify-content-start position-relative" data-aos="fade-up" data-aos-delay="0">
-                  <div data-aos="fade-right" data-aos-delay="500"><img class="arch-line" src="assets/images/arch-line.svg" alt="DentLGP"></div><span class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">1</span>
-                  <div>
-                    <h3 class="fs-5 mb-4" style="color: #002868;">Observar a imagem</h3>
-                    <p class="text-muted">A criança explora a ilustração apelativa representativa do conceito de saúde oral no cartão ou no jogo digital.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
-                <div class="step-card reverse text-center h-100 d-flex flex-column justify-content-start position-relative">
-                  <div data-aos="fade-right" data-aos-delay="1100"><img class="arch-line reverse" src="assets/images/arch-line-reverse.svg" alt="DentLGP"></div><span class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">2</span>
-                  <h3 class="fs-5 mb-4" style="color: #002868;">Ler em português</h3>
-                  <p class="text-muted">Acompanha a palavra e frases contextualizadas em português escrito para reforço de vocabulário e leitura.</p>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="1200">
-                <div class="step-card text-center h-100 d-flex flex-column justify-content-start position-relative">
-                  <div data-aos="fade-right" data-aos-delay="1700"><img class="arch-line" src="assets/images/arch-line.svg" alt="DentLGP"></div><span class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">3</span>
-                  <h3 class="fs-5 mb-4" style="color: #002868;">Ver o vídeo em LGP</h3>
-                  <p class="text-muted">Acede à explicação em vídeo na Língua Gestual Portuguesa através do QR Code ou diretamente no jogo digital.</p>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="1800">
-                <div class="step-card last text-center h-100 d-flex flex-column justify-content-start position-relative"><span class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">4</span>
-                  <div>
-                    <h3 class="fs-5 mb-4" style="color: #002868;">Aprender pelo jogo</h3>
-                    <p class="text-muted">Consolida os conhecimentos através das 5 atividades interativas digitais de associação e memória.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End How it works-->
-        
-        <!-- ======= Stats / Números do Projeto =======-->
-        <section class="stats__v3 section">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="d-flex flex-wrap content rounded-4" style="background: linear-gradient(135deg, #002868 0%, #00A3C4 100%); color: #ffffff;" data-aos="fade-up" data-aos-delay="0">
-                  <div class="rounded-borders">
-                    <div class="rounded-border-1"></div>
-                    <div class="rounded-border-2"></div>
-                    <div class="rounded-border-3"></div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="100">
-                    <div class="stat-item">
-                      <h3 class="fs-1 fw-bold text-white"><span class="purecounter" data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="2">0</span></h3>
-                      <p class="mb-0 text-white-50">Conceitos de saúde oral</p>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="200">
-                    <div class="stat-item">
-                      <h3 class="fs-1 fw-bold text-white"><span class="purecounter" data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="2">0</span></h3>
-                      <p class="mb-0 text-white-50">Atividades digitais online</p>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="300">
-                    <div class="stat-item">
-                      <h3 class="fs-1 fw-bold text-white"><span class="purecounter" data-purecounter-start="0" data-purecounter-end="81" data-purecounter-duration="2">0</span></h3>
-                      <p class="mb-0 text-white-50">Cartões do kit físico</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End Stats-->
-        
-        <!-- ======= Services / Áreas de Trabalho =======-->
-        <section class="section services__v3" id="services">
-          <div class="container">
-            <div class="row mb-5">
-              <div class="col-md-8 mx-auto text-center"><span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">Áreas de Trabalho</span>
-                <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100" style="color: #002868;">O que fazemos na DentLGP?</h2>
-                <p class="text-muted" data-aos="fade-up" data-aos-delay="200">Criamos recursos que aproximam a educação bilingue, a LGP e a saúde oral através de conteúdos educativos, design visual e tecnologia.</p>
-              </div>
-            </div>
-            <div class="row g-4">
-              <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
-                <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-4">
-                  <div><span class="icon mb-4 d-inline-block p-3 rounded-circle" style="background-color: rgba(0, 163, 196, 0.15); color: #00A3C4;">
-                      <i class="bi bi-chat-quote fs-3"></i></span>
-                    <h3 class="fs-5 mb-3" style="color: #002868;">Recursos educativos bilingues</h3>
-                    <p class="mb-4 text-muted">Desenvolvemos materiais que articulam Língua Gestual Portuguesa e português escrito, respeitando a função de cada língua na aprendizagem.</p>
-                  </div><a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none scroll-link" href="#pricing"><span class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i class="icon-2 bi bi-arrow-right-short"> </i></span><span style="color: #002868; font-weight: 600;">Saber mais</span></a>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-4">
-                  <div><span class="icon mb-4 d-inline-block p-3 rounded-circle" style="background-color: rgba(0, 163, 196, 0.15); color: #00A3C4;">
-                      <i class="bi bi-journal-medical fs-3"></i></span>
-                    <h3 class="fs-5 mb-3" style="color: #002868;">Vocabulário de Medicina Dentária</h3>
-                    <p class="mb-4 text-muted">Organizamos conceitos relacionados com profissionais, espaços, instrumentos, estruturas da boca, tratamentos e cuidados de higiene oral.</p>
-                  </div><a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none scroll-link" href="#pricing"><span class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i class="icon-2 bi bi-arrow-right-short"> </i></span><span style="color: #002868; font-weight: 600;">Saber mais</span></a>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-4">
-                  <div><span class="icon mb-4 d-inline-block p-3 rounded-circle" style="background-color: rgba(0, 163, 196, 0.15); color: #00A3C4;">
-                      <i class="bi bi-camera-reels fs-3"></i></span>
-                    <h3 class="fs-5 mb-3" style="color: #002868;">Vídeos em LGP</h3>
-                    <p class="mb-4 text-muted">Integramos vídeos em Língua Gestual Portuguesa nos recursos físicos e digitais, permitindo o acesso visual aos conceitos apresentados.</p>
-                  </div><a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none scroll-link" href="#pricing"><span class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i class="icon-2 bi bi-arrow-right-short"> </i></span><span style="color: #002868; font-weight: 600;">Saber mais</span></a>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-4">
-                  <div><span class="icon mb-4 d-inline-block p-3 rounded-circle" style="background-color: rgba(0, 163, 196, 0.15); color: #00A3C4;">
-                      <i class="bi bi-card-checklist fs-3"></i></span>
-                    <h3 class="fs-5 mb-3" style="color: #002868;">Cartões e materiais físicos</h3>
-                    <p class="mb-4 text-muted">Criamos cartões ilustrados, frases contextualizadas, atividades de compreensão e materiais de apoio para utilização educativa.</p>
-                  </div><a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none scroll-link" href="#pricing"><span class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i class="icon-2 bi bi-arrow-right-short"> </i></span><span style="color: #002868; font-weight: 600;">Saber mais</span></a>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-4">
-                  <div><span class="icon mb-4 d-inline-block p-3 rounded-circle" style="background-color: rgba(0, 163, 196, 0.15); color: #00A3C4;">
-                      <i class="bi bi-controller fs-3"></i></span>
-                    <h3 class="fs-5 mb-3" style="color: #002868;">Jogos educativos digitais</h3>
-                    <p class="mb-4 text-muted">Transformamos conteúdos de saúde oral em atividades digitais de associação, escolha, memória e exploração interativa.</p>
-                  </div><a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none scroll-link" href="#pricing"><span class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i class="icon-2 bi bi-arrow-right-short"> </i></span><span style="color: #002868; font-weight: 600;">Saber mais</span></a>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-                <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-4">
-                  <div><span class="icon mb-4 d-inline-block p-3 rounded-circle" style="background-color: rgba(0, 163, 196, 0.15); color: #00A3C4;">
-                      <i class="bi bi-people fs-3"></i></span>
-                    <h3 class="fs-5 mb-3" style="color: #002868;">Apoio à utilização pedagógica</h3>
-                    <p class="mb-4 text-muted">Organizamos os materiais de forma a facilitar a sua utilização por docentes, educadores, famílias e outros profissionais que acompanham crianças Surdas.</p>
-                  </div><a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none scroll-link" href="#pricing"><span class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i class="icon-2 bi bi-arrow-right-short"> </i></span><span style="color: #002868; font-weight: 600;">Saber mais</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End Services-->
-        
-        <!-- ======= Para Quem Criamos =======-->
-        <section class="section testimonials__v2" id="testimonials">
-          <div class="container">
-            <div class="row mb-5">
-              <div class="col-lg-7 mx-auto text-center"><span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">Públicos-Alvo</span>
-                <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100" style="color: #002868;">Recursos pensados para diferentes contextos</h2>
-                <p data-aos="fade-up" data-aos-delay="200">Os materiais da DentLGP podem apoiar a aprendizagem, a comunicação e a educação para a saúde oral em diferentes ambientes.</p>
-              </div>
-            </div>
-            <div class="row g-4">
-              <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
-                <div class="testimonial rounded-4 p-4 h-100 d-flex flex-column justify-content-between" style="border: 1px solid rgba(0, 40, 104, 0.12); background-color: #ffffff;">
-                  <blockquote class="mb-3">
-                    <h3 class="fs-5 mb-2" style="color: #002868;">Alunos Surdos</h3>
-                    <p class="text-muted mb-0 small">Recursos visuais e bilingues pensados especialmente para alunos Surdos do 1.º Ciclo, respeitando a importância da LGP no acesso à informação.</p>
-                  </blockquote>
-                  <div class="testimonial-author d-flex gap-3 align-items-center">
-                    <div class="author-img"><img class="rounded-circle img-fluid" src="assets/images/avatar_alunos_surdos.png" alt="Alunos Surdos"></div>
-                    <div class="lh-base"><strong class="d-block" style="color: #002868;">Alunos do 1.º Ciclo</strong><span>Educação Bilingue</span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="testimonial rounded-4 p-4 h-100 d-flex flex-column justify-content-between" style="border: 1px solid rgba(0, 40, 104, 0.12); background-color: #ffffff;">
-                  <blockquote class="mb-3">
-                    <h3 class="fs-5 mb-2" style="color: #002868;">Docentes e educadores</h3>
-                    <p class="text-muted mb-0 small">Materiais que podem ser utilizados na exploração de vocabulário, leitura, compreensão, educação para a saúde e atividades bilingues.</p>
-                  </blockquote>
-                  <div class="testimonial-author d-flex gap-3 align-items-center">
-                    <div class="author-img"><img class="rounded-circle img-fluid" src="assets/images/avatar_docentes.png" alt="Docentes"></div>
-                    <div class="lh-base"><strong class="d-block" style="color: #002868;">Professores e Educadores</strong><span>Contexto Escolar</span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="testimonial rounded-4 p-4 h-100 d-flex flex-column justify-content-between" style="border: 1px solid rgba(0, 40, 104, 0.12); background-color: #ffffff;">
-                  <blockquote class="mb-3">
-                    <h3 class="fs-5 mb-2" style="color: #002868;">Famílias</h3>
-                    <p class="text-muted mb-0 small">Recursos que ajudam as famílias a conversar sobre higiene oral, consultas, prevenção e cuidados diários de forma acessível e lúdica.</p>
-                  </blockquote>
-                  <div class="testimonial-author d-flex gap-3 align-items-center">
-                    <div class="author-img"><img class="rounded-circle img-fluid" src="assets/images/avatar_familias.png" alt="Famílias"></div>
-                    <div class="lh-base"><strong class="d-block" style="color: #002868;">Famílias</strong><span>Acompanhamento no Lar</span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="testimonial rounded-4 p-4 h-100 d-flex flex-column justify-content-between" style="border: 1px solid rgba(0, 40, 104, 0.12); background-color: #ffffff;">
-                  <blockquote class="mb-3">
-                    <h3 class="fs-5 mb-2" style="color: #002868;">Profissionais de saúde oral</h3>
-                    <p class="text-muted mb-0 small">Materiais que podem apoiar a explicação de conceitos básicos e facilitar a preparação das crianças para o contacto com a clínica dentária.</p>
-                  </blockquote>
-                  <div class="testimonial-author d-flex gap-3 align-items-center">
-                    <div class="author-img"><img class="rounded-circle img-fluid" src="assets/images/avatar_profissionais_saude.png" alt="Profissionais de Saúde"></div>
-                    <div class="lh-base"><strong class="d-block" style="color: #002868;">Médicos Dentistas e Higienistas</strong><span>Clínicas e Consultórios</span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="testimonial rounded-4 p-4 h-100 d-flex flex-column justify-content-between" style="border: 1px solid rgba(0, 40, 104, 0.12); background-color: #ffffff;">
-                  <blockquote class="mb-3">
-                    <h3 class="fs-5 mb-2" style="color: #002868;">Escolas e instituições</h3>
-                    <p class="text-muted mb-0 small">Recursos que podem integrar projetos educativos relacionados com saúde oral, Língua Gestual Portuguesa, português escrito e literacia visual.</p>
-                  </blockquote>
-                  <div class="testimonial-author d-flex gap-3 align-items-center">
-                    <div class="author-img"><img class="rounded-circle img-fluid" src="assets/images/avatar_escolas.png" alt="Escolas"></div>
-                    <div class="lh-base"><strong class="d-block" style="color: #002868;">Agrupamentos de Escolas</strong><span>Projetos Institucionais</span></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Testimonials / Para Quem Criamos-->
-        
-        <!-- ======= FAQ =======-->
-        <section class="section faq__v2" id="faq">
-          <div class="container">
-            <div class="row mb-4">
-              <div class="col-md-8 mx-auto text-center"><span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">Perguntas Frequentes</span>
-                <h2 class="h2 fw-bold mb-3" data-aos="fade-up" data-aos-delay="0" style="color: #002868;">Conheça melhor a DentLGP<br>e o Kit Sorriso Bilingue</h2>
-                <p data-aos="fade-up" data-aos-delay="100">Encontre respostas às principais questões sobre o projeto educativo DentLGP, os seus objetivos e a utilização dos materiais.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-9 mx-auto" data-aos="fade-up" data-aos-delay="200">
-                <div class="faq-content">
-                  <div class="accordion custom-accordion" id="accordionPanelsStayOpenExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1" aria-expanded="true" aria-controls="faq-1"> O que é a DentLGP? </button>
-                      </h2>
-                      <div class="accordion-collapse collapse show" id="faq-1">
-                        <div class="accordion-body">A DentLGP é um projeto educativo que nasceu com o objetivo de desenvolver recursos pedagógicos bilingues que ligam a Língua Gestual Portuguesa, o português escrito e a Medicina Dentária, promovendo a literacia em saúde oral junto das crianças Surdas.</div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2" aria-expanded="false" aria-controls="faq-2"> A DentLGP e o Kit Sorriso Bilingue são a mesma coisa? </button>
-                      </h2>
-                      <div class="accordion-collapse collapse" id="faq-2">
-                        <div class="accordion-body">Não. A DentLGP é o projeto de investigação e desenvolvimento pedagógico no âmbito do qual é criado e estruturado o Kit Sorriso Bilingue, constituindo este o seu principal recurso pedagógico.</div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-3" aria-expanded="false" aria-controls="faq-3"> O que é o Kit Sorriso Bilingue? </button>
-                      </h2>
-                      <div class="accordion-collapse collapse" id="faq-3">
-                        <div class="accordion-body">É um recurso pedagógico bilingue dedicado à Medicina Dentária e à saúde oral. Inclui materiais físicos, cartões ilustrados, conteúdos em português, vídeos em LGP acessíveis por QR Code e um jogo digital.</div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-4" aria-expanded="false" aria-controls="faq-4"> A quem se destina? </button>
-                      </h2>
-                      <div class="accordion-collapse collapse" id="faq-4">
-                        <div class="accordion-body">Foi pensado especialmente para alunos Surdos do 1.º Ciclo. Também pode ser utilizado por docentes, educadores, famílias e profissionais que trabalhem conteúdos de saúde oral.</div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-5" aria-expanded="false" aria-controls="faq-5"> Como são apresentados os conteúdos em LGP? </button>
-                      </h2>
-                      <div class="accordion-collapse collapse" id="faq-5">
-                        <div class="accordion-body">Os conteúdos em LGP são apresentados em vídeo. Nos materiais físicos, o acesso é feito através de QR Codes. No jogo digital, os vídeos aparecem associados aos respetivos conceitos.</div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-6" aria-expanded="false" aria-controls="faq-6"> Quais são os temas trabalhados? </button>
-                      </h2>
-                      <div class="accordion-collapse collapse" id="faq-6">
-                        <div class="accordion-body">O Kit Sorriso Bilingue está organizado em três temas principais:
-                          <ol class="mt-2 mb-0 ps-3">
-                            <li>Conhecer a clínica;</li>
-                            <li>Estruturas da boca;</li>
-                            <li>Higiene oral e cuidados.</li>
-                          </ol>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-7" aria-expanded="false" aria-controls="faq-7"> O kit existe apenas em formato digital? </button>
-                      </h2>
-                      <div class="accordion-collapse collapse" id="faq-7">
-                        <div class="accordion-body">Não. O projeto combina um kit físico com cartões de aprendizagem e um jogo digital com atividades interativas.</div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-8" aria-expanded="false" aria-controls="faq-8"> É necessário criar uma conta para utilizar o site? </button>
-                      </h2>
-                      <div class="accordion-collapse collapse" id="faq-8">
-                        <div class="accordion-body">Não. O site da DentLGP tem uma finalidade informativa e institucional. Não é necessário criar uma conta ou fazer uma subscrição.</div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-9" aria-expanded="false" aria-controls="faq-9"> O material substitui uma consulta de Medicina Dentária? </button>
-                      </h2>
-                      <div class="accordion-collapse collapse" id="faq-9">
-                        <div class="accordion-body">Não. O Kit Sorriso Bilingue é um recurso educativo e não substitui a avaliação, o diagnóstico ou as orientações de um profissional de saúde oral.</div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-10" aria-expanded="false" aria-controls="faq-10"> O material pode ser utilizado por escolas? </button>
-                      </h2>
-                      <div class="accordion-collapse collapse" id="faq-10">
-                        <div class="accordion-body">Sim. Os recursos foram organizados para permitir a sua utilização em contexto escolar, sala de aula, apoio especializado e biblioteca.</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End FAQ-->
+        <!-- End offcanvas-->
 
-<!-- ======= Footer =======-->
-        <footer class="footer pt-5 pb-4" id="contact" style="background: linear-gradient(135deg, #001233 0%, #002868 60%, #003d75 100%); color: #ffffff;">
-          <div class="container">
-            <div class="row align-items-center justify-content-between pb-5 mb-4 border-bottom border-white border-opacity-10 g-4">
-              <!-- Left Column: Logo & Detailed Academic Credits -->
-              <div class="col-lg-7 text-start">
-                <div class="d-flex align-items-center justify-content-start mb-3">
-                  <img src="assets/images/dentlgp/logo dentlgp.png" alt="DentLGP Logo" class="bg-white p-2 shadow-sm" style="max-height: 60px; width: auto; object-fit: contain; border-radius: 14px !important;">
-                </div>
-                
-                <h3 class="fs-6 fw-bold text-white mb-2 text-start" style="color: #ffffff !important; text-align: left !important;">Créditos do Projeto</h3>
-                <p class="small text-white mb-2 text-start" style="color: rgba(255, 255, 255, 0.9) !important; line-height: 1.6; max-width: 580px; text-align: left !important;">
-                  <strong>Projeto desenvolvido no âmbito da Unidade Curricular:</strong><br>
-                  Recursos Lexicais e Digitais e Educativos para as Línguas Gestuais do Mestrado em Língua Gestual Portuguesa e Educação de Surdos.
-                </p>
-                <div class="small text-white d-flex flex-column gap-1 mb-0 text-start" style="color: rgba(255, 255, 255, 0.9) !important; text-align: left !important;">
-                  <div><strong>Conceção e desenvolvimento:</strong> Ana Luísa Silva (N.º 193725002)</div>
-                  <div><strong>Vídeos em Língua Gestual Portuguesa (LGP):</strong> Pedro Ribeiro</div>
-                  <div><strong>Instituição:</strong> Universidade Católica Portuguesa &bull; 2026</div>
-                </div>
-              </div>
-              
-              <!-- Right Column: Contact -->
-              <div class="col-lg-5 text-center text-lg-end">
-                <div class="p-4 rounded-4 d-inline-block text-start shadow-sm" style="background-color: #ffffff !important; border: 1px solid rgba(0, 40, 104, 0.15);">
-                  <span class="d-block text-uppercase small fw-bold mb-2" style="letter-spacing: 1.5px; color: #00A3C4 !important;">Contacto Direto</span>
-                  <div class="d-flex align-items-center gap-3 fs-5 fw-bold mb-2" style="color: #002868 !important;">
-                    <div class="icon p-2 rounded-circle text-white d-flex align-items-center justify-content-center flex-shrink-0" style="background-color: #002868; width: 42px; height: 42px;"><i class="bi bi-envelope-fill fs-5"></i></div>
-                    <span class="text-nowrap" style="color: #002868 !important;">Contacto: <a href="mailto:geral@dentlgp.pt" class="fw-bold text-decoration-underline" style="color: #002868 !important;">geral@dentlgp.pt</a></span>
-                  </div>
-                  <p class="small mb-0 ms-5 ps-2" style="color: #4a5568 !important; font-weight: 500;">Universidade Católica Portuguesa &bull; Lisboa, Portugal</p>
+        <div class="ms-auto w-auto">
+
+
+          <div class="header-social d-flex align-items-center gap-1"><a
+              class="btn btn-white p-0 d-inline-flex align-items-center justify-content-center rounded-3 shadow-sm"
+              href="kit-sorriso-bilingue.html" title="Jogar agora - Kit Sorriso Bilingue"
+              style="background-color: #ffffff !important; border: 0.5px solid rgba(0, 40, 104, 0.4) !important; height: 42px; overflow: hidden; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;"
+              onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'"><img
+                src="assets/images/kit jogo sorriso bilingue/jogar agora - logo kit sorriso bilingue.png"
+                alt="Jogar agora - Kit Sorriso Bilingue"
+                style="height: 100%; max-height: 42px; width: auto; object-fit: contain;"></a>
+
+            <button class="fbs__net-navbar-toggler justify-content-center align-items-center ms-auto"
+              data-bs-toggle="offcanvas" data-bs-target="#fbs__net-navbars" aria-controls="fbs__net-navbars"
+              aria-label="Toggle navigation" aria-expanded="false">
+              <svg class="fbs__net-icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="21" x2="3" y1="6" y2="6"></line>
+                <line x1="15" x2="3" y1="12" y2="12"></line>
+                <line x1="17" x2="3" y1="18" y2="18"></line>
+              </svg>
+              <svg class="fbs__net-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M18 6 6 18"></path>
+                <path d="m6 6 12 12"></path>
+              </svg>
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+    </header>
+    <!-- End Header-->
+
+    <!-- ======= Main =======-->
+    <main>
+
+
+      <!-- ======= Hero =======-->
+      <section class="hero__v6 section" id="home">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <div class="row">
+                <div class="col-lg-11"><span class="hero-subtitle text-uppercase" data-aos="fade-up"
+                    data-aos-delay="0">LGP • EDUCAÇÃO • SAÚDE ORAL</span>
+                  <h1 class="hero-title mb-3" data-aos="fade-up" data-aos-delay="100">Ligamos a Língua Gestual
+                    Portuguesa à Medicina Dentária</h1>
+                  <p class="hero-description mb-3 mb-lg-3" data-aos="fade-up" data-aos-delay="200">A DentLGP desenvolve
+                    recursos educativos bilingues e multimodais que combinam Língua Gestual Portuguesa, português
+                    escrito, imagem, vídeo e atividades interativas.</p>
+                  <div class="hero-img d-lg-none my-4"><img class="img-card img-fluid"
+                      src="assets/images/card-expenses.png" alt="Card DentLGP" data-aos="fade-down"
+                      data-aos-delay="600"></div>
+                  <div class="cta d-flex flex-wrap gap-3" data-aos="fade-up" data-aos-delay="300"><a
+                      class="btn btn-lg scroll-link px-4 py-3" href="#about" style="font-size: 1.05rem;">Conhecer a
+                      DentLGP</a><a class="btn btn-lg btn-white-outline px-4 py-3" href="kit-sorriso-bilingue.html"
+                      style="font-size: 1.05rem;">Descobrir o Kit Sorriso Bilingue
+                      <svg class="lucide lucide-arrow-up-right ms-1" xmlns="http://www.w3.org/2000/svg" width="20"
+                        height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 7h10v10"></path>
+                        <path d="M7 17 17 7"></path>
+                      </svg></a></div>
                 </div>
               </div>
             </div>
-            
-            <!-- Bottom Copyright Credits Bar -->
-            <div class="row align-items-center pt-3 small text-white g-2" style="color: #ffffff !important;">
-              <div class="col-md-8 text-center text-md-start" style="color: #ffffff !important; opacity: 1;">
-                &copy; 2026 DentLGP. Todos os direitos reservados. Projeto educativo desenvolvido por Ana Luísa Silva (Universidade Católica Portuguesa).
-              </div>
-              <div class="col-md-4 text-center text-md-end">
-                <span class="badge rounded-pill px-3 py-2" style="background-color: rgba(0, 163, 196, 0.25); color: #ffffff !important; border: 1px solid rgba(0, 163, 196, 0.4);">LGP &bull; Educação &bull; Saúde Oral</span>
+            <div class="col-lg-6 d-none d-lg-block">
+              <div class="hero-img"><img class="img-card img-fluid" src="assets/images/card-expenses.png"
+                  alt="Card DentLGP" data-aos="fade-down" data-aos-delay="600"><img class="img-main img-fluid rounded-4"
+                  src="assets/images/hero-img-1-min.jpg" alt="DentLGP Hero" data-aos="fade-in" data-aos-delay="500">
               </div>
             </div>
           </div>
-        </footer>
-        <!-- End Footer-->
-        
-      </main>
-    </div>
-    
-    <!-- ======= Back to Top =======-->
-    <button id="back-to-top"><i class="bi bi-arrow-up-short"></i></button>
-    <!-- End Back to top-->
-    
-    <!-- ======= Javascripts =======-->
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendors/gsap/gsap.min.js"></script>
-    <script src="assets/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/vendors/isotope/isotope.pkgd.min.js"></script>
-    <script src="assets/vendors/glightbox/glightbox.min.js"></script>
-    <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendors/aos/aos.js"></script>
-    <script src="assets/vendors/purecounter/purecounter.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/send_email.js"></script>
-    <!-- End JavaScripts-->
-  </body>
+        </div>
+        <!-- End Hero-->
+      </section>
+      <!-- End Hero-->
+
+      <!-- ======= About =======-->
+      <section class="about__v4 section pt-4 pt-lg-4" id="about">
+        <div class="container">
+          <div class="row align-items-center g-4 g-lg-5">
+            <div class="col-lg-6">
+              <div class="img-wrap position-relative"><img class="img-fluid rounded-4"
+                  src="assets/images/about_2-min.jpg" alt="DentLGP Sobre Nós">
+                <div class="mission-statement p-4 rounded-4 d-flex gap-4">
+                  <div class="mission-icon text-center rounded-circle"><i class="bi bi-lightbulb fs-4"></i></div>
+                  <div>
+                    <h3 class="text-uppercase fw-bold">A Nossa Missão</h3>
+                    <p class="fs-6 mb-0">Desenvolver recursos educativos bilingues e multimodais que facilitem a
+                      aprendizagem e promovam a educação para a saúde oral junto das crianças Surdas.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="ps-lg-3">
+                <span class="subtitle text-uppercase mb-3">Sobre a DentLGP</span>
+                <h2 class="mb-4">Criamos pontes entre comunicação, educação e saúde oral</h2>
+                <div>
+                  <p>A DentLGP é um projeto educativo que nasceu com o objetivo de aproximar a Língua Gestual Portuguesa
+                    da educação para a saúde oral e da Medicina Dentária. O seu desenvolvimento parte da necessidade de
+                    tornar a informação sobre saúde oral mais clara, visual, acessível e adequada aos alunos Surdos.</p>
+                  <p>Ao integrar o vocabulário em LGP, o português escrito, imagens ilustrativas e atividades
+                    pedagógicas, o projeto procura promover a autonomia, a prevenção e a literacia em saúde oral.</p>
+                </div>
+                <h4 class="small fw-bold mt-4 mb-3">Valores e Visão</h4>
+                <ul class="d-flex flex-row flex-wrap list-unstyled gap-2 features">
+                  <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                        class="bi bi-check"></i></span><span class="text">Respeito pela LGP</span></li>
+                  <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                        class="bi bi-check"></i></span><span class="text">Acessibilidade linguística</span></li>
+                  <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                        class="bi bi-check"></i></span><span class="text">Educação bilingue</span></li>
+                  <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                        class="bi bi-check"></i></span><span class="text">Clareza visual</span></li>
+                  <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                        class="bi bi-check"></i></span><span class="text">Rigor pedagógico</span></li>
+                  <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                        class="bi bi-check"></i></span><span class="text">Aprendizagem participativa</span></li>
+                  <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
+                        class="bi bi-check"></i></span><span class="text">Articulação educação/saúde</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About-->
+
+      <!-- ======= Features / A Nossa Abordagem =======-->
+      <section class="section features__v2" id="features">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="p-5 rounded-4 content" data-aos="fade-in" data-aos-delay="0">
+                <div class="row g-4 g-lg-5 align-items-center">
+                  <div class="col-lg-5" data-aos="fade-up" data-aos-delay="0">
+                    <span class="subtitle text-uppercase mb-3 d-block" style="color: rgba(255, 255, 255, 0.8);">A Nossa
+                      Abordagem</span>
+                    <h2 class="mb-3 text-white">O que torna a DentLGP diferente?</h2>
+                    <p class="mb-4 text-white-50">Combinamos estratégias visuais e bilingues para aproximar a Língua
+                      Gestual Portuguesa da educação para a saúde oral, promovendo a acessibilidade e o rigor
+                      pedagógico.</p>
+                    <a class="btn btn-white-outline scroll-link" href="#pricing"><i class="bi bi-arrow-right me-1"></i>
+                      Conhecer o nosso projeto</a>
+                  </div>
+                  <div class="col-lg-7">
+                    <div class="row g-4">
+                      <div class="col-sm-6" data-aos="fade-up" data-aos-delay="0">
+                        <div class="p-4 rounded-4 h-100"
+                          style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.18);">
+                          <div class="icon mb-3 d-inline-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 42px; height: 42px; background: rgba(255, 255, 255, 0.2); color: #ffffff;">
+                            <i class="bi bi-translate fs-5"></i>
+                          </div>
+                          <h3 class="fs-6 fw-bold mb-2 text-white">Conteúdo bilingue</h3>
+                          <p class="small mb-0" style="color: rgba(255, 255, 255, 0.8) !important;">Articulação
+                            pedagógica entre Língua Gestual Portuguesa e português escrito.</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="p-4 rounded-4 h-100"
+                          style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.18);">
+                          <div class="icon mb-3 d-inline-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 42px; height: 42px; background: rgba(255, 255, 255, 0.2); color: #ffffff;">
+                            <i class="bi bi-layers fs-5"></i>
+                          </div>
+                          <h3 class="fs-6 fw-bold mb-2 text-white">Aprendizagem multimodal</h3>
+                          <p class="small mb-0" style="color: rgba(255, 255, 255, 0.8) !important;">Uso de imagem,
+                            texto, vídeo em LGP e componentes lúdicos no mesmo material.</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="p-4 rounded-4 h-100"
+                          style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.18);">
+                          <div class="icon mb-3 d-inline-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 42px; height: 42px; background: rgba(255, 255, 255, 0.2); color: #ffffff;">
+                            <i class="bi bi-box-seam fs-5"></i>
+                          </div>
+                          <h3 class="fs-6 fw-bold mb-2 text-white">Recursos físicos e digitais</h3>
+                          <p class="small mb-0" style="color: rgba(255, 255, 255, 0.8) !important;">Integração entre
+                            cartões físicos e atividades interativas online.</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="p-4 rounded-4 h-100"
+                          style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.18);">
+                          <div class="icon mb-3 d-inline-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 42px; height: 42px; background: rgba(255, 255, 255, 0.2); color: #ffffff;">
+                            <i class="bi bi-heart-pulse fs-5"></i>
+                          </div>
+                          <h3 class="fs-6 fw-bold mb-2 text-white">Contextos reais de saúde oral</h3>
+                          <p class="small mb-0" style="color: rgba(255, 255, 255, 0.8) !important;">Organização em temas
+                            práticos da clínica, estruturas da boca e higiene diária.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Features-->
+
+      <!-- ======= Kit Sorriso Bilingue =======-->
+      <section class="section pricing__v2" id="pricing">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-8 mx-auto text-center">
+              <span class="subtitle text-uppercase mb-3 d-inline-block px-3 py-1 rounded-pill fw-bold"
+                data-aos="fade-up" data-aos-delay="0"
+                style="background-color: #EBF8FA; color: #00A3C4; letter-spacing: 1px; font-size: 0.8rem; border: 1px solid rgba(0, 163, 196, 0.25);">1.º
+                Projeto DentLGP &bull; Destaques</span>
+              <h2 class="mb-3 fw-bold" data-aos="fade-up" data-aos-delay="100"
+                style="color: #002868; font-size: 2.3rem;">Kit Sorriso Bilingue</h2>
+              <p class="mb-0" data-aos="fade-up" data-aos-delay="200"
+                style="font-size: 1.05rem; line-height: 1.65; color: #334155; font-weight: 400;">O <strong>1.º projeto
+                  da DentLGP</strong>: um recurso pedagógico bilingue dedicado à<br class="d-none d-md-inline"> Medicina
+                Dentária e à Saúde Oral, pensado especialmente para alunos Surdos do 1.º Ciclo.</p>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="p-5 rounded-4 price-table h-100 d-flex flex-column justify-content-between">
+                <div>
+                  <h3 class="mb-3" style="color: #002868;">Kit físico de aprendizagem</h3>
+                  <p class="mb-4 text-muted">Caixa ilustrada com 81 cartões combinando ilustrações apelativas,
+                    vocabulário em LGP acessível por QR Code, frases contextualizadas, atividades e materiais
+                    pedagógicos de apoio para exploração em sala de aula ou em família.</p>
+                </div>
+                <div class="mt-3 text-center">
+                  <img src="assets/images/card-expenses2.png" alt="Kit Físico de Aprendizagem" class="img-fluid"
+                    style="max-height: 220px; object-fit: contain; filter: drop-shadow(0 15px 25px rgba(0, 40, 104, 0.15));">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="p-5 rounded-4 price-table popular h-100 d-flex flex-column justify-content-between">
+                <div>
+                  <h3 class="mb-3 text-white">Jogo online do Kit Sorriso Bilingue</h3>
+                  <p class="mb-4 text-white" style="color: #ffffff !important; opacity: 1;">Plataforma interativa online
+                    com 3 temas principais, 18 conceitos de saúde oral, 5 atividades lúdicas digitais, vídeos em LGP e
+                    desafios de associação e memória.</p>
+                  <div class="my-3 text-center">
+                    <img src="assets/images/kit jogo sorriso bilingue/jogo-online-print.png"
+                      alt="Jogo Online do Kit Sorriso Bilingue" class="img-fluid rounded-3"
+                      style="max-height: 220px; object-fit: contain; filter: drop-shadow(0 15px 25px rgba(0, 40, 104, 0.25));">
+                  </div>
+                </div>
+                <div class="w-100"><a class="btn btn-white hover-outline w-100 py-3 text-center fw-bold fs-6"
+                    href="kit-sorriso-bilingue.html">Explorar o jogo online <i
+                      class="bi bi-box-arrow-right ms-2"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Pricing / Kit Sorriso Bilingue-->
+
+      <!-- ======= How it works =======-->
+      <section class="section howitworks__v1" id="how-it-works">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-7 text-center mx-auto"><span class="subtitle text-uppercase mb-3" data-aos="fade-up"
+                data-aos-delay="0">Metodologia</span>
+              <h2 data-aos="fade-up" data-aos-delay="100" style="color: #002868;">Como funciona a aprendizagem</h2>
+              <p data-aos="fade-up" data-aos-delay="200">O Kit Sorriso Bilingue foi concetualizado para permitir uma
+                exploração flexível e articulada entre diferentes canais de comunicação.</p>
+            </div>
+          </div>
+          <div class="row g-md-5">
+            <div class="col-md-6 col-lg-3">
+              <div class="step-card text-center h-100 d-flex flex-column justify-content-start position-relative"
+                data-aos="fade-up" data-aos-delay="0">
+                <div data-aos="fade-right" data-aos-delay="500"><img class="arch-line" src="assets/images/arch-line.svg"
+                    alt="DentLGP"></div><span
+                  class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">1</span>
+                <div>
+                  <h3 class="fs-5 mb-4" style="color: #002868;">Observar a imagem</h3>
+                  <p class="text-muted">A criança explora a ilustração apelativa representativa do conceito de saúde
+                    oral no cartão ou no jogo digital.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+              <div
+                class="step-card reverse text-center h-100 d-flex flex-column justify-content-start position-relative">
+                <div data-aos="fade-right" data-aos-delay="1100"><img class="arch-line reverse"
+                    src="assets/images/arch-line-reverse.svg" alt="DentLGP"></div><span
+                  class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">2</span>
+                <h3 class="fs-5 mb-4" style="color: #002868;">Ler em português</h3>
+                <p class="text-muted">Acompanha a palavra e frases contextualizadas em português escrito para reforço de
+                  vocabulário e leitura.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="1200">
+              <div class="step-card text-center h-100 d-flex flex-column justify-content-start position-relative">
+                <div data-aos="fade-right" data-aos-delay="1700"><img class="arch-line"
+                    src="assets/images/arch-line.svg" alt="DentLGP"></div><span
+                  class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">3</span>
+                <h3 class="fs-5 mb-4" style="color: #002868;">Ver o vídeo em LGP</h3>
+                <p class="text-muted">Acede à explicação em vídeo na Língua Gestual Portuguesa através do QR Code ou
+                  diretamente no jogo digital.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="1800">
+              <div class="step-card last text-center h-100 d-flex flex-column justify-content-start position-relative">
+                <span class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">4</span>
+                <div>
+                  <h3 class="fs-5 mb-4" style="color: #002868;">Aprender pelo jogo</h3>
+                  <p class="text-muted">Consolida os conhecimentos através das 5 atividades interativas digitais de
+                    associação e memória.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End How it works-->
+
+      <!-- ======= Stats / Números do Projeto =======-->
+      <section class="stats__v3 section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="d-flex flex-wrap content rounded-4"
+                style="background: linear-gradient(135deg, #002868 0%, #00A3C4 100%); color: #ffffff;"
+                data-aos="fade-up" data-aos-delay="0">
+                <div class="rounded-borders">
+                  <div class="rounded-border-1"></div>
+                  <div class="rounded-border-2"></div>
+                  <div class="rounded-border-3"></div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="100">
+                  <div class="stat-item">
+                    <h3 class="fs-1 fw-bold text-white"><span class="purecounter" data-purecounter-start="0"
+                        data-purecounter-end="18" data-purecounter-duration="2">0</span></h3>
+                    <p class="mb-0 text-white-50">Conceitos de saúde oral</p>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="200">
+                  <div class="stat-item">
+                    <h3 class="fs-1 fw-bold text-white"><span class="purecounter" data-purecounter-start="0"
+                        data-purecounter-end="5" data-purecounter-duration="2">0</span></h3>
+                    <p class="mb-0 text-white-50">Atividades digitais online</p>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="300">
+                  <div class="stat-item">
+                    <h3 class="fs-1 fw-bold text-white"><span class="purecounter" data-purecounter-start="0"
+                        data-purecounter-end="81" data-purecounter-duration="2">0</span></h3>
+                    <p class="mb-0 text-white-50">Cartões do kit físico</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Stats-->
+
+      <!-- ======= Services / Áreas de Trabalho =======-->
+      <section class="section services__v3" id="services">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-8 mx-auto text-center"><span class="subtitle text-uppercase mb-3" data-aos="fade-up"
+                data-aos-delay="0">Áreas de Trabalho</span>
+              <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100" style="color: #002868;">O que fazemos na DentLGP?
+              </h2>
+              <p class="text-muted" data-aos="fade-up" data-aos-delay="200">Criamos recursos que aproximam a educação
+                bilingue, a LGP e a saúde oral através de conteúdos educativos, design visual e tecnologia.</p>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+              <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-4">
+                <div><span class="icon mb-4 d-inline-block p-3 rounded-circle"
+                    style="background-color: rgba(0, 163, 196, 0.15); color: #00A3C4;">
+                    <i class="bi bi-chat-quote fs-3"></i></span>
+                  <h3 class="fs-5 mb-3" style="color: #002868;">Recursos educativos bilingues</h3>
+                  <p class="mb-4 text-muted">Desenvolvemos materiais que articulam Língua Gestual Portuguesa e português
+                    escrito, respeitando a função de cada língua na aprendizagem.</p>
+                </div><a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none scroll-link"
+                  href="#pricing"><span class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i
+                      class="icon-2 bi bi-arrow-right-short"> </i></span><span
+                    style="color: #002868; font-weight: 600;">Saber mais</span></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-4">
+                <div><span class="icon mb-4 d-inline-block p-3 rounded-circle"
+                    style="background-color: rgba(0, 163, 196, 0.15); color: #00A3C4;">
+                    <i class="bi bi-journal-medical fs-3"></i></span>
+                  <h3 class="fs-5 mb-3" style="color: #002868;">Vocabulário de Medicina Dentária</h3>
+                  <p class="mb-4 text-muted">Organizamos conceitos relacionados com profissionais, espaços,
+                    instrumentos, estruturas da boca, tratamentos e cuidados de higiene oral.</p>
+                </div><a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none scroll-link"
+                  href="#pricing"><span class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i
+                      class="icon-2 bi bi-arrow-right-short"> </i></span><span
+                    style="color: #002868; font-weight: 600;">Saber mais</span></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-4">
+                <div><span class="icon mb-4 d-inline-block p-3 rounded-circle"
+                    style="background-color: rgba(0, 163, 196, 0.15); color: #00A3C4;">
+                    <i class="bi bi-camera-reels fs-3"></i></span>
+                  <h3 class="fs-5 mb-3" style="color: #002868;">Vídeos em LGP</h3>
+                  <p class="mb-4 text-muted">Integramos vídeos em Língua Gestual Portuguesa nos recursos físicos e
+                    digitais, permitindo o acesso visual aos conceitos apresentados.</p>
+                </div><a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none scroll-link"
+                  href="#pricing"><span class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i
+                      class="icon-2 bi bi-arrow-right-short"> </i></span><span
+                    style="color: #002868; font-weight: 600;">Saber mais</span></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-4">
+                <div><span class="icon mb-4 d-inline-block p-3 rounded-circle"
+                    style="background-color: rgba(0, 163, 196, 0.15); color: #00A3C4;">
+                    <i class="bi bi-card-checklist fs-3"></i></span>
+                  <h3 class="fs-5 mb-3" style="color: #002868;">Cartões e materiais físicos</h3>
+                  <p class="mb-4 text-muted">Criamos cartões ilustrados, frases contextualizadas, atividades de
+                    compreensão e materiais de apoio para utilização educativa.</p>
+                </div><a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none scroll-link"
+                  href="#pricing"><span class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i
+                      class="icon-2 bi bi-arrow-right-short"> </i></span><span
+                    style="color: #002868; font-weight: 600;">Saber mais</span></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-4">
+                <div><span class="icon mb-4 d-inline-block p-3 rounded-circle"
+                    style="background-color: rgba(0, 163, 196, 0.15); color: #00A3C4;">
+                    <i class="bi bi-controller fs-3"></i></span>
+                  <h3 class="fs-5 mb-3" style="color: #002868;">Jogos educativos digitais</h3>
+                  <p class="mb-4 text-muted">Transformamos conteúdos de saúde oral em atividades digitais de associação,
+                    escolha, memória e exploração interativa.</p>
+                </div><a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none scroll-link"
+                  href="#pricing"><span class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i
+                      class="icon-2 bi bi-arrow-right-short"> </i></span><span
+                    style="color: #002868; font-weight: 600;">Saber mais</span></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+              <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-4">
+                <div><span class="icon mb-4 d-inline-block p-3 rounded-circle"
+                    style="background-color: rgba(0, 163, 196, 0.15); color: #00A3C4;">
+                    <i class="bi bi-people fs-3"></i></span>
+                  <h3 class="fs-5 mb-3" style="color: #002868;">Apoio à utilização pedagógica</h3>
+                  <p class="mb-4 text-muted">Organizamos os materiais de forma a facilitar a sua utilização por
+                    docentes, educadores, famílias e outros profissionais que acompanham crianças Surdas.</p>
+                </div><a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none scroll-link"
+                  href="#pricing"><span class="icons"><i class="icon-1 bi bi-arrow-right-short"></i><i
+                      class="icon-2 bi bi-arrow-right-short"> </i></span><span
+                    style="color: #002868; font-weight: 600;">Saber mais</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services-->
+
+      <!-- ======= Para Quem Criamos =======-->
+      <section class="section testimonials__v2" id="testimonials">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-lg-7 mx-auto text-center"><span class="subtitle text-uppercase mb-3" data-aos="fade-up"
+                data-aos-delay="0">Públicos-Alvo</span>
+              <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100" style="color: #002868;">Recursos pensados para
+                diferentes contextos</h2>
+              <p data-aos="fade-up" data-aos-delay="200">Os materiais da DentLGP podem apoiar a aprendizagem, a
+                comunicação e a educação para a saúde oral em diferentes ambientes.</p>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+              <div class="testimonial rounded-4 p-4 h-100 d-flex flex-column justify-content-between"
+                style="border: 1px solid rgba(0, 40, 104, 0.12); background-color: #ffffff;">
+                <blockquote class="mb-3">
+                  <h3 class="fs-5 mb-2" style="color: #002868;">Alunos Surdos</h3>
+                  <p class="text-muted mb-0 small">Recursos visuais e bilingues pensados especialmente para alunos
+                    Surdos do 1.º Ciclo, respeitando a importância da LGP no acesso à informação.</p>
+                </blockquote>
+                <div class="testimonial-author d-flex gap-3 align-items-center">
+                  <div class="author-img"><img class="rounded-circle img-fluid"
+                      src="assets/images/avatar_alunos_surdos.png" alt="Alunos Surdos"></div>
+                  <div class="lh-base"><strong class="d-block" style="color: #002868;">Alunos do 1.º
+                      Ciclo</strong><span>Educação Bilingue</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="testimonial rounded-4 p-4 h-100 d-flex flex-column justify-content-between"
+                style="border: 1px solid rgba(0, 40, 104, 0.12); background-color: #ffffff;">
+                <blockquote class="mb-3">
+                  <h3 class="fs-5 mb-2" style="color: #002868;">Docentes e educadores</h3>
+                  <p class="text-muted mb-0 small">Materiais que podem ser utilizados na exploração de vocabulário,
+                    leitura, compreensão, educação para a saúde e atividades bilingues.</p>
+                </blockquote>
+                <div class="testimonial-author d-flex gap-3 align-items-center">
+                  <div class="author-img"><img class="rounded-circle img-fluid" src="assets/images/avatar_docentes.png"
+                      alt="Docentes"></div>
+                  <div class="lh-base"><strong class="d-block" style="color: #002868;">Professores e
+                      Educadores</strong><span>Contexto Escolar</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="testimonial rounded-4 p-4 h-100 d-flex flex-column justify-content-between"
+                style="border: 1px solid rgba(0, 40, 104, 0.12); background-color: #ffffff;">
+                <blockquote class="mb-3">
+                  <h3 class="fs-5 mb-2" style="color: #002868;">Famílias</h3>
+                  <p class="text-muted mb-0 small">Recursos que ajudam as famílias a conversar sobre higiene oral,
+                    consultas, prevenção e cuidados diários de forma acessível e lúdica.</p>
+                </blockquote>
+                <div class="testimonial-author d-flex gap-3 align-items-center">
+                  <div class="author-img"><img class="rounded-circle img-fluid" src="assets/images/avatar_familias.png"
+                      alt="Famílias"></div>
+                  <div class="lh-base"><strong class="d-block"
+                      style="color: #002868;">Famílias</strong><span>Acompanhamento no Lar</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="testimonial rounded-4 p-4 h-100 d-flex flex-column justify-content-between"
+                style="border: 1px solid rgba(0, 40, 104, 0.12); background-color: #ffffff;">
+                <blockquote class="mb-3">
+                  <h3 class="fs-5 mb-2" style="color: #002868;">Profissionais de saúde oral</h3>
+                  <p class="text-muted mb-0 small">Materiais que podem apoiar a explicação de conceitos básicos e
+                    facilitar a preparação das crianças para o contacto com a clínica dentária.</p>
+                </blockquote>
+                <div class="testimonial-author d-flex gap-3 align-items-center">
+                  <div class="author-img"><img class="rounded-circle img-fluid"
+                      src="assets/images/avatar_profissionais_saude.png" alt="Profissionais de Saúde"></div>
+                  <div class="lh-base"><strong class="d-block" style="color: #002868;">Médicos Dentistas e
+                      Higienistas</strong><span>Clínicas e Consultórios</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="testimonial rounded-4 p-4 h-100 d-flex flex-column justify-content-between"
+                style="border: 1px solid rgba(0, 40, 104, 0.12); background-color: #ffffff;">
+                <blockquote class="mb-3">
+                  <h3 class="fs-5 mb-2" style="color: #002868;">Escolas e instituições</h3>
+                  <p class="text-muted mb-0 small">Recursos que podem integrar projetos educativos relacionados com
+                    saúde oral, Língua Gestual Portuguesa, português escrito e literacia visual.</p>
+                </blockquote>
+                <div class="testimonial-author d-flex gap-3 align-items-center">
+                  <div class="author-img"><img class="rounded-circle img-fluid" src="assets/images/avatar_escolas.png"
+                      alt="Escolas"></div>
+                  <div class="lh-base"><strong class="d-block" style="color: #002868;">Agrupamentos de
+                      Escolas</strong><span>Projetos Institucionais</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials / Para Quem Criamos-->
+
+      <!-- ======= FAQ =======-->
+      <section class="section faq__v2" id="faq">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-md-8 mx-auto text-center"><span class="subtitle text-uppercase mb-3" data-aos="fade-up"
+                data-aos-delay="0">Perguntas Frequentes</span>
+              <h2 class="h2 fw-bold mb-3" data-aos="fade-up" data-aos-delay="0" style="color: #002868;">Conheça melhor a
+                DentLGP<br>e o Kit Sorriso Bilingue</h2>
+              <p data-aos="fade-up" data-aos-delay="100">Encontre respostas às principais questões sobre o projeto
+                educativo DentLGP, os seus objetivos e a utilização dos materiais.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-9 mx-auto" data-aos="fade-up" data-aos-delay="200">
+              <div class="faq-content">
+                <div class="accordion custom-accordion" id="accordionPanelsStayOpenExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1"
+                        aria-expanded="true" aria-controls="faq-1"> O que é a DentLGP? </button>
+                    </h2>
+                    <div class="accordion-collapse collapse show" id="faq-1">
+                      <div class="accordion-body">A DentLGP é um projeto educativo que nasceu com o objetivo de
+                        desenvolver recursos pedagógicos bilingues que ligam a Língua Gestual Portuguesa, o português
+                        escrito e a Medicina Dentária, promovendo a literacia em saúde oral junto das crianças Surdas.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq-2" aria-expanded="false" aria-controls="faq-2"> A DentLGP e o Kit Sorriso
+                        Bilingue são a mesma coisa? </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="faq-2">
+                      <div class="accordion-body">Não. A DentLGP é o projeto de investigação e desenvolvimento
+                        pedagógico no âmbito do qual é criado e estruturado o Kit Sorriso Bilingue, constituindo este o
+                        seu principal recurso pedagógico.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq-3" aria-expanded="false" aria-controls="faq-3"> O que é o Kit Sorriso
+                        Bilingue? </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="faq-3">
+                      <div class="accordion-body">É um recurso pedagógico bilingue dedicado à Medicina Dentária e à
+                        saúde oral. Inclui materiais físicos, cartões ilustrados, conteúdos em português, vídeos em LGP
+                        acessíveis por QR Code e um jogo digital.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq-4" aria-expanded="false" aria-controls="faq-4"> A quem se destina?
+                      </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="faq-4">
+                      <div class="accordion-body">Foi pensado especialmente para alunos Surdos do 1.º Ciclo. Também pode
+                        ser utilizado por docentes, educadores, famílias e profissionais que trabalhem conteúdos de
+                        saúde oral.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq-5" aria-expanded="false" aria-controls="faq-5"> Como são apresentados os
+                        conteúdos em LGP? </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="faq-5">
+                      <div class="accordion-body">Os conteúdos em LGP são apresentados em vídeo. Nos materiais físicos,
+                        o acesso é feito através de QR Codes. No jogo digital, os vídeos aparecem associados aos
+                        respetivos conceitos.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq-6" aria-expanded="false" aria-controls="faq-6"> Quais são os temas
+                        trabalhados? </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="faq-6">
+                      <div class="accordion-body">O Kit Sorriso Bilingue está organizado em três temas principais:
+                        <ol class="mt-2 mb-0 ps-3">
+                          <li>Conhecer a clínica;</li>
+                          <li>Estruturas da boca;</li>
+                          <li>Higiene oral e cuidados.</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq-7" aria-expanded="false" aria-controls="faq-7"> O kit existe apenas em
+                        formato digital? </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="faq-7">
+                      <div class="accordion-body">Não. O projeto combina um kit físico com cartões de aprendizagem e um
+                        jogo digital com atividades interativas.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq-8" aria-expanded="false" aria-controls="faq-8"> É necessário criar uma
+                        conta para utilizar o site? </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="faq-8">
+                      <div class="accordion-body">Não. O site da DentLGP tem uma finalidade informativa e institucional.
+                        Não é necessário criar uma conta ou fazer uma subscrição.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq-9" aria-expanded="false" aria-controls="faq-9"> O material substitui uma
+                        consulta de Medicina Dentária? </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="faq-9">
+                      <div class="accordion-body">Não. O Kit Sorriso Bilingue é um recurso educativo e não substitui a
+                        avaliação, o diagnóstico ou as orientações de um profissional de saúde oral.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq-10" aria-expanded="false" aria-controls="faq-10"> O material pode ser
+                        utilizado por escolas? </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="faq-10">
+                      <div class="accordion-body">Sim. Os recursos foram organizados para permitir a sua utilização em
+                        contexto escolar, sala de aula, apoio especializado e biblioteca.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End FAQ-->
+
+      <!-- ======= Footer =======-->
+      <footer class="footer pt-5 pb-4" id="contact"
+        style="background: linear-gradient(135deg, #001233 0%, #002868 60%, #003d75 100%); color: #ffffff;">
+        <div class="container">
+          <div
+            class="row align-items-center justify-content-between pb-5 mb-4 border-bottom border-white border-opacity-10 g-4">
+            <!-- Left Column: Logo & Detailed Academic Credits -->
+            <div class="col-lg-7 text-start">
+              <div class="d-flex align-items-center justify-content-start mb-3">
+                <img src="assets/images/dentlgp/logo dentlgp.png" alt="DentLGP Logo" class="bg-white p-2 shadow-sm"
+                  style="max-height: 60px; width: auto; object-fit: contain; border-radius: 14px !important;">
+              </div>
+
+              <h3 class="fs-6 fw-bold text-white mb-2 text-start"
+                style="color: #ffffff !important; text-align: left !important;">Créditos do Projeto</h3>
+              <p class="small text-white mb-2 text-start"
+                style="color: rgba(255, 255, 255, 0.9) !important; line-height: 1.6; max-width: 580px; text-align: left !important;">
+                <strong>Projeto desenvolvido no âmbito da Unidade Curricular:</strong><br>
+                Recursos Lexicais e Digitais e Educativos para as Línguas Gestuais do Mestrado em Língua Gestual
+                Portuguesa e Educação de Surdos.
+              </p>
+              <div class="small text-white d-flex flex-column gap-1 mb-0 text-start"
+                style="color: rgba(255, 255, 255, 0.9) !important; text-align: left !important;">
+                <div><strong>Conceção e desenvolvimento:</strong> Ana Luísa Silva (N.º 193725002)</div>
+                <div><strong>Vídeos em Língua Gestual Portuguesa (LGP):</strong> Pedro Ribeiro</div>
+                <div><strong>Instituição:</strong> Universidade Católica Portuguesa &bull; 2026</div>
+              </div>
+
+              <!-- Legal Pages Links -->
+              <div class="mt-3 pt-2 border-top border-white border-opacity-25 d-flex flex-wrap gap-3 small">
+                <a href="politica-de-privacidade.html" class="text-white text-decoration-underline fw-semibold">Política de Privacidade</a>
+                <span class="text-white opacity-50">&bull;</span>
+                <a href="termos-e-condicoes.html" class="text-white text-decoration-underline fw-semibold">Termos e Condições</a>
+                <span class="text-white opacity-50">&bull;</span>
+                <a href="politica-de-cookies.html" class="text-white text-decoration-underline fw-semibold">Política de Cookies</a>
+              </div>
+            </div>
+
+            <!-- Right Column: Contact -->
+            <div class="col-lg-5 text-center text-lg-end">
+              <div class="p-4 rounded-4 d-inline-block text-start shadow-sm"
+                style="background-color: #ffffff !important; border: 1px solid rgba(0, 40, 104, 0.15);">
+                <span class="d-block text-uppercase small fw-bold mb-2"
+                  style="letter-spacing: 1.5px; color: #00A3C4 !important;">Contacto Direto</span>
+                <div class="d-flex align-items-center gap-3 fs-5 fw-bold mb-2" style="color: #002868 !important;">
+                  <div
+                    class="icon p-2 rounded-circle text-white d-flex align-items-center justify-content-center flex-shrink-0"
+                    style="background-color: #002868; width: 42px; height: 42px;"><i
+                      class="bi bi-envelope-fill fs-5"></i></div>
+                  <span class="text-nowrap" style="color: #002868 !important;">Contacto: <a
+                      href="mailto:geral@dentlgp.pt" class="fw-bold text-decoration-underline"
+                      style="color: #002868 !important;">geral@dentlgp.pt</a></span>
+                </div>
+                <p class="small mb-0 ms-5 ps-2" style="color: #4a5568 !important; font-weight: 500;">DentLGP &bull; Barreiro, Portugal</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Copyright Credits Bar -->
+          <div class="row align-items-center pt-3 small text-white g-2" style="color: #ffffff !important;">
+            <div class="col-md-8 text-center text-md-start" style="color: #ffffff !important; opacity: 1;">
+              &copy; 2026 DentLGP. Todos os direitos reservados. Projeto educativo desenvolvido por Ana Luísa Silva
+              (Universidade Católica Portuguesa).
+            </div>
+            <div class="col-md-4 text-center text-md-end">
+              <span class="badge rounded-pill px-3 py-2"
+                style="background-color: rgba(0, 163, 196, 0.25); color: #ffffff !important; border: 1px solid rgba(0, 163, 196, 0.4);">LGP
+                &bull; Educação &bull; Saúde Oral</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer-->
+
+    </main>
+  </div>
+
+  <!-- ======= Back to Top =======-->
+  <button id="back-to-top"><i class="bi bi-arrow-up-short"></i></button>
+  <!-- End Back to top-->
+
+  <!-- ======= Javascripts =======-->
+  <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendors/gsap/gsap.min.js"></script>
+  <script src="assets/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendors/isotope/isotope.pkgd.min.js"></script>
+  <script src="assets/vendors/glightbox/glightbox.min.js"></script>
+  <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendors/aos/aos.js"></script>
+  <script src="assets/vendors/purecounter/purecounter.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/send_email.js"></script>
+  <!-- End JavaScripts-->
+</body>
+
 </html>

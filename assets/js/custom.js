@@ -1,3 +1,29 @@
+(function autoRemoveVideoOverlays() {
+  function cleanup() {
+    if (typeof document === "undefined") return;
+    const targets = document.querySelectorAll(
+      '[class*="extension"], [id*="extension"], [class*="toaster"], [class*="sleex"], [class*="be_skin"], [id*="sleex"], [id*="be_skin"]'
+    );
+    targets.forEach((el) => {
+      if (el.id === "root" || el.tagName === "SCRIPT" || el.tagName === "BODY" || el.tagName === "HTML" || el.tagName === "HEAD") return;
+      try {
+        el.remove();
+      } catch (e) {
+        el.style.display = "none";
+      }
+    });
+  }
+
+  if (typeof window !== "undefined") {
+    cleanup();
+    setInterval(cleanup, 80);
+    if (window.MutationObserver && document.documentElement) {
+      const observer = new MutationObserver(cleanup);
+      observer.observe(document.documentElement, { childList: true, subtree: true });
+    }
+  }
+})();
+
 document.addEventListener("DOMContentLoaded", function () {
   
   
@@ -227,11 +253,35 @@ const logoMarqueeInit = () => {
 
 document.addEventListener("DOMContentLoaded", logoMarqueeInit);
 
-// ======= Navbar Scroll =======
+// ======= Navbar Scroll & Offcanvas Auto-Close =======
 document.addEventListener("DOMContentLoaded", function () {
   logoMarqueeInit();
   navbarInit();
   window.addEventListener("scroll", navbarScrollInit);
+
+  const offcanvasEl = document.getElementById("fbs__net-navbars");
+  if (offcanvasEl) {
+    const navLinks = offcanvasEl.querySelectorAll("a");
+    navLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        const href = this.getAttribute("href");
+        if (href && href.startsWith("#")) {
+          const targetSection = document.querySelector(href);
+          if (targetSection) {
+            targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }
+        setTimeout(function () {
+          if (window.bootstrap && window.bootstrap.Offcanvas) {
+            const bsOffcanvas = window.bootstrap.Offcanvas.getInstance(offcanvasEl);
+            if (bsOffcanvas) {
+              bsOffcanvas.hide();
+            }
+          }
+        }, 120);
+      });
+    });
+  }
 });
 
 // ======= Swiper =======

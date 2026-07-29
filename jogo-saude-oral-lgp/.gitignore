@@ -6,3 +6,9 @@ build/
 .env.local
 *.log
 .DS_Store
+.sites-runtime
+.sites-runtime/
+**/.sites-runtime
+**/.sites-runtime/**
+.wrangler/
+.openai/
