@@ -3769,13 +3769,33 @@ footer p { margin: 0; text-align: right; }
     justify-content: center !important;
   }
 
-  /* Pre-Footer Game Bar Centering on PC */
+  /* Pre-Footer Game Bar Centering & Infinite Background on PC */
   #root > footer {
-    max-width: 1280px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: max(calc((100% - 1280px) / 2 + 24px), 24px) !important;
+    padding-right: max(calc((100% - 1280px) / 2 + 24px), 24px) !important;
   }
 }
+
+/* ==========================================================================
+   Tablet Pre-Footer Game Bar Custom Layout (768px - 991.98px)
+   ========================================================================== */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #root > footer {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 18px 24px !important;
+  }
+  #root > footer p {
+    display: none !important;
+  }
+  #root > footer .footer-guide-link {
+    display: inline-flex !important;
+  }
+}
+
 
 
 
