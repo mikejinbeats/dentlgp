@@ -669,6 +669,17 @@ function NativeLgpVideoPlayer({ src, themeColor }) {
   const [hasStarted, setHasStarted] = useState(false);
   const videoRef = useRef(null);
 
+  const cleanSrc = useMemo(() => {
+    if (!src) return "";
+    return encodeURI(src);
+  }, [src]);
+
+  const cleanSrcAlt = useMemo(() => {
+    if (!src) return "";
+    const altPath = src.replace("assets/videos - cartoes de aprendizagem/", "assets/videos/");
+    return encodeURI(altPath);
+  }, [src]);
+
   useEffect(() => {
     setIsPlaying(false);
     setHasStarted(false);
@@ -692,7 +703,9 @@ function NativeLgpVideoPlayer({ src, themeColor }) {
       setIsPlaying(true);
       setHasStarted(true);
       if (videoRef.current) {
-        videoRef.current.play().catch(() => {});
+        videoRef.current.play().catch(() => {
+          setIsPlaying(false);
+        });
       }
     }
   };
@@ -710,17 +723,17 @@ function NativeLgpVideoPlayer({ src, themeColor }) {
   return (
     <div
       className="lgp-video-player"
-      style={{ position: "relative", overflow: "hidden", borderRadius: "14px", cursor: "pointer" }}
-      onClick={handleTogglePlay}
+      style={{ position: "relative", overflow: "hidden", borderRadius: "14px" }}
     >
       <video
         ref={videoRef}
-        key={src}
-        src={src}
+        key={cleanSrc}
         onEnded={handleEnded}
-        muted
+        onPlay={() => setIsPlaying(true)}
+        onPause={() => setIsPlaying(false)}
         playsInline
-        preload="auto"
+        controls
+        preload="metadata"
         style={{
           width: "100%",
           height: "100%",
@@ -728,18 +741,21 @@ function NativeLgpVideoPlayer({ src, themeColor }) {
           backgroundColor: "#100a1c",
           borderRadius: "14px",
           display: "block",
-          pointerEvents: "none"
         }}
-      />
-      {!isPlaying && (
-        <div className="lgp-video-play-overlay" onClick={handleTogglePlay}>
+      >
+        <source src={cleanSrc} type="video/mp4" />
+        <source src={cleanSrcAlt} type="video/mp4" />
+        O seu navegador não suporta a reprodução deste vídeo em LGP.
+      </video>
+      {!isPlaying && !hasStarted && (
+        <div className="lgp-video-play-overlay" onClick={handleTogglePlay} style={{ cursor: "pointer" }}>
           <div className="lgp-video-play-btn" style={{ backgroundColor: themeColor || "var(--theme, #079eb3)" }}>
             <svg viewBox="0 0 24 24" aria-hidden="true" style={{ width: "32px", height: "32px", fill: "#ffffff", marginLeft: "3px" }}>
               <path d="M8 5v14l11-7z" />
             </svg>
           </div>
           <span className="lgp-video-play-text">
-            {hasStarted ? "Clique para continuar a ver" : "Ver vídeo em LGP"}
+            Ver vídeo em LGP
           </span>
         </div>
       )}
