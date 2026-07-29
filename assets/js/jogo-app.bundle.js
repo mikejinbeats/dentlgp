@@ -22833,6 +22833,7 @@
         videoRef.current.pause();
         try {
           videoRef.current.currentTime = 0;
+          videoRef.current.load();
         } catch (e) {
         }
       }
@@ -22874,6 +22875,7 @@
             "video",
             {
               ref: videoRef,
+              src: cleanSrc,
               onEnded: handleEnded,
               onPlay: () => setIsPlaying(true),
               onPause: () => setIsPlaying(false),

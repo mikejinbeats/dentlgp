@@ -687,6 +687,7 @@ function NativeLgpVideoPlayer({ src, themeColor }) {
       videoRef.current.pause();
       try {
         videoRef.current.currentTime = 0;
+        videoRef.current.load();
       } catch (e) {}
     }
   }, [src]);
@@ -728,6 +729,7 @@ function NativeLgpVideoPlayer({ src, themeColor }) {
       <video
         ref={videoRef}
         key={cleanSrc}
+        src={cleanSrc}
         onEnded={handleEnded}
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
