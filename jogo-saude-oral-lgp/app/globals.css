@@ -3485,14 +3485,24 @@ footer p { margin: 0; text-align: right; }
     justify-content: center !important;
   }
 
+  /* Flush Pre-Footer Game Bar for Learning Cards & Game Pages on PC */
+  .learning-cards-page,
+  .game-shell,
+  .prepared-activity-page {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
   /* Pre-Footer Game Bar Centering & Infinite Background on PC */
   #root > footer {
     width: 100% !important;
     max-width: 100% !important;
+    margin-top: 0 !important;
     padding-left: max(calc((100% - 1280px) / 2 + 24px), 24px) !important;
     padding-right: max(calc((100% - 1280px) / 2 + 24px), 24px) !important;
   }
 }
+
 
 /* ==========================================================================
    Tablet Pre-Footer Game Bar Custom Layout (768px - 991.98px)
