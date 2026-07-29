@@ -22816,7 +22816,7 @@
   function NativeLgpVideoPlayer({ src, themeColor }) {
     const [isPlaying, setIsPlaying] = (0, import_react.useState)(false);
     const [hasStarted, setHasStarted] = (0, import_react.useState)(false);
-    const videoRef = useRef(null);
+    const videoRef = (0, import_react.useRef)(null);
     const cleanSrc = (0, import_react.useMemo)(() => {
       if (!src) return "";
       return encodeURI(src);
