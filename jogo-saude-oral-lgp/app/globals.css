@@ -3382,29 +3382,6 @@ footer p { margin: 0; text-align: right; }
   opacity: 0 !important;
 }
 
-.teacher-guide-page .guide-hero {
-  text-align: center !important;
-}
-
-.teacher-guide-page .guide-hero-copy {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  text-align: center !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-.teacher-guide-page .guide-downloads {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  align-items: center !important;
-  justify-content: center !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  gap: 12px !important;
-}
-
 .lgp-video-play-text {
   color: #ffffff !important;
   font-weight: 800 !important;
@@ -3424,20 +3401,4 @@ footer p { margin: 0; text-align: right; }
   visibility: hidden !important;
   opacity: 0 !important;
   pointer-events: none !important;
-}
-
-/* Centered max-width container wrappers for Zoom Out & Ultra-wide viewports */
-.hero,
-.atividades-section,
-.atividades-grid,
-.teacher-guide-page,
-.guide-hero,
-.guide-intro-grid,
-.guide-theme-grid,
-.guide-activity-grid,
-.observation-section,
-.teacher-guide-page section {
-  max-width: 1320px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
 }
