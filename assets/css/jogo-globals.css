@@ -3768,7 +3768,15 @@ footer p { margin: 0; text-align: right; }
   .card-exploration ol {
     justify-content: center !important;
   }
+
+  /* Pre-Footer Game Bar Centering on PC */
+  #root > footer {
+    max-width: 1280px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }
+
 
 
 
