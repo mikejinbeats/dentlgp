@@ -3686,3 +3686,79 @@ footer p { margin: 0; text-align: right; }
   opacity: 0 !important;
   pointer-events: none !important;
 }
+
+/* ==========================================================================
+   PC / Desktop Alignment & Centering Fix (min-width: 992px)
+   Strictly scoped to PC views - Mobile & Tablet responsiveness untouched.
+   ========================================================================== */
+@media (min-width: 992px) {
+  /* Position Back Button strictly ABOVE the Eyebrow subtitle text on PC */
+  .back-to-home-link {
+    display: inline-flex !important;
+    width: fit-content !important;
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+  }
+  .hero-copy .eyebrow {
+    display: flex !important;
+    width: fit-content !important;
+    clear: both !important;
+  }
+
+  /* Full Width Background for Hero Sections on PC (Infinitely Spanning Background) */
+  .guide-hero,
+  .teacher-guide-page .guide-hero {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: max(calc((100% - 1280px) / 2 + 24px), 24px) !important;
+    padding-right: max(calc((100% - 1280px) / 2 + 24px), 24px) !important;
+  }
+
+  /* Hero & Header Containers Centering */
+  .hero-copy,
+  .hero-art {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Main Section Headings & Content Grids Centering on PC */
+  .section-heading,
+  .activity-overview-grid,
+  .activity-game-grid,
+  .teacher-callout,
+  .theme-grid,
+  .how-section,
+  .learning-section {
+    max-width: 1280px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Guia do Professor Page - Inner Section Containers Centering on PC */
+  .teacher-guide-page .guide-intro-grid,
+  .teacher-guide-page .guide-split-section,
+  .teacher-guide-page .guide-section-heading,
+  .teacher-guide-page .guide-theme-grid,
+  .teacher-guide-page .card-exploration,
+  .teacher-guide-page .accessibility-section,
+  .teacher-guide-page .guide-activity-grid,
+  .teacher-guide-page .observation-section {
+    max-width: 1280px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Specific Layout Polish for Guia do Professor elements on PC */
+  .guide-intro-grid,
+  .guide-theme-grid,
+  .guide-activity-grid {
+    width: 100% !important;
+  }
+
+  .card-exploration ol {
+    justify-content: center !important;
+  }
+}
+
+
+
