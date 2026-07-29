@@ -16,6 +16,13 @@ export const metadata = {
     type: "website",
   },
   referrer: "strict-origin-when-cross-origin",
+  icons: {
+    icon: [
+      { url: "assets/images/favicon/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+    ],
+    shortcut: "assets/images/favicon/favicon-96x96.png",
+    apple: "assets/images/favicon/apple-touch-icon.png",
+  },
   other: {
     "codex-preview": "development",
     "X-UA-Compatible": "IE=edge",
