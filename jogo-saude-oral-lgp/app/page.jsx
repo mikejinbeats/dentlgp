@@ -724,7 +724,8 @@ function NativeLgpVideoPlayer({ src, themeColor }) {
   return (
     <div
       className="lgp-video-player"
-      style={{ position: "relative", overflow: "hidden", borderRadius: "14px" }}
+      onClick={handleTogglePlay}
+      style={{ position: "relative", overflow: "hidden", borderRadius: "14px", cursor: "pointer" }}
     >
       <video
         ref={videoRef}
@@ -734,7 +735,7 @@ function NativeLgpVideoPlayer({ src, themeColor }) {
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
         playsInline
-        controls
+        muted
         preload="metadata"
         style={{
           width: "100%",
@@ -749,7 +750,7 @@ function NativeLgpVideoPlayer({ src, themeColor }) {
         <source src={cleanSrcAlt} type="video/mp4" />
         O seu navegador não suporta a reprodução deste vídeo em LGP.
       </video>
-      {!isPlaying && !hasStarted && (
+      {!isPlaying && (
         <div className="lgp-video-play-overlay" onClick={handleTogglePlay} style={{ cursor: "pointer" }}>
           <div className="lgp-video-play-btn" style={{ backgroundColor: themeColor || "var(--theme, #079eb3)" }}>
             <svg viewBox="0 0 24 24" aria-hidden="true" style={{ width: "32px", height: "32px", fill: "#ffffff", marginLeft: "3px" }}>
@@ -757,12 +758,13 @@ function NativeLgpVideoPlayer({ src, themeColor }) {
             </svg>
           </div>
           <span className="lgp-video-play-text">
-            Ver vídeo em LGP
+            {hasStarted ? "Continuar a ver" : "Ver vídeo em LGP"}
           </span>
         </div>
       )}
     </div>
   );
+
 }
 
 function KnowledgeQuiz({ onExit, onFinish }) {

@@ -1952,3 +1952,38 @@ html, body {
   opacity: 0 !important;
   pointer-events: none !important;
 }
+
+/* Centralização dos Links Legais no Footer para Tablet e Mobile (L, M, S) */
+@media (max-width: 991.98px) {
+  footer div:has(> a[href*="politica-de-privacidade"]),
+  .footer div:has(> a[href*="politica-de-privacidade"]),
+  footer .d-flex.flex-wrap.gap-3.small,
+  .footer .d-flex.flex-wrap.gap-3.small {
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* Responsividade Mobile S: Remover pontinhos no footer e alinhar verticalmente ao centro */
+@media (max-width: 430px) {
+  footer div:has(> a[href*="politica-de-privacidade"]),
+  .footer div:has(> a[href*="politica-de-privacidade"]),
+  footer .d-flex.flex-wrap.gap-3.small,
+  .footer .d-flex.flex-wrap.gap-3.small {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+  }
+  footer div:has(> a[href*="politica-de-privacidade"]) span.opacity-50,
+  .footer div:has(> a[href*="politica-de-privacidade"]) span.opacity-50,
+  footer .d-flex.flex-wrap.gap-3.small span.opacity-50,
+  .footer .d-flex.flex-wrap.gap-3.small span.opacity-50 {
+    display: none !important;
+  }
+}
+
+

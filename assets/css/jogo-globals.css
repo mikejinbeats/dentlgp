@@ -3668,13 +3668,22 @@ footer p { margin: 0; text-align: right; }
   pointer-events: none !important;
 }
 
+.lgp-video-player video::-webkit-media-controls,
+.lgp-video-player video::-webkit-media-controls-enclosure,
+.lgp-video-player video::-webkit-media-controls-panel,
+.lgp-video-player video::-webkit-media-controls-timeline,
+.lgp-video-player video::-webkit-media-controls-current-time-display,
+.lgp-video-player video::-webkit-media-controls-time-remaining-display,
 .lgp-video-player video::-webkit-media-controls-start-playback-button,
 .lgp-video-player video::-webkit-media-controls-play-button,
 .lgp-video-player video::-webkit-media-controls-overlay-play-button {
   display: none !important;
   -webkit-appearance: none !important;
   opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
 }
+
 
 .lgp-video-play-text {
   color: #ffffff !important;
@@ -3769,13 +3778,14 @@ footer p { margin: 0; text-align: right; }
     justify-content: center !important;
   }
 
-  /* Flush Pre-Footer Game Bar for Learning Cards & Game Pages on PC */
+  /* Professional Spacing Above Pre-Footer Game Bar for Learning Cards & Game Pages on PC */
   .learning-cards-page,
   .game-shell,
   .prepared-activity-page {
-    padding-bottom: 0 !important;
+    padding-bottom: 48px !important;
     margin-bottom: 0 !important;
   }
+
 
   /* Pre-Footer Game Bar Centering & Infinite Background on PC */
   #root > footer {
@@ -3804,7 +3814,40 @@ footer p { margin: 0; text-align: right; }
   #root > footer .footer-guide-link {
     display: inline-flex !important;
   }
+/* Centralização dos Links Legais no Footer para Tablet e Mobile (L, M, S) */
+@media (max-width: 991.98px) {
+  footer div:has(> a[href*="politica-de-privacidade"]),
+  .footer div:has(> a[href*="politica-de-privacidade"]),
+  footer .d-flex.flex-wrap.gap-3.small,
+  .footer .d-flex.flex-wrap.gap-3.small {
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }
+
+/* Responsividade Mobile S: Remover pontinhos no footer e alinhar verticalmente ao centro */
+@media (max-width: 430px) {
+  footer div:has(> a[href*="politica-de-privacidade"]),
+  .footer div:has(> a[href*="politica-de-privacidade"]),
+  footer .d-flex.flex-wrap.gap-3.small,
+  .footer .d-flex.flex-wrap.gap-3.small {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+  }
+  footer div:has(> a[href*="politica-de-privacidade"]) span.opacity-50,
+  .footer div:has(> a[href*="politica-de-privacidade"]) span.opacity-50,
+  footer .d-flex.flex-wrap.gap-3.small span.opacity-50,
+  .footer .d-flex.flex-wrap.gap-3.small span.opacity-50 {
+    display: none !important;
+  }
+}
+
+
 
 
 

@@ -22869,7 +22869,8 @@
       "div",
       {
         className: "lgp-video-player",
-        style: { position: "relative", overflow: "hidden", borderRadius: "14px" },
+        onClick: handleTogglePlay,
+        style: { position: "relative", overflow: "hidden", borderRadius: "14px", cursor: "pointer" },
         children: [
           /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
             "video",
@@ -22880,7 +22881,7 @@
               onPlay: () => setIsPlaying(true),
               onPause: () => setIsPlaying(false),
               playsInline: true,
-              controls: true,
+              muted: true,
               preload: "metadata",
               style: {
                 width: "100%",
@@ -22898,9 +22899,9 @@
             },
             cleanSrc
           ),
-          !isPlaying && !hasStarted && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "lgp-video-play-overlay", onClick: handleTogglePlay, style: { cursor: "pointer" }, children: [
+          !isPlaying && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "lgp-video-play-overlay", onClick: handleTogglePlay, style: { cursor: "pointer" }, children: [
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "lgp-video-play-btn", style: { backgroundColor: themeColor || "var(--theme, #079eb3)" }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("svg", { viewBox: "0 0 24 24", "aria-hidden": "true", style: { width: "32px", height: "32px", fill: "#ffffff", marginLeft: "3px" }, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M8 5v14l11-7z" }) }) }),
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "lgp-video-play-text", children: "Ver v\xEDdeo em LGP" })
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "lgp-video-play-text", children: hasStarted ? "Continuar a ver" : "Ver v\xEDdeo em LGP" })
           ] })
         ]
       }
