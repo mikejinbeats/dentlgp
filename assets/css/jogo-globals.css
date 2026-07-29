@@ -3736,7 +3736,8 @@ footer p { margin: 0; text-align: right; }
     clear: both !important;
   }
 
-  /* Full Width Background for Hero Sections on PC (Infinitely Spanning Background) */
+  /* Full Width Background for Hero Sections on PC (Infinitely Spanning Background with Centered Content) */
+  .hero,
   .guide-hero,
   .teacher-guide-page .guide-hero {
     width: 100% !important;
@@ -3744,6 +3745,7 @@ footer p { margin: 0; text-align: right; }
     padding-left: max(calc((100% - 1280px) / 2 + 24px), 24px) !important;
     padding-right: max(calc((100% - 1280px) / 2 + 24px), 24px) !important;
   }
+
 
   /* Hero & Header Containers Centering */
   .hero-copy,
