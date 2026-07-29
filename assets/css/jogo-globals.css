@@ -28,6 +28,16 @@ body {
   font-family: "DM Sans", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
+/* Prevent footer flash at the top during initial React mounting */
+#root {
+  min-height: 100vh;
+}
+
+#root:empty + footer {
+  display: none !important;
+}
+
 button, a { font: inherit; }
 button { color: inherit; }
 button:focus-visible, a:focus-visible {
